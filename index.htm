@@ -1,0 +1,1030 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Huisdier Assistentie</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!meta charset utf="8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Play-Offs Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script src="js/0.js"></script>
+		<!--bootstrap-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--coustom css-->
+    <link rel="stylesheet" id="camera-css"  href="css/camera.css" type="text/css" media="all">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+		<!--script-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<!--fonts-->
+		<link href="//fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+		<!--script-->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$("html,body").animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+<!--gallery start here-->
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //		Styles
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 90%;
+		}
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
+//Styles
+.question{
+  position:absolute;
+  top:20px;
+  right:20px;
+  z-index:3;
+  display:none;
+  p{font-size:40px;color:white;cursor:pointer;margin:0;}
+}
+.tut{
+  background:white;
+  padding:0px;
+  width:760px;
+  margin:auto;
+  transition:all .3s;
+  //display:none;
+  border-radius:7px;
+  text-align:center;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) scale(0);
+  left:0;
+  right:0;
+  z-index:3;
+  h2{
+    font-size: 20px;
+    color: #C39681;
+    width: 370px;
+    margin: 50px auto 30px auto;
+  }
+  p{
+    color: #C39681;
+    border-top: 1px solid #FCF1EC;
+    border-bottom-right-radius: 7px;
+    padding-top: 30px;
+    border-bottom-left-radius: 7px;
+    background: #FFF3ED;
+    transition:all .3s;
+    cursor: pointer;
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 30px;
+    &:hover{
+      background:#7B6358;
+      color:white;
+    }
+  }
+}
+.loader{
+  position:fixed;
+  z-index:3;
+  width:100%;
+  height:100%;
+  background:#c39681;
+  &_inner{
+    text-align:center;
+    position:absolute;
+    left:0;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    margin:auto;
+    div{
+      color: rgba(255, 255, 255, 0.52);
+      font-size: 16px;
+      margin-top: 40px;
+      opacity:0;
+      animation:load .6s .3s forwards
+    }
+    .pawone{
+      top:-10px;
+    }
+    .pawtwo{}
+    img{
+      margin-right:17px;
+      width:30px;
+      position:relative;
+      opacity:0;
+      @for $i from 1 through 10{
+        &:nth-of-type(#{$i}){
+
+          animation: load 1s (0.4s + $i/3) linear forwards;
+        }
+      }
+      @keyframes load{
+        0%{opacity:0}
+        100%{opacity:1}
+      }
+    }
+  }
+}
+
+// Animations
+
+.poptut{
+
+  animation: poptut 1s .4s forwards;
+
+}
+.popone{
+
+  animation: pop 1s .4s forwards;
+
+}
+.poptwo{
+  animation: pop 1s .6s forwards;
+
+}
+.popthree{
+  animation: pop 1s .8s forwards;
+
+}
+.popfour{
+  animation: pop 1s 1s forwards;
+
+}
+@keyframes pop{
+  0%{transform:scale(0);}
+  25%{transform:scale(1.2);}
+  50%{transform:scale(.9);}
+  75%{transform:scale(1.1);}
+  100%{transform:scale(1);}
+}
+@keyframes poptut{
+  0%{transform:translateY(-50%) scale(0);}
+  25%{transform:translateY(-50%) scale(1.2);}
+  50%{transform:translateY(-50%) scale(.9);}
+  75%{transform:translateY(-50%) scale(1.1);}
+  100%{transform:translateY(-50%) scale(1);}
+}
+a.follow{
+  background: #4BE8AC !important;
+  box-shadow: 0px 3px 0px #39BF8C !important;
+}
+a.download,a.follow{    transform:scale(0);
+  &:hover{
+    background: #88614F;
+  }
+  text-align: center;
+  margin-top: 80px;
+  width: 200px;
+  float: left;
+  display: inline-block;
+  padding: 26px 30px;
+  background: #845E4C;
+  box-shadow: 0px 3px 0px #744A37;
+  color: white;
+  font-weight: 900;
+  font-family: 'nunito';
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 22px;}
+
+// summary
+.summary{
+  position: relative;
+  padding: 0px 50px;
+  margin-top: 78px;
+}
+.col_left{
+  width: 400px;
+  position: relative;
+  height: 510px;
+  padding: 9px 0px 0px 0px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Crete Round', serif;
+  color: white;
+  font-size: 19px;
+  .board{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+  }
+  p{
+    margin:0;
+  }
+  margin:0 auto;
+  text-align: left;
+  font-family: 'Crete Round', serif;
+  color: white;
+  font-size: 19px;
+  .answer_p{
+    font-size:28px;    font-size: 19px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 9px;
+    margin-bottom: 6px !important;
+    color: #4BE8AC;
+  }
+}
+.col_right{
+  width: 453px;
+  position: absolute;
+  bottom: -27px;
+  left: 159px;
+  margin: 0 auto;
+  a{
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin: 14px;
+  }
+}
+	</style>
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //		Scripts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_3').camera({
+				height: '56%',
+				pagination: false,
+				thumbnails: true,
+				imagePath: 'image/'
+			});
+
+		});
+function resizeInput() {
+    $(this).attr('size', $(this).val().length);
+}
+
+$('input[type="text"], input[type="email"]')
+    // event handler
+    .keyup(resizeInput)
+    // resize on page load
+    .each(resizeInput);
+
+
+console.clear();
+// Adapted from georgepapadakis.me/demo/expanding-textarea.html
+(function(){
+  
+  var textareas = document.querySelectorAll('.expanding'),
+      
+      resize = function(t) {
+        t.style.height = 'auto';
+        t.style.overflow = 'hidden'; // Ensure scrollbar doesn't interfere with the true height of the text.
+        t.style.height = (t.scrollHeight + t.offset ) + 'px';
+        t.style.overflow = '';
+      },
+      
+      attachResize = function(t) {
+        if ( t ) {
+          console.log('t.className',t.className);
+          t.offset = !window.opera ? (t.offsetHeight - t.clientHeight) : (t.offsetHeight + parseInt(window.getComputedStyle(t, null).getPropertyValue('border-top-width')));
+
+          resize(t);
+
+          if ( t.addEventListener ) {
+            t.addEventListener('input', function() { resize(t); });
+            t.addEventListener('mouseup', function() { resize(t); }); // set height after user resize
+          }
+
+          t['attachEvent'] && t.attachEvent('onkeyup', function() { resize(t); });
+        }
+      };
+  
+  // IE7 support
+  if ( !document.querySelectorAll ) {
+  
+    function getElementsByClass(searchClass,node,tag) {
+      var classElements = new Array();
+      node = node || document;
+      tag = tag || '*';
+      var els = node.getElementsByTagName(tag);
+      var elsLen = els.length;
+      var pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)");
+      for (i = 0, j = 0; i < elsLen; i++) {
+        if ( pattern.test(els[i].className) ) {
+          classElements[j] = els[i];
+          j++;
+        }
+      }
+      return classElements;
+    }
+    
+    textareas = getElementsByClass('expanding');
+  }
+  
+  for (var i = 0; i < textareas.length; i++ ) {
+    attachResize(textareas[i]);
+  }
+  
+})();
+/* ======================================
+
+Super Fresh Customer Feedback Concept
+Author: Jamie Coulter
+Date: 01.01.2016
+Version: 1.0
+
+========================================= */
+// Tutorial modal
+
+function open_modal(){
+  $('.tut').addClass('poptut'); // Remove
+  $('.question').fadeOut(400); // Fadeout
+}
+
+function close_modal(){
+  $('.question').fadeIn(400); // Fadeout
+  $('.tut').removeClass('poptut'); // Remove
+  $('h1,h2').addClass('popone'); // Intro
+  $('.character').addClass('poptwo'); // Intro
+  $('.rating').addClass('popthree'); // Intro
+  $('.next,.prev').addClass('popfour'); // Intro
+}
+
+$('.tut p').click(function(){
+  close_modal(); // Close modal
+});
+
+$('.question p').click(function(){
+  open_modal(); // Open modal
+})
+
+// End tutorial modal
+
+// Page slider
+
+var slide_amount = $('.feedbackform_slide').length; // Slide count
+var window_width = $(window).width(); // Init window width
+var current_x = 0; // Current x value of slides
+var current_position = 0; // Current position
+
+$('.feedbackform').css('width',window_width * slide_amount + 'px'); // Set up the slides
+$('.feedbackform_slide').css('width',window_width + 'px'); // Set up the slides
+
+$('.next').click(function(){
+  update_answers();
+  var window_width = $(window).width(); // Re assess window width
+  if(current_position < slide_amount - 1){
+    current_position++;
+    current_x = current_position * window_width;
+    $('.feedbackform_slide').css('right',current_x);
+    $('.active_slide').removeClass('active_slide').next().addClass('active_slide');
+    setTimeout(function(){
+      $('.active_slide').find('.popone').removeClass('popone'); // Reset animations
+      $('.active_slide').find('.poptwo').removeClass('poptwo'); // Reset animations
+      $('.active_slide').find('.popthree').removeClass('popthree'); // Reset animations
+      $('.active_slide').find('.popfour').removeClass('popfour'); // Reset animations
+    },10)
+    setTimeout(function(){
+      $('h1,h2').addClass('popone'); // Reset animations
+      $('.character,a.follow,a.download').addClass('poptwo'); // Reset animations
+      $('.rating').addClass('popthree'); // Reset animations
+      $('.next,.prev').addClass('popfour'); // Reset animations
+    },410)
+  }
+});
+
+$('.prev').click(function(){
+  update_answers();
+  var window_width = $(window).width();
+  if(current_position > 0){
+    current_position--;
+    current_x = current_position * window_width;
+    $('.feedbackform_slide').css('right',current_x);
+    $('.active_slide').removeClass('active_slide').prev().addClass('active_slide');
+    setTimeout(function(){
+      $('.active_slide').find('.popone').removeClass('popone'); // Reset animations
+      $('.active_slide').find('.poptwo').removeClass('poptwo'); // Reset animations
+      $('.active_slide').find('.popthree').removeClass('popthree'); // Reset animations
+      $('.active_slide').find('.popfour').removeClass('popfour'); // Reset animations
+    },10)
+    setTimeout(function(){
+      $('h1,h2').addClass('popone'); // Reset animations
+      $('.character,a.follow,a.download').addClass('poptwo'); // Reset animations
+      $('.rating').addClass('popthree'); // Reset animations
+      $('.next,.prev').addClass('popfour'); // Reset animations
+    },410)
+  }
+});
+
+$(window).resize(function(){ // Responisivity
+  var window_width = $(window).width(); // Window width
+  $('.feedbackform').css('width',window_width * slide_amount + 'px'); // Re jig slide sizes
+  $('.feedbackform_slide').css('width',window_width + 'px'); // Re jig slide sizes
+  current_position = 0; // Reset
+  current_x = current_position * window_width; // Reset
+  $('.feedbackform_slide').css('right',current_x); // Reset
+  $('.active_slide').removeClass('active_slide')
+  $('.first').addClass('active_slide');
+});
+
+// End page slider
+
+// Questions
+
+var questions = ['How satisfied are you with our services?','How satisfied are you with your pet?','How were our staff?','How was the cleanliness of our store?']
+var q = 0;
+
+$('.question_s').each(function(){
+  $(this).html(questions[q])
+  q++;
+})
+
+// Summary
+var answers = []
+
+var animals = ['monkey','rabbit','panda','lion']
+for(i = 0; i < animals.length; i++){
+  answers[animals[i]] = ['Average'] 
+}
+
+function update_answers(){
+   $('.summary').html('');
+  for(i = 0; i < questions.length; i++){
+    $('.summary').append('<p>' + questions[i] + '</p><p class="answer_p">' + answers[animals[i]][0] + '</p>')
+  }
+}
+// Messages
+
+var monkey_messages = ['terrible','bad','not great','average','good','excellent','amazing']; // Monkey array
+var rabbit_messages = ['dissapointed','unhappy','not great','average','pleased','happy','super happy']; // Rabbit array
+var panda_messages = ['terrible','bad','not great','average','good','excellent','amazing']; // Panda array
+var lion_messages = ['very dirty','dirty','needs work','average','clean','very clean','Superb']; // Lion array
+
+// The smile
+
+$('input').mousedown(function(){
+  $('input').css('cursor','-webkit-grabbing'); // Change cursor
+  $('input').css('cursor','-moz-grabbing'); // Change cursor
+});
+
+$('input').mouseup(function(){
+  $('input').css('cursor','-webkit-grab'); // Change cursor
+  $('input').css('cursor','-moz-grab'); // Change cursor
+});
+
+var smile_value;
+
+$('input').mousedown(function(){
+  var active_smile = $(this).attr('class').split(' ').pop(); // Get active smile
+  s = setInterval(function(){
+    // Change smile svg coords
+    smile_value = $('input.' + active_smile).val(); // Get the value
+    $('.smile.' + active_smile + ' path').attr('d','M10 10 C 20 ' + smile_value + ', 40 ' + smile_value + ', 50 10');
+    // Select relevant array
+    if(active_smile == 'monkey'){
+      var active_array = monkey_messages; // Monkey array
+    } else if(active_smile == 'rabbit'){
+      var active_array = rabbit_messages; // Rabbit array
+    } else if(active_smile == 'panda'){
+      var active_array = panda_messages; // Panda array
+    } else if(active_smile == 'lion'){
+      var active_array = lion_messages; // Lion array
+    }
+    answers[active_smile] = [$('.rating.' + active_smile + ' span').html()]; // Push to answers
+    $('.sb.' + active_smile).css('opacity',(smile_value/60)); // Pattern opacity
+    $('.grad.' + active_smile).css('opacity',(smile_value/40)); // Gradient opacity
+    if(smile_value == 0){
+      // Worst
+      $('.rating.' + active_smile + ' span').html(active_array[0]); // Set message
+    } else if(smile_value < 10 && smile_value > 5){
+      // Bad
+      $('.rating.' + active_smile + ' span').html(active_array[1]); // Set message
+    } else if(smile_value < 5 && smile_value > 0){
+      // Not good
+      $('.rating.' + active_smile + ' span').html(active_array[2]); // Set message
+    } else if(smile_value == 10){
+      // Average
+      $('.rating.' + active_smile + ' span').html(active_array[3]); // Set message
+    } else if(smile_value > 10 && smile_value < 15){
+      // Good
+      $('.rating.' + active_smile + ' span').html(active_array[4]); // Set message
+    } else if(smile_value > 15 && smile_value < 20){
+      // Very good
+      $('.rating.' + active_smile + ' span').html(active_array[5]); // Set message
+    } else if(smile_value== 20){
+      // Amazing
+      $('.rating.' + active_smile + ' span').html(active_array[6]); // Set message
+    }        
+  },10)
+});
+
+// Clear interval
+
+$('input').mouseup(function(){
+  clearInterval(s); // Clear intervals
+});
+
+
+// To do
+// Code tidy
+// CBT CDT
+// Finish last slide
+
+// Would be nice
+// Things appear on the board, banans etc
+// summary page?
+// Eyes follow you?
+	</script>
+<!--gallery ends here-->
+	</head>
+	<body>
+		<!--header-part-->
+		<div class="banner-background" id="to-top">
+			<div class="container">
+				<div class="nav-back">
+					<div class="navigation">
+						<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+					<li><a class="active  scroll" href="#to-top">Home</a></li>
+					<li><a class="scroll" href="#about">Over Ons</a></li>
+					<li><a class="scroll" href="#service">Diensten</a></li>
+					<li><a class="scroll" href="#team">Team</a></li>
+					<li><a class="scroll" href="#gallery">Gallery</a></li>
+					<li><a class="scroll" href="#agenda">Agenda</a></li>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+								<div class="clearfix"></div>	
+							<div class="clearfix"></div>
+						</nav>
+						<div class="clearfix"></div>
+					</div>
+					<div class="logo">
+						<h1><a href=""><span class="hlh">Huisdier</span><span class="hlf">Assistentie</span></a></h1>
+					</div>
+					<div class="banner-slider">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+						  </ol>
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+							<div class="item active">
+							  <a class="scroll" href="#gallery"><img src="images/welkom.gif" alt="Welkom" class="img-responsive"></a>
+							</div>
+							<div class="item">
+							<img src="images/t-uitlaat.gif" onmouseover='this.src = this.src.replace("images/t-uitlaat.gif","images/t-uitlaat.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+							  <div class="carousel-caption ch">
+								<h3>Hondenuitlaatservice</h3>
+								<p>Ik laat honden uit wanneer het u niet lukt.</p>
+							  </div>
+							</div>
+							<div class="item">
+							  <img src="images/t-dier.gif" onmouseover='this.src = this.src.replace("images/t-dier.gif","images/t-dier.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+							  <div class="carousel-caption ch">
+								<h3>Huisdieroppas</h3>
+								<p>Ik pas op huisdieren in mijn eigen of uw huis.</p>
+							  </div>
+							</div>
+							<div class="item">
+							  <img src="images/t-oppas.gif" onmouseover='this.src = this.src.replace("images/t-oppas.gif","images/t-oppas.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+							  <div class="carousel-caption ch">
+								<h3>Hondenoppas</h3>
+								<p>Ik pas op honden in mijn eigen of uw huis.</p>
+							  </div>
+							</div>
+						  </div>
+						  <!-- Controls -->
+						  <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+					<div class="clearfix">  </div>
+				</div>
+			</div>
+		</div>
+		<!--header-ends-->
+<!--about start here-->
+<div class="services" id="about">
+	<div class="container">
+		<div class="about-main">
+			<h2>Over Ons</h2>
+			<div class="about-bottom">
+			<div class="col-md-6 about-left">
+				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
+			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+			</div>
+			<div class="col-md-6 about-right">
+			    <div class="about-grid">
+			    	<div class="about-box">
+			    		<h5><span class="ab-box">  </span></h5>
+			    	</div>
+			    	<div class="about-text">
+			    		<h4>Eerste ontmoeting</h4>
+			    		<p>Ik sta open om langs te komen, voor een goed gesprek en wat uw wensen zijn.</p>
+			    	</div>
+			      <div class="clearfix">  </div>
+			    </div>
+			    <div class="about-grid ab-more">
+			    	<div class="about-box">
+			    		<h5><span class="ab-box">  </span></h5>
+			    	</div>
+			    	<div class="about-text">
+			    		<h4>Prijs</h4>
+			    		<p>Ik vraag niet veel voor het oppassen. Voor meer informatie ga naar <a class="scroll" href="#service">Onze Diensten</a>.</p>
+			    	</div>
+			      <div class="clearfix">  </div>
+			    </div>
+			    <div class="about-grid">
+			    	<div class="about-box">
+			    		<h5><span class="ab-box">  </span></h5>
+			    	</div>
+			    	<div class="about-text">
+			    		<h4>Buiten Hilversum</h4>
+			    		<p>Buiten Hilversum vraag ik wel reisvergoeding.</p>
+			    	</div>
+			       <div class="clearfix">  </div>
+			    </div>
+			</div>
+		  </div>
+		  <div class="clearfix">  </div>
+		</div>
+	</div>
+</div>
+<!--about end here-->
+<!--services start here-->
+<div class="services" id="service">
+		<!--content-->
+		<div class="our-products">
+			<div class="container">
+				<div class="products-gallery">
+					<h2>Onze Diensten</h2>
+					<div class="col-md-3 arr">
+						<div class="bg">
+						  <img src="images/uitlaat.jpg" onmouseover='this.src = this.src.replace("images/uitlaat.jpg","images/uitlaat.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
+						  <div class="caption">
+							<h3>Hondenuitlaatservice</h3>
+							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Wij doen dat voor u<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a></p>
+							<p>Prijs: €7,-</p>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 arr">
+						<div class="bg">
+						  <img src="images/dier.jpg" onmouseover='this.src = this.src.replace("images/dier.jpg","images/dier.gif")' alt="Huisdieroppas" class="img-responsive">
+						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
+						  <div class="caption">
+							<h3>Dierenoppas</h3>
+							<p>Wilt u op vakantie maar weet u niet waar u, uw dieren ga laten?<br />Wij zorgen voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a></p>
+							<p><a href="#" class="btn btn-danger" role="button">More</a></p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 arr">
+						<div class="bg">
+						  <img src="images/oppas.jpg" onmouseover='this.src = this.src.replace("images/oppas.jpg","images/oppas.gif")' alt="Hondenoppas" class="img-responsive">
+						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
+						  <div class="caption">
+							<h3>Hondenoppas</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p><a href="#" class="btn btn-danger" role="button">More</a></p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3 arr">
+						<div class="bg">
+						  <img src="images/e.jpg" alt="pet" class="img-responsive">
+						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
+						  <div class="caption">
+							<h3>Verblijf</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p><a href="#" class="btn btn-danger" role="button">More</a></p>
+						  </div>
+						 </div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+					<div class="traits-technology">
+						<div class="col-md-8 tt">
+							<ul class="traits-text">
+								<li><h3>Wat maakt ons anders?</h3></li>
+								<li><p><b style="font-weight:600;">Lorem Ipsum is simply dummy text of the printing</b></p></li>
+								<li><p>There are many variations of passages of Lorem Ipsum available,<br>
+								but the majority have suffered alteration in some form, by injected humour,<br>
+								or randomised words which don"t look even slightly believable.</p></li>
+							</ul>
+							<ol>
+								<div class="col-md-6 brk">
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								</div>
+								<div class="col-md-6 brk">
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
+								</div>
+								<div class="clearfix"></div>
+							</ol>
+							<span><a href="#" class="btn btn-danger bt" role="button">More</a></span>
+						</div>
+						<div class="col-md-4 tt">
+							<div class="traits-logos">
+								<div class="col-xs-6 col-md-6 tt brk2">
+									<span class="glyphicon glyphicon-leaf bgtl" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-6 col-md-6 tt brk2">
+									<span class="glyphicon glyphicon-grain bgtl" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-6 col-md-6 tt brk2">
+									<span class="glyphicon glyphicon-fire bgtl" aria-hidden="true"></span>
+								</div>	
+								<div class="col-xs-6 col-md-6 tt brk2">
+									<span class="glyphicon glyphicon-camera bgtl" aria-hidden="true"></span>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			</div>
+		</div>
+		<!--content-ends-->
+</div>
+<!--services end here-->
+<!--team start here-->
+<div class="team-member" id="team">
+	<div class="container">
+		<div class="team-main">
+			<h2>Ons Team</h2>
+			<h3>Hilversum</h3>
+			<div class="team-bottom">
+			   <div class="col-md-3 team-grid">
+				<img src="images/t1.jpg" alt="Tugba Özsoy" class="img-responsive">
+				<div class="about-details">
+					<h4>Tugba Özsoy</h4>
+					<p>Eigenaar<br />Uitlaat/Oppas<br />regio Hilversum</p>
+				</div>
+			   </div>
+			</div>
+			<div class="team-bottom">
+			   <div class="col-md-3 team-grid">
+				<img src="images/t3.jpg" alt="Paul Hemmens" class="img-responsive">
+				<div class="about-details">
+					<h4>Paul Hemmens</h4>
+					<p>Webdesigner<br />ondersteuning Uitlaat/Oppas<br />regio Hilversum</p>
+				</div>
+			   </div>
+			</div>
+			<h3><br />Huizen</h3>
+			<div class="team-bottom">
+			   <div class="col-md-3 team-grid">
+				<img src="images/t2.jpg" alt="Jus Mokum" class="img-responsive">
+				<div class="about-details">
+					<h4>Jus Mokum</h4>
+					<p>Uitlaat/Oppas<br />Huizen</p>
+				</div>
+			   </div>
+			</div>
+		  <div class="clearfix">  </div>
+		</div>
+	</div>
+</div>
+<!--team end here-->
+<!--clients start here-->
+<div class="clients">
+	<div class="container">
+		<div class="clients-main">
+        <div class="col-md-6 clients-left">
+          <h3>Ons Passie</h3>
+          <h4>Fusce dapibus, tellus ac cursus commodo.Contrary to popular belief</h4>
+          <p >Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard</p>
+           <div class="client-btn">
+           	  <a href="#">Read more</a>
+           </div>
+        </div>
+        <div class="col-md-6 clients-right">
+          <h3>Verleden</h3>
+          <h4>Tellus ac cursus commodo.Contrary to popular beliefFusce dapibus</h4>
+          <p >Ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard Donec </p>
+           	<div class="client-btn">
+           	  <a href="#">Read more</a>
+           </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!--clients end here-->
+<!--gallery start here-->
+<div class="gallery" id="gallery">
+	<div class="container">
+		<div class="gallery-main">
+			<h2>Gallery</h2>
+	<div class="fluid_container">
+        <div class="camera_wrap camera_emboss" id="camera_wrap_3">
+            <div data-thumb="images/slides/thumbs/intro-tn.png" data-src="images/slides/intro.png">
+<iframe width="100%" height="100%" src="//www.youtube.com/embed/v1lHhL0YqIs" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+                <div style="position:absolute; top:5%; left:5%; background:#000; color:#fff; padding:5px; width:25%" class="fadeIn camera_effected">This is an HTML element included in the transition effect</div>
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg" data-time="1500" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank">
+                <div class="camera_caption fadeFromBottom">
+                    Changed the time and the transition time of this slide
+                </div>
+            </div>
+        </div>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+	</div>
+</div>
+<!--gallery  end here-->
+<!--agenda start here-->
+<div class="agenda" id="agenda">
+	<div class="container">
+		<div class="contact-main">
+			<h2>Agenda</h2>
+<iframe src="//calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;showTz=0&amp;wkst=1&amp;hl=nl&amp;bgcolor=%23f3fbfe&amp;src=info%40huisdierassistentie.nl&amp;color=%23f3fbfe&amp;ctz=Europe%2FAmsterdam" style="border-width:0" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+		 </div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!--agenda  end here-->
+<!--map start here-->
+<div class="map">
+<div class="overlay" onClick='style.pointerEvents="none"'></div>
+<iframe src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d130517.33373183105!2d5.016273187800884!3d52.24767695481527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c643ebada6a5f7%3A0x1c1f3931512f9233!2sHilversum%2C+Nederland!5e0!3m2!1snl!2snl!4v1501741224714" allowfullscreen></iframe>
+<!--map end here-->
+		<!--brand-logos-->
+			<div class="brand-logo">
+				<div class="container">
+					<div class="col-md-3 arr">
+						<h2><a class="vegavriend" href="https://www.vegavriend.nl" target=_blank alt="VegaVriend">VegaVriend</a></h2>
+					</div>
+					<div class="col-md-3 arr">
+						<h2><a class="hondenoppas" href="https://www.hondenoppas.nl/hilversum/15288" target=_blank alt="Hondenoppas"></a></h2>
+					</div>
+					<div class="col-md-3 arr">
+						<h2><a class="dedierenoppas" href="https://www.dedierenoppas.nl/dierenoppas/1201/" target=_blank alt="Dedierenoppas.nl"></a></h2>
+					</div>
+					<div class="col-md-3 arr">
+						<h2><a class="hondenoppasgezocht" href="http://www.hondenoppasgezocht.nl/advertentie/2-4927" target=_blank alt="Hondenoppasgezocht.nl">Hondenoppas<br />gezocht.nl</a></h2>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+<!--brand-ends-->
+<!--contact start here-->
+<div class="services" id="contact">
+		<div class="contact-main">
+			<h2>Contact</h2>
+			<table><tr><td>
+<form id="contact-form" method=POST action="mailto:info@huisdierassistentie.nl" enctype="text/html">
+  <p>Beste Huisdier Assistentie,<br />
+  Mijn
+    <label for="your-name">naam</label> is
+    <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(uw naam)" required>,<br />
+	mijn <label for="email">email adres</label> is
+    <input type="email" name="your-email" id="email" placeholder="(uw email adres)" required> en
+  <br />mijn
+    <label for="tel">telefoon nummer</label> is
+    <input type="tel" name="your-tel" id="tel" minlength="10" placeholder="(uw telefoon nummer)">.
+<br /><br />
+De naam van mijn <label for="huisdier">huisdier'en</label> zijn
+    <input type="text" name="huisdier" id="huisdier" minlength="1" placeholder="(uw huisdier'en naam)" required>,<br />
+de <label for="soort">soort</label> is als volgt
+    <input type="text" name="soort" id="soort" minlength="1" placeholder="(soort huisdier'en)" required>,<br />
+de <label for="ras">ras</label> is als volgt
+    <input type="text" name="ras" id="ras" minlength="1" placeholder="(ras van uw huisdier'en)" required><br />
+en dit is mijn <label for="your-message">bericht</label>,
+    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
+  <br />
+    <center><button type="submit">
+      <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+        <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+	l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+      </svg>
+    </button></center>
+  </p>
+</form></td><td>
+		<dl> 
+   <dt>Regio</dt> 
+   <dd>Hilversum</dd> 
+   <dd>Huizen</dd> 
+   <dt>Tel:</dt> 
+   <dd>+31 1234567</dd>    
+</dl></td></tr></table>
+		   </div>
+	</div>
+</div>
+<!--contact end here-->
+		<!--footer-->
+			<div class="footer">
+				<div class="container">
+				<div class="col-md-6 mrg1">
+					<div class="col-md-4 brk4">
+						<div class="advice">
+							<h4>MENU</h4>
+				<ul>
+					<li><a class="active  scroll" href="#to-top">Home</a></li>
+					<li><a class="scroll" href="#about">Over Ons</a></li>
+					<li><a class="scroll" href="#service">Diensten</a></li>
+					<li><a class="scroll" href="#team">Team</a></li>
+					<li><a class="scroll" href="#gallery">Gallery</a></li>
+					<li><a class="scroll" href="#agenda">Agenda</a></li>
+					<li><a class="scroll" href="#contact">Contact</a></li>
+				</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 brk5">
+					<div class="follow-us">
+						<h4>VOLG ONS</h4>
+						<ul>
+							<li><a href="#" class="fb"></a></li>
+							<li><a href="#" class="twt"></a></li>
+							<li><a href="#" class="gpls"></a></li>
+							<li><a href="#" class="pint"></a></li>
+							<li><a href="#" class="lnkdin"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3 brk5">
+					<div class="copy-rt">
+						<h4>COPYRIGHT</h4>
+						<p>Huisdier Assistentie &#169 2017 Design by <a href="http://www.w3layouts.com" target="_blank">w3layouts</a></p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+			</div>
+		<!--footer-->
+		<!---->
+		<script type="text/javascript">
+				$(document).ready(function() {
+						/*
+						var defaults = {
+						containerID: "toTop", // fading element id
+						containerHoverID: "toTopHover", // fading element hover id
+						scrollSpeed: 1200,
+						easingType: "linear" 
+						};
+						*/
+				$().UItoTop({ easingType: "easeOutQuart" });
+		});
+		</script>
+		<a href="#to-top" id="toTop" class="scroll" style="display:block;"><span id="toTopHover" style="opacity:1;"></span></a>
+		<!----> 
+	</body>
+</html>
