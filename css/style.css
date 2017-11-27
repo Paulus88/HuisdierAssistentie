@@ -494,8 +494,9 @@ border-top:3px solid #F789DB;
 /*--about end here--*/
 /*--team start here--*/
 .team-member {
-  padding:4em 0em 4em 0em;
-  background-color:#f3fbfe
+padding:4em 0em 4em 0em;
+background-color:#f3fbfe;
+border-top:3px solid #F789DB;
 }
 .team-main h3 {
   font-size:2.4em;
