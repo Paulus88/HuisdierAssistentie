@@ -1,3 +1,3 @@
-# HuisdierAssistentie
+# Huisdier Assistentie
 
-HuisdierAssistentie
+De website voor Huisdieroppas in de omgeving Hilversum.
