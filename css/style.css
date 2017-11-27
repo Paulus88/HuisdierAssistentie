@@ -2845,7 +2845,7 @@ li.text-ul h4 {
 }
 
 .pace .pace-progress {
-  background: #e90f92;
+  background: #F789DB
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -2860,7 +2860,7 @@ li.text-ul h4 {
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #e90f92, 0 0 5px #e90f92;
+  box-shadow: 0 0 10px #F789DB, 0 0 5px #e90f92;
   opacity: 1.0;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -moz-transform: rotate(3deg) translate(0px, -4px);
@@ -2878,8 +2878,8 @@ li.text-ul h4 {
   width: 14px;
   height: 14px;
   border: solid 2px transparent;
-  border-top-color: #e90f92;
-  border-left-color: #e90f92;
+  border-top-color: #F789DB
+  border-left-color: #F789DB
   border-radius: 10px;
   -webkit-animation: pace-spinner 400ms linear infinite;
   -moz-animation: pace-spinner 400ms linear infinite;
