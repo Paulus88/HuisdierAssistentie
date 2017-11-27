@@ -58,6 +58,96 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Crete+Round);
+// Styles
+.question{
+   position:absolute;
+   top:20px;
+   right:20px;
+   zindex:3;
+   display:none;
+   p{fontsize:40px;color:white;cursor:pointer;margin:0;}
+ }
+.tut{
+   background:white;
+   padding:0px;
+   width:760px;
+   margin:auto;
+   transition:all.3s;
+   //display:none;
+   borderradius:7px;
+   textalign:center;
+   position:absolute;
+   top:50%;
+   transform:translateY(50%) scale(0);
+   left:0;
+   right:0;
+   zindex:3;
+   h2{
+     fontsize: 20px;
+     color: #C39681;
+     width: 370px;
+     margin: 50px auto 30px auto;
+   }
+   p{
+     color: #C39681;
+     bordertop: 1px solid #FCF1EC;
+     borderbottomrightradius: 7px;
+     paddingtop: 30px;
+     borderbottomleftradius: 7px;
+     background: #FFF3ED;
+     transition:all.3s;
+     cursor: pointer;
+     margin: 20px 0px 0px 0px;
+     paddingbottom: 30px;
+     &:hover{
+       background:#7B6358;
+       color:white;
+     }
+   }
+ }
+.loader{
+   position:fixed;
+   zindex:3;
+   width:100%;
+   height:100%;
+   background:#c39681;
+   &_inner{
+     textalign:center;
+     position:absolute;
+     left:0;
+     right:0;
+     top:50%;
+     transform:translateY(50%);
+     margin:auto;
+     div{
+       color: rgba(255, 255, 255, 0.52);
+       fontsize: 16px;
+       margintop: 40px;
+       opacity:0;
+       animation:load.6s.3s forwards
+     }
+    .pawone{
+       top:10px;
+     }
+    .pawtwo{}
+     img{
+       marginright:17px;
+       width:30px;
+       position:relative;
+       opacity:0;
+       @for $i from 1 through 10{
+         &:nthoftype(#{$i}){
+
+           animation: load 1s (0.4s + $i/3) linear forwards;
+         }
+       }
+       @keyframes load{
+         0%{opacity:0}
+         100%{opacity:1}
+       }
+     }
+   }
+}
 </style>
     <!--///////////////////////////////////////////////////////////////////////////////////////////////////
     //
@@ -71,6 +161,15 @@
 paceOptions = {
       elements: true
 };
+jQuery(function(){
+
+ jQuery('#camera_wrap_3').camera({
+ height: '56%',
+ pagination: false,
+ thumbnails: true,
+ imagePath: 'image/'
+});
+});
 function resizeInput() {
     $(this).attr('size', $(this).val().length);
 }
@@ -153,7 +252,7 @@ console.clear();
     }, 4000);
     Pace.on('hide', function(){
       console.log('done');
-    });
+    })();
 </script>
 <!--gallery ends here-->
 	</head>
