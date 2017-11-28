@@ -237,7 +237,7 @@ console.clear();
   }});
     function load(time){
       var x = new XMLHttpRequest()
-      x.open('GET', "https://huisdierassistentie.nl/" + time, true);
+      x.open('GET', "https://huisdierassistentie.nl" + time, true);
       x.send();
     };
     load(20);
@@ -252,7 +252,7 @@ console.clear();
     }, 4000);
     Pace.on('hide', function(){
       console.log('done');
-    })();
+    });
 </script>
 <!--gallery ends here-->
 	</head>
