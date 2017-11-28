@@ -638,8 +638,8 @@ padding:4em 0em 5em 0em}
   -webkit-font-smoothing:antialiased;
 }
 @media all and (min-width:0px){
-	.notepad{display:block;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:100% 100%}
-	.notepad table{width:60%;height:60%;font-size:10px;text-align:left;font-weight:100}
+	.notepad{display:block;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:100% 100%;font-size:10px;text-align:left;font-weight:100}
+	.notepad table{width:60%;height:60%}
 	.book{display:none}}
 @media all and (min-width:1024px){
 	.book{display:block;background-image:url('/images/open-book.png');background-repeat:no-repeat;background-size:100% 100%}
