@@ -638,19 +638,19 @@ padding:4em 0em 5em 0em}
   -webkit-font-smoothing:antialiased;
 }
 @media all and (min-width:0px){
-.contact-main table{width:100%;
+.notepad{display:block;
+	width:100%;
   background-image:url('/images/notepad.png');
   background-repeat:no-repeat;
   background-size:100% 100%;}
-.book{
-	display:none;}}
+.book{display:none}}
 @media all and (min-width:1024px){
-.contact-main table{width:100%;
+.book{display:block;
+	width:100%;
   background-image:url('/images/open-book.png');
   background-repeat:no-repeat;
-  background-size:100% 100%;}
-.notepad{
-	display:none;}}
+  background-size:100% 100%}
+.notepad{display:none}}
 .contact-main table td{width:50%;
 padding:10% 0 5% 10%;}
 .contact-main h3 {
