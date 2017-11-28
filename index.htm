@@ -237,14 +237,14 @@ console.clear();
   }});
     function load(time){
       var x = new XMLHttpRequest()
-      x.open('GET', "https://huisdierassistentie.nl" + time, true);
+      x.open('GET', "https://huisdierassistentie.nl/" + time, true);
       x.send();
     };
-    load(20);
-    load(100);
-    load(500);
-    load(2000);
-    load(3000);
+    load(images/welkom.gif);
+    load(images/t-dier.gif);
+    load(images/t-verblijf.gif);
+    load(images/open-book.png);
+    load(images/notepad.png);
     setTimeout(function(){
       Pace.ignore(function(){
         load(3100);
