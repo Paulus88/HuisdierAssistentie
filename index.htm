@@ -240,11 +240,6 @@ console.clear();
       x.open('GET', "https://huisdierassistentie.nl/" + time, true);
       x.send();
     };
-    setTimeout(function(){
-      Pace.ignore(function(){
-        load(3100);
-      });
-    }, 4000);
     Pace.on('hide', function(){
       console.log('done');
     });
