@@ -649,6 +649,42 @@ en dit is mijn <label for="your-message">bericht</label>,
    <dt>Tel:</dt> 
    <dd>+31 1234567</dd>    
 </dl></td></tr></table>
+<table class="notepad"><tr>
+<form id="contact-form" method=POST action="mailto:info@huisdierassistentie.nl" enctype="text/html">
+  <p>Beste Huisdier Assistentie,<br />
+  Mijn
+    <label for="your-name">naam</label> is
+    <input type="text" name="your-name" id="your-name" minlength="3" placeholder="(uw naam)" required>,<br />
+	mijn <label for="email">email adres</label> is
+    <input type="email" name="your-email" id="email" placeholder="(uw email adres)" required> en
+  <br />mijn
+    <label for="tel">telefoon nummer</label> is
+    <input type="tel" name="your-tel" id="tel" minlength="10" placeholder="(uw telefoon nummer)">.
+<br /><br />
+De naam van mijn <label for="huisdier">huisdier'en</label> zijn
+    <input type="text" name="huisdier" id="huisdier" minlength="1" placeholder="(uw huisdier'en naam)" required>,<br />
+de <label for="soort">soort</label> is als volgt
+    <input type="text" name="soort" id="soort" minlength="1" placeholder="(soort huisdier'en)" required>,<br />
+de <label for="ras">ras</label> is als volgt
+    <input type="text" name="ras" id="ras" minlength="1" placeholder="(ras van uw huisdier'en)" required><br />
+en dit is mijn <label for="your-message">bericht</label>,
+    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
+  <br />
+    <center><button type="submit">
+      <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+        <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+	l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+      </svg>
+    </button></center>
+  </p>
+</form>
+		<dl> 
+   <dt>Regio</dt> 
+   <dd>Hilversum</dd> 
+   <dd>Huizen</dd> 
+   <dt>Tel:</dt> 
+   <dd>+31 1234567</dd>    
+</dl></tr></table>
 		   </div>
 	</div>
 </div>
