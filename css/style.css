@@ -638,7 +638,7 @@ padding:4em 0em 5em 0em}
   -webkit-font-smoothing:antialiased;
 }
 @media all and (min-width:0px){
-	.notepad{display:block;height:999px;padding:40px;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:100% 100%;font-size:13px;text-align:left}
+	.notepad{display:block;height:999px;padding:60px 35px;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:100% 100%;font-size:13px;text-align:left}
 	.notepad table{width:100%}
 	.book{display:none}}
 @media all and (min-width:1024px){
