@@ -1411,11 +1411,15 @@ ul.nav.navbar-nav li a.active{
 	text-decoration:none;
 	background-color:transparent;
 }
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%
+}
 .logo {
 	text-align:center;
 	margin:0;
 	padding:16px 0px 26px;
-position:fixed;top:0px;
 }
 .logo h1 {
 	margin:0;
