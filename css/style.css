@@ -1429,10 +1429,12 @@ ul.nav.navbar-nav li a.active{
 .logo a span.hlf{
 	text-decoration:none;
 	color:#f789db;
+	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .logo a span.hlh{
 	text-decoration:none;
 	color:#89dbf7;
+	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .carousel-caption.ch  h3{
 	text-transform:uppercase !important;
