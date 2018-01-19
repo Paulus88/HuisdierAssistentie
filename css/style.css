@@ -1415,6 +1415,7 @@ ul.nav.navbar-nav li a.active{
 	text-align:center;
 	margin:0;
 	padding:16px 0px 26px;
+position:fixed;top:0px;margin:auto;z-index:100000;width:100%;
 }
 .logo h1 {
 	margin:0;
