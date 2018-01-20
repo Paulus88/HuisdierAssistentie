@@ -1410,7 +1410,7 @@ ul.nav.navbar-nav li a.active{
 	text-align:center;
 	margin:0;
 	background:#FFF;
-  padding:16px;
+  padding:10px;
 	font-size:72px;
 }
 .logo a {
@@ -1427,12 +1427,6 @@ ul.nav.navbar-nav li a.active{
 	color:#89dbf7;
 	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
-.carousel-caption.ch  h3{
-	text-transform:uppercase !important;
-	font-size:2em !important;
-	font-weight:500 !important;
-	color:#fff;
-}
 .sticky {
   position:fixed;
   top:0;
@@ -1441,8 +1435,14 @@ ul.nav.navbar-nav li a.active{
 	display:block;
 	position:sticky;
 	z-index:10000;
-  padding:16px;
+  padding:8px;
 	font-size:44px;
+}
+.carousel-caption.ch  h3{
+	text-transform:uppercase !important;
+	font-size:2em !important;
+	font-weight:500 !important;
+	color:#fff;
 }
 .carousel-caption.ch p {
 	color:#000;
