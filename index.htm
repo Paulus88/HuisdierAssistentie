@@ -649,6 +649,8 @@ en dit is mijn <label for="your-message">bericht</label>,<br />
 		function myFunction() {
 		  if (window.pageYOffset >= sticky) {
 		    header.classList.add("sticky");
+		  if (window.pageYOffset == sticky) {
+		    header.classList.remove("sticky");
 		  } else {
 		    header.classList.remove("sticky");
 		  }
