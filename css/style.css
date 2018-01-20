@@ -1355,6 +1355,7 @@ body{
 	float:none !important;
 }
 .navbar-nav>li {
+	width:14.28%;
 	margin-left:0em !important;
 }
 .navbar-default .navbar-nav>li>a {
@@ -1428,7 +1429,7 @@ ul.nav.navbar-nav li a.active{
 }
 .sticky {
   position:fixed;
-  top:2px;
+  top:0;
   width:100%;
 	background:#FFF;
 	display:block;
@@ -2438,9 +2439,6 @@ li.text-ul h4 {
 	}
 	.carousel-caption.ch p {
 		font-size:1.1em;
-	}
-	.banner-slider {
-		padding-bottom:30px;
 	}
 	.caption {
 		padding:20px 11px 0px;
