@@ -641,10 +641,10 @@ en dit is mijn <label for="your-message">bericht</label>,<br />
 						*/
 				$().UItoTop({ easingType: "easeOutQuart" });
 		});
-window.onscroll = function() {myFunction()};
+window.scrollTop=function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var header=document.getElementById("myHeader");
+var sticky=header.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
