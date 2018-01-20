@@ -1406,17 +1406,6 @@ ul.nav.navbar-nav li a.active{
 	background-color:transparent;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position:fixed;
-  top:0;
-  width:100%;
-	background:#FFF;
-	display:block;
-	position:sticky;
-	z-index:10000;
-  padding:16px;
-	font-size:44px;
-}
 .logo{
 	text-align:center;
 	margin:0;
@@ -1443,6 +1432,17 @@ ul.nav.navbar-nav li a.active{
 	font-size:2em !important;
 	font-weight:500 !important;
 	color:#fff;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+	background:#FFF;
+	display:block;
+	position:sticky;
+	z-index:10000;
+  padding:16px;
+	font-size:44px;
 }
 .carousel-caption.ch p {
 	color:#000;
