@@ -248,12 +248,13 @@ console.clear();
 	</head>
 	<body>
 		<!--header-part-->
+		<div class="logo" id="myHeader">
+		<h1><a href=""><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1>
+		</div>
+		<div class="content">
 		<div class="banner-background" id="to-top">
 			<div class="container">
 				<div class="nav-back">
-					<div class="logo" id="myHeader">
-						<h1><a href=""><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1>
-					</div>
 					<div class="navigation">
 						<nav class="navbar navbar-default">
 							<!-- Brand and toggle get grouped for better mobile display -->
@@ -718,6 +719,7 @@ en dit is mijn <label for="your-message">bericht</label>,<br />
 				<div class="clearfix"></div>
 				</div>
 			</div>
+	</div>
 		<!--footer-->
 		<!---->
 		<script type="text/javascript">
@@ -732,7 +734,19 @@ en dit is mijn <label for="your-message">bericht</label>,<br />
 						*/
 				$().UItoTop({ easingType: "easeOutQuart" });
 		});
-		</script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 		<a href="#to-top" id="toTop" class="scroll" style="display:block;"><span id="toTopHover" style="opacity:1;"></span></a>
 		<!----> 
 	</body>
