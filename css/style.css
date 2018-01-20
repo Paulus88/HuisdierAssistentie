@@ -1405,12 +1405,9 @@ ul.nav.navbar-nav li a.active{
 	text-decoration:none;
 	background-color:transparent;
 }
-.boven{background:url(/images/bg.jpg);
-	padding:0px 50px 0px 50px;}
 .logo{
 	text-align:center;
 	margin:0;
-  width:100%;
 	background:#FFF;
   padding:10px;
 	font-size:70px;
