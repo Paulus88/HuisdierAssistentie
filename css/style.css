@@ -1405,7 +1405,6 @@ ul.nav.navbar-nav li a.active{
 	text-decoration:none;
 	background-color:transparent;
 }
-/* The sticky class is added to the header with JS when it reaches its scroll position */
 .logo{
 	text-align:center;
 	margin:0;
@@ -2557,9 +2556,6 @@ li.text-ul h4 {
 	}
 	.carousel-caption.ch h3 {
 		font-size:1em !important;
-	}
-	.logo a {
-		font-size:28px;
 	}
 	.navbar-toggle {
 		margin-right:130px;
