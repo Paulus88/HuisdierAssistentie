@@ -32,6 +32,7 @@ h2 {
     font-weight:normal;
     font-style:normal;
 }
+div{display:relative;}
 ul, ol {margin:0;}
 p {margin:0;}
 html, body{
