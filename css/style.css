@@ -54,7 +54,6 @@ a:hover {text-decoration:none;color:#000}
     min-height:59.4px;
 }
 .header-main {
-  position:relative;
   padding:0em 0em 0em 1em;
 }
 .top-nav {
@@ -196,9 +195,6 @@ span.menu {
 /*--search--*/
 /*----*/
 /********** Login *************/
-#loginContainer {
-    position:relative;
-}
 #loginContainer a{
 	text-decoration:none;
 }
@@ -342,7 +338,6 @@ input:focus {
   background:url(/images/2.jpg)no-repeat;
   min-height:730px;
   background-size:cover;
-  position:relative;
 }
 .banner-main {
   padding:2em 0em 0em 0em;
@@ -835,7 +830,6 @@ span.menu{
 		color:#E74C3C;
 		font-size:16px;
 		font-weight:700;
-		position:relative;
 	}
 .top-nav ul.res{
 	 display:none;
@@ -1494,7 +1488,6 @@ ul.nav.navbar-nav li a.active{
 	background-color:#89dbf7;
 	margin:0px 8px;
 	border-radius:5px;
-	position:relative;
 }
 .arr img{
 	width:100%;
@@ -1923,7 +1916,6 @@ a.controls.previous {
 	clear:both;
 }
 .modal-body {
-	position:relative;
 	padding:50px;
 }
 .services {
