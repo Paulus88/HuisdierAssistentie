@@ -32,13 +32,14 @@ h2 {
     font-weight:normal;
     font-style:normal;
 }
-div{display:relative;}
+div, ul, menu, dir{display:relative;}
 ul, ol {margin:0;}
 p {margin:0;}
 html, body{
   font-family:'Quicksand', sans-serif;
    font-size:100%;
    background:#fff;
+	 display:relative;
 }
 a,a:visited,a:active{
   transition:0.5s all;
