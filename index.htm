@@ -644,8 +644,7 @@ en dit is mijn <label for="your-message">bericht</label>,<br />
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
-var sticky = window.scroll(0,0)
-
+var sticky = logo.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     header.classList.add("sticky");
