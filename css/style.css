@@ -32,14 +32,12 @@ h2 {
     font-weight:normal;
     font-style:normal;
 }
-div, ul, menu, dir{display:inline;}
 ul, ol {margin:0;}
 p {margin:0;}
 html, body{
   font-family:'Quicksand', sans-serif;
    font-size:100%;
    background:#fff;
-	 display:inline;
 }
 a,a:visited,a:active{
   transition:0.5s all;
