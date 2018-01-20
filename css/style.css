@@ -1424,7 +1424,7 @@ ul.nav.navbar-nav li a.active{
 .logo {
 	text-align:center;
 	margin:0;
-	padding:16px 0px 26px;
+  padding-top:80px;
 	background:#FFF;
 }
 .logo h1 {
