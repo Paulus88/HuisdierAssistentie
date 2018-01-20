@@ -1421,10 +1421,11 @@ ul.nav.navbar-nav li a.active{
   top:0;
   width:100%;
 	background:#FFF;
+	position:sticky;
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top:100px;
+  padding-top:80px;
 }
 .logo {
 	text-align:center;
