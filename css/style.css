@@ -1334,10 +1334,10 @@ body{
 /*--header-nav--*/
 .banner-background {
 	background:url(/images/bg.jpg);
+	padding:0px 50px 0px 50px;
 }
 .nav-back {
 	background-color:#fff;
-	padding:0px 50px 0px 50px;
 }
 .banner-slider {
 	padding-bottom:50px;
@@ -1428,7 +1428,7 @@ ul.nav.navbar-nav li a.active{
 }
 .sticky {
   position:fixed;
-  top:0;
+  top:2px;
   width:100%;
 	background:#FFF;
 	display:block;
