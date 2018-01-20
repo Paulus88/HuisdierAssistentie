@@ -1417,15 +1417,12 @@ ul.nav.navbar-nav li a.active{
   padding:16px;
 	font-size:44px;
 }
-.logo {
+.logo{
 	text-align:center;
 	margin:0;
 	background:#FFF;
   padding:16px;
 	font-size:72px;
-}
-.logo h1 {
-	margin:0;
 }
 .logo a {
 	font-weight:bold;
