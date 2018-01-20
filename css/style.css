@@ -1407,7 +1407,7 @@ ul.nav.navbar-nav li a.active{
 }
 /* Page content */
 .content {
-  padding-top:80px;
+  padding-top:0px;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -1417,6 +1417,7 @@ ul.nav.navbar-nav li a.active{
 	background:#FFF;
 	display:block;
 	position:sticky;
+	z-index:10000;
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
