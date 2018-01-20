@@ -1412,6 +1412,7 @@ ul.nav.navbar-nav li a.active{
 .logo{
 	text-align:center;
 	margin:0;
+  width:100%;
 	background:#FFF;
   padding:10px;
 	font-size:70px;
