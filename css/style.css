@@ -1424,7 +1424,8 @@ h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .bel{
 position:absolute;
-right:0; }
+right:0;
+top:0;}
 .sticky {
   position:fixed;
   top:0;
@@ -1434,7 +1435,6 @@ right:0; }
 	position:sticky;
 	z-index:10000;
   padding:8px;
-	font-size:10px;
 }
 .sticky h1{
 	font-size:30px;
