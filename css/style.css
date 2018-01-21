@@ -1423,6 +1423,9 @@ h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	text-decoration:none;
 	color:#89dbf7;
 }
+.bel{
+position:absolute;  
+right:0; }
 .sticky {
   position:fixed;
   top:0;
