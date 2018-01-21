@@ -1412,7 +1412,6 @@ ul.nav.navbar-nav li a.active{
 h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	font-size:70px;}
 .logo a {
-	font-weight:bold;
 	text-decoration:none;
 }
 .logo a span.hlf{
@@ -1424,7 +1423,7 @@ h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	color:#89dbf7;
 }
 .bel{
-position:absolute;  
+position:absolute;
 right:0; }
 .sticky {
   position:fixed;
