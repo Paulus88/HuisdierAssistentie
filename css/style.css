@@ -1424,8 +1424,10 @@ h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 .bel{
 position:absolute;
 font-weight:bold;
-top:auto;}
-@media all and (min-width:1175px){.bel{right:0;top:27px;}}
+top:auto;
+width:100%;
+background:#FFF;}
+@media all and (min-width:1175px){.bel{right:2px;top:27px;}}
 .sticky {
   position:fixed;
   top:0;
