@@ -1423,12 +1423,12 @@ h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	color:#89dbf7;
 }
 .bel{
-position:absolute;
+position:inherit;
 font-weight:bold;
 top:auto;
 width:100%;
 background:#FFF;}
-@media all and (min-width:1175px){.bel{right:2px;top:27px;width:auto;}}
+@media all and (min-width:1175px){.bel{position:absolute;right:2px;top:27px;width:auto;}}
 .sticky {
   position:fixed;
   top:0;
