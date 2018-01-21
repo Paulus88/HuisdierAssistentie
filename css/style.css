@@ -646,10 +646,10 @@ padding:4em 0em 5em 0em}
 	.book dl{text-align:center}}
 @media all and (min-width:512px){
 	.book{display:block;width:100%;padding:150px 200px 300px 35px;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:100% 100%;font-size:13px;text-align:left}
-	.book dl{text-align:center}
+	.book dl{text-align:center}}
 @media all and (min-width:1024px){
 	.book{display:block;width:100%;background-image:url('/images/open-book.png');background-repeat:no-repeat;background-size:100% 100%}
-	.book table{width:100%}
+	.book table{width:100%}}
 .contact-main table td{width:50%;
 padding:10% 0 5% 10%;}
 .contact-main h3 {
