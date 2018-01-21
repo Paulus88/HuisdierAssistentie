@@ -1408,7 +1408,7 @@ ul.nav.navbar-nav li a.active{
 	background:#FFF;
   padding:10px;
 }
-h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
+h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	font-size:70px;}
 .logo a {
 	text-decoration:none;
@@ -1423,8 +1423,9 @@ h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .bel{
 position:absolute;
+text-align:right;
 right:0;
-top:0;}
+top:auto;}
 .sticky {
   position:fixed;
   top:0;
