@@ -1407,8 +1407,9 @@ ul.nav.navbar-nav li a.active{
 	margin:0;
 	background:#FFF;
   padding:10px;
-	font-size:70px;
 }
+h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
+	font-size:70px;}
 .logo a {
 	font-weight:bold;
 	text-decoration:none;
@@ -1416,12 +1417,10 @@ ul.nav.navbar-nav li a.active{
 .logo a span.hlf{
 	text-decoration:none;
 	color:#f789db;
-	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .logo a span.hlh{
 	text-decoration:none;
 	color:#89dbf7;
-	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .sticky {
   position:fixed;
