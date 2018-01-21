@@ -2436,6 +2436,10 @@ li.text-ul h4 {
 	.navbar-toggle {
 		margin-right:166px;
 	}
+	.nav-back {
+		background-color:#fff;
+		padding:0px 30px 0px 29px;
+	}
 	.carousel-caption.ch h3 {
 		font-size:1.4em !important;
 	}
@@ -2516,6 +2520,10 @@ li.text-ul h4 {
 		padding:0.2em 0em;
 	}
 }
+@media screen and (max-width:414px){
+	.nav-back {
+		padding:0px 30px 0px 30px;
+	}
 	.products-gallery h2 {
 		font-size:2em;
 	}
