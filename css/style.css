@@ -1426,6 +1426,7 @@ position:absolute;
 font-weight:bold;
 right:0;
 top:27px;}
+@media all and (min-width:1175px){.bel{top:auto;}}
 .sticky {
   position:fixed;
   top:0;
