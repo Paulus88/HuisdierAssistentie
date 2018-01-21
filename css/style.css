@@ -1423,9 +1423,9 @@ h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 }
 .bel{
 position:absolute;
-text-align:right;
+font-weight:bold;
 right:0;
-top:auto;}
+top:50%;}
 .sticky {
   position:fixed;
   top:0;
