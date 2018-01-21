@@ -1425,7 +1425,7 @@ h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 position:absolute;
 font-weight:bold;
 right:0;
-top:30px;}
+top:27px;}
 .sticky {
   position:fixed;
   top:0;
@@ -1439,6 +1439,7 @@ top:30px;}
 .sticky h1{
 	font-size:30px;
 }
+.sticky .bel{top:5px;}
 .carousel-caption.ch  h3{
 	text-transform:uppercase !important;
 	font-size:2em !important;
