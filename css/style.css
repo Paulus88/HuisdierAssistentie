@@ -1407,6 +1407,7 @@ ul.nav.navbar-nav li a.active{
 	margin:0;
 	background:#FFF;
   padding:10px;
+	font-size:10px;
 }
 h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	font-size:70px;}
@@ -1431,6 +1432,9 @@ h1{	font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	position:sticky;
 	z-index:10000;
   padding:8px;
+	font-size:10px;
+}
+.sticky h1{
 	font-size:30px;
 }
 .carousel-caption.ch  h3{
