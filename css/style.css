@@ -2687,6 +2687,9 @@ li.text-ul h4 {
 		margin-top:16px;
 		padding:6px;
 	}
+	.nav-back {
+		padding:0px 10px 0px 10px;
+	}
 	.bg {
 		margin:0px 0px 0px;
 	}
