@@ -1,4 +1,4 @@
-use PHPMailer\PHPMailer\PHPMailer;
+<?php use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
@@ -29,3 +29,4 @@ try {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 }}
+?>
