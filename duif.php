@@ -7,10 +7,10 @@ try {
     //Server settings
     $mail->SMTPDebug = 2;
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'mx.zoho.eu';
     $mail->SMTPAuth = true;
-    $mail->Username = 'username@gmail.com';
-    $mail->Password = '_password_';
+    $mail->Username = 'info@dereisplanner.nl';
+    $mail->Password = 'Tugba123';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
