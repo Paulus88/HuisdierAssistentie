@@ -12,8 +12,8 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'info@huisdierassistentie.nl';
     $mail->Password = 'Tugba123';
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
 
     $mail->setFrom('info@huisdierassistentie.nl', 'Your Name');
