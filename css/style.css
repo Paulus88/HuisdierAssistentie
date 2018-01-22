@@ -20,7 +20,7 @@ h2 {
     src:url('/fonts/lithospro-webfont.eot');
     src:url('/fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/lithospro-webfont.ttf') format('truetype');
-    font-family: 'BaileywickCurlyJF';
+    font-family:'BaileywickCurlyJF';
     src: url('/fonts/BaileywickCurlyJF.eot');
     src: url('/fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
         url('/fonts/BaileywickCurlyJF.woff2') format('woff2'),
