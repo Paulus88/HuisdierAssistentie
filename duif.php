@@ -1,4 +1,5 @@
-<?php use PHPMailer\PHPMailer\PHPMailer;
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
@@ -9,7 +10,7 @@ try {
     $mail->isSMTP();
     $mail->Host = 'mx.zoho.eu';
     $mail->SMTPAuth = true;
-    $mail->Username = 'info@dereisplanner.nl';
+    $mail->Username = 'info@huisdierassistentie.nl';
     $mail->Password = 'Tugba123';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
