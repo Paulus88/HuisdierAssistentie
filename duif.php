@@ -8,12 +8,12 @@ try {
     //Server settings
     $mail->SMTPDebug = 2;
     $mail->isSMTP();
-    $mail->Host = 'mx.zoho.eu';
+    $mail->Host = 'smtp.zoho.eu';
     $mail->SMTPAuth = true;
     $mail->Username = 'info@huisdierassistentie.nl';
     $mail->Password = 'Tugba123';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = 465;
 
 
     $mail->setFrom('info@huisdierassistentie.nl', 'Your Name');
