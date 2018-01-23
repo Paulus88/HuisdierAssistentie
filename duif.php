@@ -1,14 +1,27 @@
 <?php
-require 'PHPMailerAutoload.php';
+require 'class.phpmailer.php';
+
 $mail = new PHPMailer;
-$mail->setFrom('info@huisdierassistentie.nl', 'Your Name');
-$mail->addAddress('myfriend@example.net', 'My Friend');
-$mail->Subject  = 'First PHPMailer Message';
-$mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
-if(!$mail->send()) {
-  echo 'Message was not sent.';
-  echo 'Mailer error: ' . $mail->ErrorInfo;
-} else {
-  echo 'Message has been sent.';
+
+$mail->isSMTP();
+$mail->Host = 'mx.zoho.eu';                // Specify main and backup server
+$mail->Port = 25;                                    // Set the SMTP port                        // Enable encryption, 'ssl' also accepted
+
+$mail->From = 'website@huisdierassistentie.nl';
+$mail->FromName = 'Website HuisdierAssistentie';
+$mail->AddAddress('info@huisdierassistentie.nl');  // Add a recipient           // Name is optional
+
+$mail->IsHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Here is the subject';
+$mail->Body    = 'This is the HTML message body <strong>in bold!</strong>';
+$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+if(!$mail->Send()) {
+   echo 'Message could not be sent.';
+   echo 'Mailer Error: ' . $mail->ErrorInfo;
+   exit;
 }
+
+echo 'Message has been sent';
 ?>

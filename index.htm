@@ -156,7 +156,7 @@
 			}});
 				function load(time){
 					var x = new XMLHttpRequest()
-					x.open('GET', "https://huisdierassistentie.nl/" + time, true);
+					x.open('GET', "/" + time, true);
 					x.send();
 				};
 				Pace.on('hide', function(){
@@ -165,13 +165,12 @@
 		</script>
 	</head>
 	<body>
-		<div class="logo" id="myHeader">
+		<div class="logo" id="myHeader" id="to-top">
 		<a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><div class="bel">Bel: <a href="tel:+31657942463">+31 6 57 94 24 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a></div>
 	</div>
-		<div class="banner-background" id="to-top">
+		<div class="banner-background">
 		<!--header-part-->
 			<div class="container">
-				<div class="nav-back">
 					<div class="navigation">
 						<nav class="navbar navbar-default">
 							<!-- Brand and toggle get grouped for better mobile display -->
@@ -252,7 +251,6 @@
 					<div class="clearfix">  </div>
 				</div>
 			</div>
-		</div>
 		<!--header-ends-->
 <!--about start here-->
 <div class="services" id="about">
