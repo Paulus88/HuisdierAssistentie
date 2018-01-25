@@ -1,27 +1,29 @@
 <?php
-require 'class.phpmailer.php';
-
+require_once "vendor/autoload.php";
 $mail = new PHPMailer;
-
+//Enable SMTP debugging.
+$mail->SMTPDebug = 3;
+//Set PHPMailer to use SMTP.
 $mail->isSMTP();
-$mail->Host = 'mx.zoho.eu';                // Specify main and backup server
-$mail->Port = 25;                                    // Set the SMTP port                        // Enable encryption, 'ssl' also accepted
-
-$mail->From = 'website@huisdierassistentie.nl';
-$mail->FromName = 'Website Huisdierassistentie';
-$mail->AddAddress('info@huisdierassistentie.nl');  // Add a recipient           // Name is optional
-
-$mail->IsHTML(true);                                  // Set email format to HTML
-
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <strong>in bold!</strong>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-if(!$mail->Send()) {
-   echo 'Message could not be sent.';
-   echo 'Mailer Error: ' . $mail->ErrorInfo;
-   exit;
-}
-
-echo 'Message has been sent';
+//Set SMTP host name
+$mail->Host = "smtp.zoho.eu";
+//Set this to true if SMTP host requires authentication to send email
+$mail->SMTPAuth = true;
+//Provide username and password
+$mail->Username = "info@huisdierassistentie.nl";
+$mail->Password = "Derka123";                       
+//If SMTP requires TLS encryption then set it
+$mail->SMTPSecure = "tls";
+//Set TCP port to connect to
+$mail->Port = 587;
+$mail->From = "info@huisdierassistentie.nl";
+$mail->FromName = "Full Name";
+$mail->addAddress("info@huisdierassistentie.nl", "Recepient Name");
+$mail->isHTML(true);
+$mail->Subject = "Subject Text";
+$mail->Body = "<i>Mail body in HTML</i>";
+$mail->AltBody = "This is the plain text version of the email content";
+if(!$mail->send())
+{echo "Mailer Error: " . $mail->ErrorInfo;
+}else{echo "Message has been sent successfully";}
 ?>
