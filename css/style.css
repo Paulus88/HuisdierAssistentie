@@ -2517,7 +2517,6 @@ li.text-ul h4 {
 }
 @media screen and (max-width:414px){
 	.nav-back {
-		padding:0px 30px 0px 30px;
 	}
 	.products-gallery h2 {
 		font-size:2em;
@@ -2689,9 +2688,6 @@ li.text-ul h4 {
 		margin-right:110px;
 		margin-top:16px;
 		padding:6px;
-	}
-	.nav-back {
-		padding:0px 10px 0px 10px;
 	}
 	.bg {
 		margin:0px 0px 0px;
