@@ -1349,13 +1349,13 @@ body{
 }
 .navbar-nav>li {
 	margin-left:0em !important;
-	width:14.3%;
+	width:14%;
 }
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
 	text-decoration:none;
 	background:#000000;
-	padding=top:45px;
+	padding-top:45px;
 	padding-bottom:45px;
 	font-family:'Quicksand', sans-serif;
 	font-size:16px;
@@ -1364,7 +1364,8 @@ body{
 .navbar-default .navbar-nav>li>a:hover {
 	color:#fff;
 	background-color:#f789db;
-	padding:35px 45px;
+	padding=top:45px;
+	padding-bottom:45px;
 	transition:0.5s all ease-in-out;
 	font-size:16px;
 }
