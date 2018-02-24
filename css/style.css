@@ -1346,6 +1346,7 @@ body{
 }
 .navbar-nav {
 	float:none !important;
+	background:#000;
 }
 .navbar-nav>li {
 	margin-left:0em !important;
@@ -1354,7 +1355,7 @@ body{
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
 	text-decoration:none;
-	background:#000000;
+	background:#000;
 	padding:35px 45px;
 	font-family:'Quicksand', sans-serif;
 	font-size:16px;
