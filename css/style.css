@@ -1350,7 +1350,7 @@ body{
 }
 .navbar-nav>li {
 	margin-left:0em !important;
-	width:14.28%;
+	width:14.285%;
 }
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
@@ -1367,6 +1367,9 @@ body{
 	padding:35px 45px;
 	transition:0.5s all ease-in-out;
 	font-size:16px;
+}
+.navbar-default .navbar-nav>li>a:active {
+	color:#fff;
 }
 ul.nav.navbar-nav li a.active{
 	color:#fff;
