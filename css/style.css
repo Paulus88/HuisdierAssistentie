@@ -818,6 +818,10 @@ ul.ftr-icons {
 }
 }
 @media(max-width:768px){
+	.navbar-nav>li {
+		margin-left:0em !important;
+		width:100%;
+	}
 span.menu{
 		display:block;
 		text-align:left;
@@ -1331,53 +1335,6 @@ body{
 .banner-background {
 	background:url(/images/bg.jpg);
 	padding:0px 50px 0px 50px;
-}
-.nav-back {
-	background-color:#fff;
-}
-.navbar-default {
-	background-color:transparent !important;
-	border:none !important;
-	min-height:90px;
-	margin-bottom:0;
-}
-.navbar-collapse {
-	padding:0 !important;
-}
-.navbar-nav {
-	float:none !important;
-	background:#000;
-}
-.navbar-nav>li {
-	margin-left:0em !important;
-	width:14.285%;
-}
-.navbar-default .navbar-nav>li>a {
-	color:#fff;
-	text-decoration:none;
-	background:#000;
-	padding-top:35px;
-	padding-bottom:35px;
-	text-align:center;
-	font-family:'Quicksand', sans-serif;
-	font-size:16px;
-	font-weight:700;
-}
-.navbar-default .navbar-nav>li>a:hover {
-	color:#fff;
-	background-color:#f789db;
-	padding-top:35px;
-	padding-bottom:35px;
-	text-align:center;
-	transition:0.5s all ease-in-out;
-	font-size:16px;
-}
-.navbar-default .navbar-nav>li>a:active {
-	color:#fff;
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-	color:#fff;
-	background-color:#f789db;
 }
 .dropdown-menu {
 	text-align:left;
@@ -2148,6 +2105,53 @@ li.text-ul h4 {
 }
 /*--about--*/
 /*--responsive starts here--*/
+.nav-back {
+	background-color:#fff;
+}
+.navbar-default {
+	background-color:transparent !important;
+	border:none !important;
+	min-height:90px;
+	margin-bottom:0;
+}
+.navbar-collapse {
+	padding:0 !important;
+}
+.navbar-nav {
+	float:none !important;
+	background:#000;
+}
+.navbar-nav>li {
+	margin-left:0em !important;
+	width:14.285%;
+}
+.navbar-default .navbar-nav>li>a {
+	color:#fff;
+	text-decoration:none;
+	background:#000;
+	padding-top:35px;
+	padding-bottom:35px;
+	text-align:center;
+	font-family:'Quicksand', sans-serif;
+	font-size:16px;
+	font-weight:700;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color:#fff;
+	background-color:#f789db;
+	padding-top:35px;
+	padding-bottom:35px;
+	text-align:center;
+	transition:0.5s all ease-in-out;
+	font-size:16px;
+}
+.navbar-default .navbar-nav>li>a:active {
+	color:#fff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color:#fff;
+	background-color:#f789db;
+}
 @media screen and (max-width:1280px){
 	.four-four p {
 		padding:0.5em 0em;
@@ -2155,11 +2159,9 @@ li.text-ul h4 {
 }
 @media screen and (max-width:1024px){
 	.navbar-default .navbar-nav>li>a {
-		padding:30px 35px;
 		font-size:13px;
 	}
 	.navbar-default .navbar-nav>li>a:hover {
-		padding:35px 35px;
 		font-size:13px;
 	}
 	span.pst {
