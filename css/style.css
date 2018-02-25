@@ -2359,7 +2359,6 @@ li.text-ul h4 {
 	}
 	.navbar-toggle {
 		margin-top:20px;
-		margin-right:225px;
 	}
 	.navbar-nav {
 		text-align:center;
@@ -2396,9 +2395,6 @@ li.text-ul h4 {
 	}
 }
 @media screen and (max-width:568px){
-	.navbar-toggle {
-		margin-right:192px;
-	}
 	.carousel-caption.ch h3 {
 		font-size:1.3em !important;
 	}
@@ -2422,9 +2418,6 @@ li.text-ul h4 {
 	}
 }
 @media screen and (max-width:480px){
-	.navbar-toggle {
-		margin-right:166px;
-	}
 	.nav-back {
 		background-color:#fff;
 	}
@@ -2539,9 +2532,6 @@ li.text-ul h4 {
 	.carousel-caption.ch h3 {
 		font-size:1em !important;
 	}
-	.navbar-toggle {
-		margin-right:130px;
-	}
 	.arr {
 		float:none;
 		width:90%;
@@ -2609,9 +2599,6 @@ li.text-ul h4 {
 	}
 }
 @media screen and (max-width:384px){
-	.navbar-toggle {
-		margin-right:110px;
-	}
 	span.pst {
 		top:49%;
 		left:42%;
@@ -2657,7 +2644,6 @@ li.text-ul h4 {
 		font-size:10em
 	}
 	.navbar-toggle {
-		margin-right:118px;
 		margin-top:27px;
 	}
 }
@@ -2672,7 +2658,6 @@ li.text-ul h4 {
 }
 @media screen and (max-width:320px){
 	.navbar-toggle {
-		margin-right:110px;
 		margin-top:16px;
 		padding:6px;
 	}
