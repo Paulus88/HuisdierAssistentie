@@ -2190,6 +2190,14 @@ li.text-ul h4 {
 		padding:30px 17px 0px;
 	}
 }
+@media screen and (max-width:992px) {
+	.arr {
+		padding:0;
+		float:left;
+		width:50%;
+		margin:0px 0px 20px;
+	}
+}
 @media screen and (max-width:768px){
 	.navbar-nav>li {
 		margin-left:0em !important;
