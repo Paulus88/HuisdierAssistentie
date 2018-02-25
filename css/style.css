@@ -818,10 +818,6 @@ ul.ftr-icons {
 }
 }
 @media(max-width:768px){
-	.navbar-nav>li {
-		margin-left:0em !important;
-		width:100%;
-	}
 span.menu{
 		display:block;
 		text-align:left;
@@ -2195,6 +2191,10 @@ li.text-ul h4 {
 	}
 }
 @media screen and (max-width:768px){
+	.navbar-nav>li {
+		margin-left:0em !important;
+		width:100%;
+	}
 	.navbar-default .navbar-nav>li>a {
 		font-size:12px;
 	}
