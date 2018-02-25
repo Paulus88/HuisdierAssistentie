@@ -2357,9 +2357,6 @@ li.text-ul h4 {
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color:#fff;
 	}
-	.navbar-toggle {
-		margin-top:20px;
-	}
 	.navbar-nav {
 		text-align:center;
 	}
@@ -2643,9 +2640,6 @@ li.text-ul h4 {
 		margin:0;
 		font-size:10em
 	}
-	.navbar-toggle {
-		margin-top:27px;
-	}
 }
 @media screen and (max-width:375px){
 	.tt ol {
@@ -2658,7 +2652,6 @@ li.text-ul h4 {
 }
 @media screen and (max-width:320px){
 	.navbar-toggle {
-		margin-top:16px;
 		padding:6px;
 	}
 	.bg {
