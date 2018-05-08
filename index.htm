@@ -711,9 +711,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 		            position: "right", // Position may be 'right' or 'left'
 		            order: "whatsapp,facebook,sms,call,email", // Order of buttons
 		        };
-		        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + 'js/0.js';
-		        s.onload = function () { WhWidgetSendButton.init(options); };
-		        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+						<script type="text/javascript" src="js/1.js">function () { WhWidgetSendButton.init(options); };</script>
 		    })();
 		</script>
 	</body>
