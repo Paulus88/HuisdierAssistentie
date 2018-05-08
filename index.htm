@@ -711,7 +711,10 @@ en dit is mijn <label for="your-message">bericht</label>,
 		            position: "right", // Position may be 'right' or 'left'
 		            order: "whatsapp,facebook,sms,call,email", // Order of buttons
 		        };
-						<script type="text/javascript" src="js/1.js">function () { WhWidgetSendButton.init(options); };</script>
+		        var proto = document.location.protocol, host = "huisdierassistentie.nl", url = proto + "//www." + host;
+		        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/js/1.js';
+		        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+		        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 		    })();
 		</script>
 	</body>
