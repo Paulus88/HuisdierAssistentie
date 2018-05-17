@@ -2115,16 +2115,16 @@ li.text-ul h4 {
 }
 .navbar-nav {
 	float:none !important;
-	background:#000;
+	background:#89dbf7;
 }
 .navbar-nav>li {
 	margin-left:0em !important;
 	width:14.285%;
+	border:3px solid #F789DB;
 }
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
 	text-decoration:none;
-	background:#000;
 	padding-top:35px;
 	padding-bottom:35px;
 	text-align:center;
