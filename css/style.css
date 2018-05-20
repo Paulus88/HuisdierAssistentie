@@ -2103,6 +2103,7 @@ li.text-ul h4 {
 /*--responsive starts here--*/
 .nav-back {
 	background-color:#fff;
+	border:3px solid #41c5f2;
 }
 .navbar-default {
 	background-color:transparent !important;
@@ -2116,9 +2117,6 @@ li.text-ul h4 {
 .navbar-nav {
 	float:none !important;
 	background:#89dbf7;
-	border-top:3px solid #41c5f2;
-	border-left:3px solid #41c5f2;
-	border-right:3px solid #41c5f2;
 }
 .navbar-nav>li {
 	margin-left:0em !important;
