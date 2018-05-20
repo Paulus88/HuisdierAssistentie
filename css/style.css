@@ -1969,7 +1969,7 @@ section#tables {
 	display:none;
 	text-decoration:none;
 	position:fixed;
-	bottom: :10px;
+	bottom:10px;
 	left:10px;
 	overflow:hidden;
 	width:40px;
