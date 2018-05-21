@@ -20,13 +20,19 @@ h2 {
     src:url('/fonts/lithospro-webfont.eot');
     src:url('/fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
          url('/fonts/lithospro-webfont.ttf') format('truetype');
-    font-family:'BaileywickCurlyJF';
+    font-family:'Lato-Bold';
     src: url('/fonts/BaileywickCurlyJF.eot');
     src: url('/fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
         url('/fonts/BaileywickCurlyJF.woff2') format('woff2'),
         url('/fonts/BaileywickCurlyJF.woff') format('woff'),
         url('/fonts/BaileywickCurlyJF.ttf') format('truetype'),
         url('/fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF') format('svg');
+		font-family:'Lato-Bold';
+				src:url('/fonts/Lato-Bold.eot');
+				src:url('/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+				url('/fonts/Lato-Bold.woff2') format('woff2'),
+        url('/fonts/Lato-Bold.woff') format('woff'),
+				url('/fonts/Lato-Bold.ttf') format('truetype');
     font-weight:normal;
     font-style:normal;
     font-weight:normal;
@@ -1579,7 +1585,7 @@ span a.btn.btn-danger.bt {
     display:block;
     background-size:95px;
     height:65px}
-.hondenoppasgezocht{font-family:LithosProRegular;font-size:40px}
+.hondenoppasgezocht{font-family:'LithosProRegular';font-size:40px}
 .hondenoppasgezocht,.hondenoppasgezocht:visited,.hondenoppasgezocht:active{font-size:40px;color:#FFF;text-decoration:none}
 .hondenoppasgezocht:hover{color:#df2225;text-decoration:none}
 /*--logos--*/
