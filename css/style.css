@@ -13,15 +13,7 @@ h2 {
 	margin:0px;
 	color:#F789DB;
 	padding:1em 0em;
-	font-family:'Quicksand', sans-serif;
-}
-@font-face{
-    font-family:'LithosProRegular';
-    src:url(/fonts/lithospro-webfont.eot),
-		url(/fonts/lithospro-webfont.eot?#iefix) format('embedded-opentype'),
-		url(/fonts/lithospro-webfont.ttf) format('truetype');
-		font-weight:normal;
-		font-style:normal;}
+	font-family:Quicksand,sans-serif;}
 @font-face {
     font-family:'BaileywickCurlyJF';
     src:url(/fonts/BaileywickCurlyJF.eot),
@@ -30,6 +22,13 @@ h2 {
 		url(/fonts/BaileywickCurlyJF.woff) format('woff'),
 		url(/fonts/BaileywickCurlyJF.ttf) format('truetype'),
 		url(/fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF) format('svg');
+		font-weight:normal;
+		font-style:normal;}
+@font-face{
+    font-family:'LithosProRegular';
+    src:url(/fonts/lithospro-webfont.eot),
+		url(/fonts/lithospro-webfont.eot?#iefix) format('embedded-opentype'),
+		url(/fonts/lithospro-webfont.ttf) format('truetype');
 		font-weight:normal;
 		font-style:normal;}
 @font-face {
@@ -70,10 +69,12 @@ h2 {
   src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(/fonts/3y976aknfjLm_3lMKjiMgmUUYBs04Y8bH-o.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+h1{font-family:BaileywickCurlyJF;
+	font-size:70px;}
 ul, ol {margin:0;}
 p {margin:0;}
 html, body{
-  font-family:'Quicksand', sans-serif;
+  font-family:Quicksand, sans-serif;
    font-size:100%;
    background:#fff;
 }
@@ -1363,7 +1364,7 @@ p {margin:0;}
 body{
 	margin:0;
 	padding:0;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 /*--header-nav--*/
 .banner-background {
@@ -1385,7 +1386,7 @@ body{
 .dropdown-menu>li>a {
 	padding:6px 20px;
 	color:#fff;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 	font-size:13px;
 	font-weight:600;
 }
@@ -1402,8 +1403,6 @@ body{
 	z-index:10000;
 	border-bottom:3px solid #F789DB;
 }
-h1{font-family:BaileywickCurlyJF;
-	font-size:70px;}
 .logo a {
 	text-decoration:none;
 }
@@ -1437,10 +1436,11 @@ background:#FFF;}
 .sticky .bel{display:none;}
 @media all and (min-width:1175px){.sticky .bel{display:block;top:5px;}}
 .carousel-caption.ch  h3{
+	font-family:Lato-Bold !important;
 	text-transform:uppercase !important;
 	font-size:2em !important;
 	font-weight:500 !important;
-	color:#fff;
+	color:#000 !important;
 }
 .carousel-caption.ch p {
 	color:#000;
@@ -1528,7 +1528,7 @@ ul.traits-text {
 ul.traits-text li h3{
 	font-size:5em;
 	margin:0px 0px 25px;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 ul.traits-text li p {
 	font-size:1.5em;
@@ -1628,7 +1628,7 @@ span a.btn.btn-danger.bt {
 	border-top:3px solid #F789DB;
 }
 .about h4,.advice h4,.join-in h4,.follow-us h4,.copy-rt h4{
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 	font-weight:600;
 	font-size:1.5em;
 	margin:0;
@@ -1725,7 +1725,7 @@ span a.btn.btn-danger.bt {
 .four-four h3{
 	margin:0;
 	font-size:16em;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 	font-weight:500;
 	color:#000;
 	vertical-align:bottom;
@@ -1750,7 +1750,7 @@ span a.btn.btn-danger.bt {
   text-align:center;
   color:#FDA2A2;
   margin:0px 0px 30px;
-  font-family:'Quicksand', sans-serif;
+  font-family:Quicksand, sans-serif;
 }
 #contact-form {
   margin:0
@@ -1867,7 +1867,7 @@ small {
 	text-align:center;
 	color:#FDA2A2;
 	margin:0px 0px 45px;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .services {
 	min-height:500px;
@@ -1931,7 +1931,7 @@ a.controls.previous {
 	text-align:center;
 	color:#FDA2A2;
 	margin:0px 0px 40px;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .grid_1 > h4 {
 	font-size:2em;
@@ -2029,7 +2029,7 @@ section#tables {
 	color:#FDA2A2;
 	margin:0px 0px 45px;
 	text-transform:uppercase;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .folt p ,.flt p{
 	font-weight:100;
@@ -2041,14 +2041,14 @@ section#tables {
 	font-weight:400;
 	margin:0px 0px 30px;
 	text-transform:uppercase;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .few-words>h3 {
 	font-size:2em;
 	font-weight:400;
 	margin:0px 0px 30px;
 	text-transform:uppercase;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .choose-us ul{
 	list-style-type:none;
@@ -2108,14 +2108,14 @@ li.text-ul h4 {
 	font-weight:400;
 	margin:0px 0px 30px;
 	text-transform:uppercase;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .our-team h3 {
 	font-size:2em;
 	font-weight:400;
 	margin:0px 0px 30px;
 	text-transform:uppercase;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 }
 .box p {
 	font-size:0.9em;
@@ -2166,7 +2166,7 @@ li.text-ul h4 {
 	padding-top:35px;
 	padding-bottom:35px;
 	text-align:center;
-	font-family:'Quicksand', sans-serif;
+	font-family:Quicksand, sans-serif;
 	font-size:16px;
 	font-weight:700;
 }
