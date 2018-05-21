@@ -1370,7 +1370,7 @@ body{
 	z-index:10000;
 	border-bottom:3px solid #F789DB;
 }
-h1{font-family:BaileywickCurlyJF;font-weight:normal;font-style:normal;
+h1{font-family:'BaileywickCurlyJF';font-weight:normal;font-style:normal;
 	font-size:70px;}
 .logo a {
 	text-decoration:none;
@@ -1585,7 +1585,7 @@ span a.btn.btn-danger.bt {
     display:block;
     background-size:95px;
     height:65px}
-.hondenoppasgezocht{font-family:LithosProRegular;font-size:40px}
+.hondenoppasgezocht{font-family:'LithosProRegular';font-size:40px}
 .hondenoppasgezocht,.hondenoppasgezocht:visited,.hondenoppasgezocht:active{font-size:40px;color:#FFF;text-decoration:none}
 .hondenoppasgezocht:hover{color:#df2225;text-decoration:none}
 /*--logos--*/
