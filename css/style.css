@@ -32,7 +32,7 @@ h2 {
 		    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
 		        url('fonts/Lato-Bold.woff2') format('woff2'),
 		        url('fonts/Lato-Bold.woff') format('woff'),
-		        url('fonts/Lato-Bold.ttf') format('truetype'),
+		        url('fonts/Lato-Bold.ttf') format('truetype');
     font-weight:normal;
     font-style:normal;
     font-weight:normal;
