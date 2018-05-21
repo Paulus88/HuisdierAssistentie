@@ -17,22 +17,16 @@ h2 {
 }
 @font-face{
     font-family:'LithosProRegular';
-    src:url('/fonts/lithospro-webfont.eot');
-    src:url('/fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/lithospro-webfont.ttf') format('truetype');
+    src:url('fonts/lithospro-webfont.eot');
+    src:url('fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lithospro-webfont.ttf') format('truetype');
     font-family:'BaileywickCurlyJF';
-    src: url('/fonts/BaileywickCurlyJF.eot');
-    src: url('/fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/BaileywickCurlyJF.woff2') format('woff2'),
-        url('/fonts/BaileywickCurlyJF.woff') format('woff'),
-        url('/fonts/BaileywickCurlyJF.ttf') format('truetype'),
-        url('/fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF') format('svg');
-				font-family:'Lato-Bold';
-		    src: url('/fonts/Lato-Bold.eot');
-		    src: url('/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
-		        url('/fonts/Lato-Bold.woff2') format('woff2'),
-		        url('/fonts/Lato-Bold.woff') format('woff'),
-		        url('/fonts/Lato-Bold.ttf') format('truetype');
+    src: url('fonts/BaileywickCurlyJF.eot');
+    src: url('fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BaileywickCurlyJF.woff2') format('woff2'),
+        url('fonts/BaileywickCurlyJF.woff') format('woff'),
+        url('fonts/BaileywickCurlyJF.ttf') format('truetype'),
+        url('fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF') format('svg');
     font-weight:normal;
     font-style:normal;
     font-weight:normal;
@@ -1408,8 +1402,7 @@ background:#FFF;}
 	text-transform:uppercase !important;
 	font-size:2em !important;
 	font-weight:500 !important;
-	font-family:'Lato-Bold';
-	color:#000;
+	color:#fff;
 }
 .carousel-caption.ch p {
 	color:#000;
