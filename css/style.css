@@ -17,16 +17,16 @@ h2 {
 }
 @font-face{
     font-family:'LithosProRegular';
-    src:url('fonts/lithospro-webfont.eot');
-    src:url('fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lithospro-webfont.ttf') format('truetype');
+    src:url('/fonts/lithospro-webfont.eot');
+    src:url('/fonts/lithospro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/lithospro-webfont.ttf') format('truetype');
     font-family:'BaileywickCurlyJF';
-    src: url('fonts/BaileywickCurlyJF.eot');
-    src: url('fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
-        url('fonts/BaileywickCurlyJF.woff2') format('woff2'),
-        url('fonts/BaileywickCurlyJF.woff') format('woff'),
-        url('fonts/BaileywickCurlyJF.ttf') format('truetype'),
-        url('fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF') format('svg');
+    src: url('/fonts/BaileywickCurlyJF.eot');
+    src: url('/fonts/BaileywickCurlyJF.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/BaileywickCurlyJF.woff2') format('woff2'),
+        url('/fonts/BaileywickCurlyJF.woff') format('woff'),
+        url('/fonts/BaileywickCurlyJF.ttf') format('truetype'),
+        url('/fonts/BaileywickCurlyJF.svg#BaileywickCurlyJF') format('svg');
     font-weight:normal;
     font-style:normal;
     font-weight:normal;
