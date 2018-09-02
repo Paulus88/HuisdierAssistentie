@@ -1446,7 +1446,7 @@ body{
 	margin:0;
 	background:#FFF;
   padding:10px;
-	z-index:10000;
+	z-index:16000162;
 	border-bottom:3px solid #F789DB;
 	display:block
 }
@@ -2973,19 +2973,10 @@ body {
 	width: 90%;
 }
 .pre-loader {
-    background-color: #2c3e50;
+    background-color:#fff;
     position: fixed;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
-	z-index:3000;}
-.dog{
-  position:absolute;
-  width:600px;
-  z-index:3001
-}
-svg{
-  width:100%;
-  visibility:hidden;
-}
+	z-index:16000161;}
