@@ -1453,11 +1453,11 @@ body{
 .logo a{
 	text-decoration:none;
 }
-.logo a span.hlf{
+a span.hlf{
 	text-decoration:none;
 	color:#ec008c;
 }
-.logo a span.hlh{
+a span.hlh{
 	text-decoration:none;
 	color:#42c8f5;
 }
@@ -2975,13 +2975,17 @@ body {
 .pre-loader {
     background-color:#fff;
     position:fixed;
--ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-filter:alpha(opacity=80);
--moz-opacity:0.8;
--khtml-opacity:0.8;
-opacity:0.8;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+filter:alpha(opacity=95);
+-moz-opacity:0.95;
+-khtml-opacity:0.95;
+opacity:0.95;
     height:100%;
     width:100%;
     left:0;
     top:0;
-	z-index:16000161;}
+	z-index:16000161;
+  height: 10em;
+  display: flex;
+  align-items: center;
+justify-content: center}
