@@ -3194,7 +3194,7 @@ body {
   .right {
     right: -12px;
     border-radius: 0 20px 0 0;
-    z-index: 1;
+    z-index:3002;
     &:before {
       transform: translateX(-13px); 
     }
@@ -3203,7 +3203,7 @@ body {
 
 .ears {
   position: absolute;
-  z-index: -1;
+  z-index:3001;
   top: -20px;
   &:after, &:before {
     content: '';
@@ -3225,7 +3225,7 @@ body {
   width: 14px;
   height: 80px;
   position: absolute;
-  z-index: -1;
+  z-index:3001;
   right: 10px;
   bottom: 40px;
   transform: rotate(30deg);
@@ -3240,14 +3240,13 @@ body {
   border-bottom: 5px solid #FF6B5A;
   width: 500%;
   height: 161px;
-  z-index: 2;
+  z-index: 3002;
   position: absolute;
   top: 30px;
   left: 100px;
   box-sizing: border-box;
   border-bottom-left-radius: 40px;
 }
-
 @keyframes squeeze {
   90% {
     transform: none;
@@ -3260,7 +3259,6 @@ body {
     animation-timing-function: ease-out;
   }
 }
-
 @keyframes grow {
   0% {
     animation-timing-function: ease-in;
@@ -3269,7 +3267,6 @@ body {
     height: 35px;
   }
 }
-
 @keyframes shake {
   0% {
     transform: rotate(30deg);
