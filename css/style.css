@@ -2988,6 +2988,7 @@ z-index:16000161;
 display:flex;
 align-items:center;
 justify-content:center}
+.loader{font-weight: bold}
 .paw {
   width: 3em;
   opacity: 0;
@@ -2998,7 +2999,6 @@ justify-content:center}
   right: 40px;
   animation: 5s paw-move alternate infinite;
 }
-
 .paw-wrapper > img:nth-child(2){
   position: absolute;
   bottom: 60px;
@@ -3029,9 +3029,6 @@ justify-content:center}
 }
 @keyframes paw-move{
   from{
-    opacity: 1;
-  }
+    opacity: 1;}
   to{
-    opcatic: 1;
-  }
-}
+    opcatic: 1;}}
