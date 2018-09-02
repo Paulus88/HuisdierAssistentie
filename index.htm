@@ -30,13 +30,54 @@
 					$("html,body").animate({scrollTop:$(this.hash).offset().top},900);
 				});
 			});
-$(document).ready(function() {
-  // Fakes the loading setting a timeout
-    setTimeout(function() {
-        $('body').addClass('loaded');
-    }, 9999);
- 
+HTML  CSS  JS Result
+EDIT ON
+ $(document).ready(function() {
+  var counter = 0;
+
+  // Start the changing images
+  setInterval(function() {
+    if(counter == 9) { 
+      counter = 0; 
+    }
+
+    changeImage(counter);
+    counter++;
+  }, 3000);
+
+  // Set the percentage off
+  loading();
 });
+
+function changeImage(counter) {
+  var images = [
+    '<i class="fa fa-fighter-jet"></i>',
+    '<i class="fa fa-gamepad"></i>',
+    '<i class="fa fa-headphones"></i>',
+    '<i class="fa fa-cubes"></i>',
+    '<i class="fa fa-paw"></i>',
+    '<i class="fa fa-rocket"></i>',
+    '<i class="fa fa-ticket"></i>',
+    '<i class="fa fa-pie-chart"></i>',
+    '<i class="fa fa-codepen"></i>'
+  ];
+
+  $(".loader .image").html(""+ images[counter] +"");
+}
+
+function loading(){
+  var num = 0;
+
+  for(i=0; i<=100; i++) {
+    setTimeout(function() { 
+      $('.loader span').html(num+'%');
+
+      if(num == 100) {
+        loading();
+      }
+      num++;
+    },i*120);
+  };
 </script>
     <!--///////////////////////////////////////////////////////////////////////////////////////////////////
     //
@@ -140,35 +181,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</script>
 	</head>
 	<body>
-<div id="loader-wrapper">
-  <div id="loader"></div>
-  <div class="loader-section section-left"><div class="dog">
-  <div class="ears"></div>
-  <div class="body">
-    <div class="eyes"></div>
-    <div class="beard">
-      <div class="mouth">
-        <div class="tongue"></div>
-      </div>
-    </div>
-    <div class="belt">
-      <div class="locket"></div>
-      <div class="dot dot1"></div>
-      <div class="dot dot2"></div>
-      <div class="dot dot3"></div>
-      <div class="dot dot4"></div>
-      <div class="tag"></div>
-    </div>
-    <div class="stomach">
-    </div>
-    <div class="legs">
-      <div class="left"></div>
-      <div class="right"></div>
-    </div>
+<div class="loader">
+  <div class="image">
+    <i class="fa fa-codepen"></i>
   </div>
-  <div class="tail">
-  </div>
-</div></div>
+  <span></span>
 </div>
 <div class="logo" id="myHeader">
 		<a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><div class="bel">Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a></div>
