@@ -30,6 +30,15 @@
 					$("html,body").animate({scrollTop:$(this.hash).offset().top},900);
 				});
 			});
+(function($){
+  'use strict';
+    $(window).on('load', function () {
+        if ($(".pre-loader").length > 0)
+        {
+            $(".pre-loader").fadeOut("slow");
+        }
+    });
+})(jQuery)
 </script>
 	</head>
 	<body>
