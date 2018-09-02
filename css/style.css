@@ -2982,7 +2982,7 @@ body {
 	z-index:3000;}
 .dog {
   width: 120px;
-  position: relative;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -3240,7 +3240,7 @@ body {
   border-bottom: 5px solid #FF6B5A;
   width: 500%;
   height: 161px;
-  z-index: 3002;
+  z-index:3002;
   position: absolute;
   top: 30px;
   left: 100px;
