@@ -87,14 +87,6 @@ License URL:http://creativecommons.org/licenses/by/3.0/
   background: #fff;
   z-index: 10;
 }
-
-#loader-wrapper .loader-section.section-left {
-  left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-  right: 0;
-}
 .dog {
   width: 120px;
   position: relative;
@@ -391,6 +383,18 @@ License URL:http://creativecommons.org/licenses/by/3.0/
   100% {
     transform: rotate(40deg);
   }
+}
+
+/* Loaded styles */
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
 }
 @font-face{
     font-family:'BaileywickCurlyJF';
