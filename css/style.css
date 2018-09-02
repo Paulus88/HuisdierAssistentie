@@ -2975,11 +2975,11 @@ body {
 .pre-loader{
 background-color:#fff;
 position:fixed;
--ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
-filter:alpha(opacity=95);
--moz-opacity:0.95;
--khtml-opacity:0.95;
-opacity:0.95;
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=97)";
+filter:alpha(opacity=97);
+-moz-opacity:0.97;
+-khtml-opacity:0.97;
+opacity:0.97;
 height:100%;
 width:100%;
 left:0;
@@ -2992,11 +2992,6 @@ justify-content:center}
   width: 3em;
   opacity: 0;
 }
-
-.paw-wrapper{
-
-}
-
 .paw-wrapper > img:nth-child(1){
   position: absolute;
   bottom: 0;
@@ -3011,7 +3006,6 @@ justify-content:center}
   animation: 5s paw-move alternate infinite;
   animation-delay: 1s;
 }
-
 .paw-wrapper > img:nth-child(3){
   position: absolute;
   bottom: 120px;
@@ -3019,7 +3013,6 @@ justify-content:center}
   animation: 5s paw-move alternate infinite;
   animation-delay: 2s;
 }
-
 .paw-wrapper > img:nth-child(4){
   position: absolute;
   bottom: 180px;
@@ -3027,7 +3020,6 @@ justify-content:center}
   animation: 5s paw-move alternate infinite;
   animation-delay: 3s;
 }
-
 .paw-wrapper > img:nth-child(5){
   position: absolute;
   bottom: 240px;
@@ -3035,7 +3027,6 @@ justify-content:center}
   animation: 5s paw-move alternate infinite;
   animation-delay: 4s;
 }
-
 @keyframes paw-move{
   from{
     opacity: 1;
