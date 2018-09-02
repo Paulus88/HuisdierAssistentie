@@ -29,11 +29,14 @@
 					event.preventDefault();
 					$("html,body").animate({scrollTop:$(this.hash).offset().top},900);
 				});
-
-// site preloader -- also uncomment the div in the header and the css style for #preloader
-$(window).load(function(){
-	$('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
+			});
+$(document).ready(function() {
+ 
+  // Fakes the loading setting a timeout
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 3500);
+ 
 });
 </script>
     <!--///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -137,15 +140,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				});
 		</script>
 	</head>
-<div class="js">
 	<body>
-		<div class="logo" id="myHeader">
+<div class="logo" id="myHeader">
 		<a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><div class="bel">Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a></div>
-	</div>
-		<!-- Google Tag Manager (noscript) -->
+</div>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBZ3D9T"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<div id="content">
 		<div class="banner-background" id="to-top">
 		<!--header-part-->
 			<div class="container">
@@ -642,5 +648,5 @@ en dit is mijn <label for="your-message">bericht</label>,
 		        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 		    })();
 		</script>
-</body></div>
+</div></body>
 </html>
