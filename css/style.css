@@ -2986,7 +2986,6 @@ $birdColor3: #01c7be;
 $feetColor: #f8c14d;
 $beakColor: #f7d35d;
 $beakColor2: #eb9f2d;
-
 $birdColor3: #01c7be;
 
 // Storyboard Timeline
@@ -3111,7 +3110,7 @@ $timelineAccumulated: ();
   }
 	.bird {
 		position: absolute;
-		z-index: 1;
+		z-index: 16000162;
 		left: 96px;
 		top: 100px;
 		.body {
