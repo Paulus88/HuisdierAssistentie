@@ -115,7 +115,8 @@
 		padding:1em 0em;
 		font-family:Quicksand,sans-serif}
 h1{font-family:BaileywickCurlyJF;
-	font-size:70px}
+	font-size:70px;
+	text-align:center}
 ul,ol{margin:0}
 p{margin:0}
 html,body{
@@ -3028,6 +3029,6 @@ justify-content:center}
 }
 @keyframes paw-move{
   from{
-    opacity: 1;}
+    opacity: 1}
   to{
-    opcatic: 1;}}
+    opcatic: 1}}
