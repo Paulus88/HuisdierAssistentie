@@ -1448,6 +1448,7 @@ body{
   padding:10px;
 	z-index:10000;
 	border-bottom:3px solid #F789DB;
+	display:block
 }
 .logo a{
 	text-decoration:none;
@@ -2978,7 +2979,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-	z-index:3000;
+	z-index:3000;}
 .dog {
   width: 120px;
   position: relative;
