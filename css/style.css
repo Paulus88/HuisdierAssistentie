@@ -2989,6 +2989,7 @@ body {
 	}
 	&:before, &:after {
 	content: '';
+	z-index:16000162;
 	}
 }
 	.face,
