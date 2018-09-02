@@ -2983,13 +2983,12 @@ body {
 .body {
 	width: 90px;
 	height: 100px;
-
+	z-index:16000162;
 	&, &:before, &:after {
 	position: absolute;
 	}
 	&:before, &:after {
 	content: '';
-	z-index:16000162;
 	}
 }
 	.face,
