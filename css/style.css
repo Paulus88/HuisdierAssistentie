@@ -2960,3 +2960,19 @@ li.text-ul h4{
   0%{ transform:rotate(0deg); transform:rotate(0deg); }
   100%{ transform:rotate(360deg); transform:rotate(360deg); }
 }
+body {
+	margin:0;
+	padding:0;
+}
+#back_to_camera {
+	clear: both;
+	display: block;
+	height: 80px;
+	line-height: 40px;
+	padding: 20px;
+}
+.fluid_container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+}
