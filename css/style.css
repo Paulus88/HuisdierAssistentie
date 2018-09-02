@@ -3003,7 +3003,7 @@ input {
   height: 32px;
   border-radius: 50%;
   margin-top: 4rem;
-  z-index: 0;
+  z-index:16000163;
   
   &:after {
     content: '';
@@ -3016,7 +3016,7 @@ input {
     border-radius: 50%;
     box-shadow: inset 0 -8px 0 0 rgba(black, 0.2);
     background: var(--ball, red);
-    z-index: 1;
+    z-index:16000164;
   }
   
   &:focus {
@@ -3059,7 +3059,7 @@ input {
       border-radius: 50%;
       background: rgba(black, 0.05);
       animation: bounce-shadow $double-interval infinite alternate;
-      z-index: -10;
+      z-index:16000160;
     }
   }
 }
@@ -3067,7 +3067,7 @@ input {
 .dog {
   width: $dog-width;
   height: $dog-width;
-  z-index: 1;
+  z-index:16000164;
   
   &:before {
     content: '';
@@ -3164,7 +3164,7 @@ input {
   width: 60%;
   top: 55%;
   left: 20%;
-  z-index: 1;
+  z-index:16000164;
   
   &:before {
     content: '';
@@ -3176,7 +3176,7 @@ input {
     background: orange;
     top: -10px;
     left: -10px;
-    z-index: 0;
+    z-index:16000163;
     border: 4px solid white;
     border-left-width: 0;
     border-bottom-width: 0;
@@ -3190,7 +3190,7 @@ input {
   height: 10px;
   border-radius: 50%;
   background: #000;
-  z-index: 1;
+  z-index:16000164;
   animation: dog-eye $full-interval infinite;
   
   @keyframes dog-eye {
@@ -3256,7 +3256,7 @@ input {
   width: 40px;
   height: 100%;
   left: calc(50% - 20px);
-  z-index: -1;
+  z-index:16000162;
   transform-origin: center top;
   animation: dog-tongue $full-interval -50ms ease-in-out infinite;
   
