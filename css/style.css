@@ -1481,7 +1481,7 @@ background:#FFF}
 	font-size:30px;
 }
 .welkom{display:none}
-@media all and (min-width:1050px){.welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:90px}
+@media all and (min-width:1050px){.welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:104.8px}
 .sticky .welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:30px}}
 .sticky .bel{display:none}
 @media all and (min-width:1175px){.sticky .bel{display:block;top:5px}}
