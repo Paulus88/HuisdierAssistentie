@@ -1467,7 +1467,6 @@ font-weight:bold;
 top:auto;
 width:100%;
 background:#FFF}
-@media all and (min-width:1175px){.bel{position:absolute;right:2px;top:27px;width:auto}}
 .sticky{
   position:fixed;
   top:0;
@@ -1481,12 +1480,13 @@ background:#FFF}
 	font-size:30px;
 }
 .welkom{display:none}
-@media all and (min-width:1075px){.welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:104.8px}
+@media all and (min-width:1150px){.welkom{display:block;position:absolute;left:2px;top:49.8px;width:auto;height:104.8px}
 .sticky .welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:56.8px}}
-@media all and (min-width:1050px){.welkom{display:block;position:absolute;left:2px;top:49.8px;width:auto;height:104.8px}
+@media all and (min-width:1175px){.welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:104.8px}
 .sticky .welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:56.8px}}
 .sticky .bel{display:none}
-@media all and (min-width:1175px){.sticky .bel{display:block;top:5px}}
+@media all and (min-width:1175px){.bel{position:absolute;right:2px;top:27px;width:auto}
+.sticky .bel{display:block;top:5px}}
 .carousel-caption.ch  h3{
 	font-family:Lato-Bold !important;
 	text-transform:uppercase !important;
