@@ -1481,8 +1481,8 @@ background:#FFF}
 	font-size:30px;
 }
 .welkom{display:none}
-@media all and (min-width:1050px){.welkom{position:absolute;left:2px;top:5px;width:auto;height:90px}
-.sticky .welkom{position:absolute;left:2px;top:5px;width:auto;height:30px}}
+@media all and (min-width:1050px){.welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:90px}
+.sticky .welkom{display:block;position:absolute;left:2px;top:5px;width:auto;height:30px}}
 .sticky .bel{display:none}
 @media all and (min-width:1175px){.sticky .bel{display:block;top:5px}}
 .carousel-caption.ch  h3{
