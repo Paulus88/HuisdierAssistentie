@@ -1,6 +1,6 @@
 <?php
 
-$ports[] = array('host'=>'smtp.zoho.com','number'=>25);
+$ports[] = array('host'=>'smtp.zoho.com','number'=>587);
 
 foreach ($ports as $port)
 {
