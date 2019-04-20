@@ -1,8 +1,4 @@
-<?php
-if($_POST["message"]) {
-    mail("info@huisdierassistentie.nl", "Beste Huisdier Assistentie", $_POST["your-message"], $_POST["email"]);
-}
-?><!doctype html>
+<!doctype html>
 <html>
 	<head>
 		<script src="js/0.js"></script>
@@ -400,7 +396,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="services" id="contact">
 		<div class="contact-main">
 			<h2>Contact</h2>
-<form id="contact-form" method=POST action="#" enctype="text/php">
+<form id="contact-form" method=POST action="duif.php" enctype="text/php">
 			<div class="book">
 			<div class="form">
   <p>Beste Huisdier Assistentie,<br />
