@@ -1,10 +1,10 @@
-<?php 
+<?php
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $from = "info@huisdierassistentie.nl";
-    $to = $_POST["email"];
+    $from = "emailtest@YOURDOMAIN";
+    $to = "YOUREMAILADDRESS";
     $subject = "PHP Mail Test script";
-    $message = $_POST["your-message"]
+    $message = "This is a test to check the PHP Mail functionality";
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
     echo "Test email sent";
