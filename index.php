@@ -19,7 +19,6 @@
 		<meta name="msvalidate.01" content="6A0A2BE320F97CCC6F544BDB772E9258" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-    <script data-pace-options='{ "ajax": false }' src="js/pace.min.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -27,7 +26,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
 }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="js/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){
