@@ -506,16 +506,16 @@ en dit is mijn <label for="your-message">bericht</label>,
 		<script type="text/javascript">
 		    (function () {
 		        var options = {
-              call_to_action: "Message us",
 		          facebook: "1409025745855457", // Facebook page ID
-		            whatsapp: "+31657941463", // WhatsApp number
-		            email: "info@huisdierassistentie.nl", // Email
-		            sms: "+31657941463", // Sms phone number
-		            call: "+31657941463", // Call phone number
-		            button_color: "#F789DB", // Color of button
-		            position: "right", // Position may be 'right' or 'left'
-		            order: "whatsapp,facebook,sms,call,email", // Order of buttons
-                };
+		          whatsapp: "+31657941463", // WhatsApp number
+		          email: "info@huisdierassistentie.nl", // Email
+		          sms: "+31657941463", // Sms phone number
+		          call: "+31657941463", // Call phone number
+              greeting_message "Hoi, kan ik uw helpen?"
+		          button_color: "#F789DB", // Color of button
+		          position: "right", // Position may be 'right' or 'left'
+		          order: "whatsapp,facebook,sms,call,email", // Order of buttons
+              };
                 var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
                 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
                 s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
