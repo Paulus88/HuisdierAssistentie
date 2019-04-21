@@ -14,7 +14,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Ververs de 
 header("refresh:4;url=/");
 ?>
 <!doctype html>
-<html>
+<html lang="nl">
 <head>
 		<title>Huisdier Assistentie - Duif</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>

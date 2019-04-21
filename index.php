@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="nl">
 	<head>
 		<script src="js/0.js"></script>
 		<title>Huisdier Assistentie</title>

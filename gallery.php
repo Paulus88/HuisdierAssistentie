@@ -1,4 +1,4 @@
-<!doctype html><html><head>
+<!doctype html><html lang="nl"><head>
 		<script src="js/0.js"></script>
 		<title>Huisdier Assistentie</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
