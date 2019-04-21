@@ -512,7 +512,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 		          email: "info@huisdierassistentie.nl", // Email
 		          sms: "+31657941463", // Sms phone number
 		          call: "+31657941463", // Call phone number
-              company_logo_url: "images/icon.png", // URL of company logo (png, jpg, gif)
+              company_logo_url: "//huisdierassistentie.nl/images/icon.png", // URL of company logo (png, jpg, gif)
               greeting_message: "Hoi, kan ik u helpen?", // Text of greeting message
 		          button_color: "#F789DB", // Color of button
 		          position: "right", // Position may be 'right' or 'left'
