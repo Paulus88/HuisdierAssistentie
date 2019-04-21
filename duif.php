@@ -23,8 +23,8 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Ververs de 
   <source src="images/duif.mp4" type="video/mp4">
 </video>
 <div class="duifcontent">
-  <h1><?php echo "$name"?></h1>
-  <p><?php echo "$message"?></p>
+  <h1>Hoi <?php echo "$name"?>!</h1>
+  <p>Ik heb de volgende bericht ontvangen: <i><?php echo "$message"?></i></p>
 </div>
 </body>
 </html>
