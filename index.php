@@ -50,6 +50,7 @@ window.onload = init;
 </script>
 </head>
 <body>
+<div class="pace"><div class="pace-progress" data-progress="50" data-progress-text="50%" style="-webkit-transform: translate3d(50%, 0px, 0px); -ms-transform: translate3d(50%, 0px, 0px); transform: translate3d(50%, 0px, 0px);"><div class="pace-progress-inner"></div></div><div class="pace-activity"></div></div>
 <div class="pre-loader"><div class="loader">
 <a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><br />Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a><br /><br />Pagina wordt geladen...</div><div class="paw-wrapper">
 <img class = "paw" src="images/paw.png"></img>
