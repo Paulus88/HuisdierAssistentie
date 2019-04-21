@@ -11,7 +11,7 @@ $recipient = "Huisdier Assistentie <info@huisdierassistentie.nl>";
 $subject = "Website: Hello Huisdier Assistentie";
 $mailheader = "From: $email\r\nReply-to: $email\r\nReturn-Path: $email";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Ververs de pagina of naam contact op via een andere methode");
-header("refresh:4;url=/");
+#header("refresh:4;url=/");
 ?>
 <!doctype html>
 <html>
