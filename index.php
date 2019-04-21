@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
 							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a></p>
-							<p>Prijs: €7,- per uur</p>
+							<p>Prijs: €10,- per uur</p>
 						</div>
 						</div>
 					</div>
