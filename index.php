@@ -355,7 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<div class="gallery-main">
 			<h2>Gallery</h2>
-<iframe src="gallery.htm" onload="resizeIframe(this)" style="top:0px; left:0px; bottom:0px; right:0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width:100%">
+<iframe src="gallery.php" onload="resizeIframe(this)" style="top:0px; left:0px; bottom:0px; right:0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width:100%">
     Jou browser onderstend geen iframes, ga naar
 </iframe>
 	</div>
