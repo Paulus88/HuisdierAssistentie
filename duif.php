@@ -11,7 +11,7 @@ $recipient = "info@huisdierassistentie.nl";
 $subject = "Website: Hello Huisdier Assistentie";
 $mailheader = "From: $email\r\nReply-to: $email";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Ververs de pagina of naam contact op via een andere methode");
-header("refresh:4;url=index.php");
+header("refresh:4;url=/");
 ?>
 <!doctype html>
 <html>
@@ -24,7 +24,7 @@ header("refresh:4;url=index.php");
   <source src="images/duif.mp4" type="video/mp4">
 </video>
 <div class="duifcontent">
-  <h2>Hoi <?php echo "$name"?>!</h2>
+  <h3>Hoi <?php echo "$name"?>!</h3>
   <p>Ik heb de volgende bericht ontvangen: <i><?php echo "$message"?></i></p>
 </div>
 </body>
