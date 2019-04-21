@@ -508,6 +508,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 		        var options = {
 		          facebook: "1409025745855457", // Facebook page ID
 		          whatsapp: "+31657941463", // WhatsApp number
+              line: "+31657941463", // Line QR code URL
 		          email: "info@huisdierassistentie.nl", // Email
 		          sms: "+31657941463", // Sms phone number
 		          call: "+31657941463", // Call phone number
@@ -515,7 +516,7 @@ en dit is mijn <label for="your-message">bericht</label>,
               greeting_message: "Hoi, kan ik u helpen?", // Text of greeting message
 		          button_color: "#F789DB", // Color of button
 		          position: "right", // Position may be 'right' or 'left'
-		          order: "whatsapp,facebook,sms,call,email", // Order of buttons
+		          order: "whatsapp,facebook,line,sms,call,email", // Order of buttons
               };
                 var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
                 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
