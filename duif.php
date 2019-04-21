@@ -31,7 +31,7 @@ header("refresh:4;url=/");
 </video>
 <div class="duifcontent">
   <h3>Hoi <?php echo "$name"?>!</h3>
-  <p>Ik heb de volgende bericht ontvangen:<br /><i><?php echo "$message"?></i></p>
+  <p>Ik heb de volgende bericht ontvangen:<br /><i><?php echo nl2br("$message")?></i></p>
 </div>
 </body>
 </html>
