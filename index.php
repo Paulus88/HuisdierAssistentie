@@ -506,7 +506,8 @@ en dit is mijn <label for="your-message">bericht</label>,
 		<script type="text/javascript">
 		    (function () {
 		        var options = {
-		            facebook: "1409025745855457", // Facebook page ID
+              call_to_action: "Message us",
+		          facebook: "1409025745855457", // Facebook page ID
 		            whatsapp: "+31657941463", // WhatsApp number
 		            email: "info@huisdierassistentie.nl", // Email
 		            sms: "+31657941463", // Sms phone number
