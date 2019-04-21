@@ -2901,20 +2901,18 @@ li.text-ul h4{
 		width:100%;
 	}
 }
-.pace{
+.pace {
   -webkit-pointer-events:none;
   pointer-events:none;
   -webkit-user-select:none;
   -moz-user-select:none;
   user-select:none;
 }
-
-.pace-inactive{
+.pace-inactive {
   display:none;
 }
-
-.pace .pace-progress{
-  background:#F789DB;
+.pace .pace-progress {
+  background:#F789DB
   position:fixed;
   z-index:2000;
   top:0;
@@ -2922,76 +2920,21 @@ li.text-ul h4{
   width:100%;
   height:2px;
 }
-
-.pace .pace-progress-inner{
-  display:block;
-  position:absolute;
-  right:0px;
-  width:100px;
-  height:100%;
-  box-shadow:0 0 10px #F789DB,0 0 5px #F789DB;
-  opacity:1.0;
-  -webkit-transform:rotate(3deg) translate(0px,-4px);
-  -moz-transform:rotate(3deg) translate(0px,-4px);
-  -ms-transform:rotate(3deg) translate(0px,-4px);
-  -o-transform:rotate(3deg) translate(0px,-4px);
-  transform:rotate(3deg) translate(0px,-4px);
-}
-
-.pace .pace-activity{
-  display:block;
-  position:fixed;
-  z-index:2000;
-  top:15px;
-  right:15px;
-  width:14px;
-  height:14px;
-  border:solid 2px transparent;
-  border-top-color:#F789DB;
-  border-left-color:#F789DB;
-  border-radius:10px;
-  -webkit-animation:pace-spinner 400ms linear infinite;
-  -moz-animation:pace-spinner 400ms linear infinite;
-  -ms-animation:pace-spinner 400ms linear infinite;
-  -o-animation:pace-spinner 400ms linear infinite;
-  animation:pace-spinner 400ms linear infinite;
-}
-
-@-webkit-keyframes pace-spinner{
-  0%{ -webkit-transform:rotate(0deg); transform:rotate(0deg); }
-  100%{ -webkit-transform:rotate(360deg); transform:rotate(360deg); }
-}
-@-moz-keyframes pace-spinner{
-  0%{ -moz-transform:rotate(0deg); transform:rotate(0deg); }
-  100%{ -moz-transform:rotate(360deg); transform:rotate(360deg); }
-}
-@-o-keyframes pace-spinner{
-  0%{ -o-transform:rotate(0deg); transform:rotate(0deg); }
-  100%{ -o-transform:rotate(360deg); transform:rotate(360deg); }
-}
-@-ms-keyframes pace-spinner{
-  0%{ -ms-transform:rotate(0deg); transform:rotate(0deg); }
-  100%{ -ms-transform:rotate(360deg); transform:rotate(360deg); }
-}
-@keyframes pace-spinner{
-  0%{ transform:rotate(0deg); transform:rotate(0deg); }
-  100%{ transform:rotate(360deg); transform:rotate(360deg); }
-}
 body {
 	margin:0;
 	padding:0;
 }
 #back_to_camera {
-	clear: both;
-	display: block;
-	height: 80px;
-	line-height: 40px;
-	padding: 20px;
+	clear:both;
+	display:block;
+	height:80px;
+	line-height:40px;
+	padding:20px;
 }
 .fluid_container{
-	margin: 0 auto;
-	max-width: 1000px;
-	width: 90%;
+	margin:0 auto;
+	max-width:1000px;
+	width:90%;
 }
 .pre-loader{
 background-color:#fff;
@@ -3009,47 +2952,47 @@ z-index:16000161;
 display:flex;
 align-items:center;
 justify-content:center}
-.loader{font-weight: bold}
+.loader{font-weight:bold}
 .paw {
-  width: 3em;
-  opacity: 0;
+  width:3em;
+  opacity:0;
 }
 .paw-wrapper > img:nth-child(1){
-  position: absolute;
-  bottom: 0;
-  right: 40px;
-  animation: 5s paw-move alternate infinite;
+  position:absolute;
+  bottom:0;
+  right:40px;
+  animation:5s paw-move alternate infinite;
 }
 .paw-wrapper > img:nth-child(2){
-  position: absolute;
-  bottom: 60px;
-  right: 100px;
-  animation: 5s paw-move alternate infinite;
-  animation-delay: 1s;
+  position:absolute;
+  bottom:60px;
+  right:100px;
+  animation:5s paw-move alternate infinite;
+  animation-delay:1s;
 }
 .paw-wrapper > img:nth-child(3){
-  position: absolute;
-  bottom: 120px;
-  right: 40px;
-  animation: 5s paw-move alternate infinite;
-  animation-delay: 2s;
+  position:absolute;
+  bottom:120px;
+  right:40px;
+  animation:5s paw-move alternate infinite;
+  animation-delay:2s;
 }
 .paw-wrapper > img:nth-child(4){
-  position: absolute;
-  bottom: 180px;
-  right: 100px;
-  animation: 5s paw-move alternate infinite;
-  animation-delay: 3s;
+  position:absolute;
+  bottom:180px;
+  right:100px;
+  animation:5s paw-move alternate infinite;
+  animation-delay:3s;
 }
 .paw-wrapper > img:nth-child(5){
-  position: absolute;
-  bottom: 240px;
-  right: 40px;
-  animation: 5s paw-move alternate infinite;
-  animation-delay: 4s;
+  position:absolute;
+  bottom:240px;
+  right:40px;
+  animation:5s paw-move alternate infinite;
+  animation-delay:4s;
 }
 @keyframes paw-move{
   from{
-    opacity: 1}
+    opacity:1}
   to{
-    opcatic: 1}}
+    opcatic:1}}
