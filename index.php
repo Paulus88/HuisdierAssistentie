@@ -22,11 +22,11 @@
     <script data-pace-options='{ "ajax": false }' src="js/pace.min.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
 }
-</script>   
+</script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -56,7 +56,6 @@ window.onload = init;
 </script>
 </head>
 <body>
-<div class="pace"><div class="pace-progress" data-progress="50" data-progress-text="50%" style="-webkit-transform: translate3d(50%, 0px, 0px); -ms-transform: translate3d(50%, 0px, 0px); transform: translate3d(50%, 0px, 0px);"><div class="pace-progress-inner"></div></div></div>
 <div class="pre-loader"><div class="loader">
 <a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><br />Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a><br /><br />Pagina wordt geladen...</div><div class="paw-wrapper">
 <img class = "paw" src="images/paw.png" alt="paw"></img>
