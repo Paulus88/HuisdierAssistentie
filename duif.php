@@ -19,8 +19,8 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
-<video autoplay muted loop class="duif">
+<div class="duifContainer"><video autoplay muted loop class="duif">
   <source src="images/duif.mp4" type="video/mp4">
-</video>
+</video></div>
 </body>
 </html>

@@ -726,13 +726,17 @@ padding:4em 0em 5em 0em}
   font-weight:300;
   -webkit-font-smoothing:antialiased;
 }
+.duifContainer{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow:hidden;}
 .duif{
 position:fixed;
 right:0;
 bottom:0;
 min-width:100%;
-min-height:100%;
-object-fit:fill}
+min-height:100%;}
 @media all and (min-width:0px){
 .book{display:block;width:100%;padding:150px 35px 300px 35px;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:135% 100%;font-size:9px;text-align:left}
 .book dl{text-align:center}}
