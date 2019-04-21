@@ -508,7 +508,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 		        var options = {
 		          facebook: "1409025745855457", // Facebook page ID
 		          whatsapp: "+31657941463", // WhatsApp number
-              line: "//line.me/R/ti/p/huisdierassistentie", // Line QR code URL
+              line: "//line.me/R/ti/p/913yfgul", // Line QR code URL
 		          email: "info@huisdierassistentie.nl", // Email
 		          sms: "+31657941463", // Sms phone number
 		          call: "+31657941463", // Call phone number
