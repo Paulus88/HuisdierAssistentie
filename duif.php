@@ -1,6 +1,6 @@
 <?php
 $name = $_POST['your-name'];
-$email = $_POST['your-email'];
+$email = $_POST['email'];
 $message = $_POST['your-message'];
 $tel = $_POST['your-tel'];
 $formcontent="From: $name \n Message: $message";
