@@ -7,7 +7,7 @@ $huisdier = $_POST['huisdier'];
 $soort = $_POST['soort'];
 $ras = $_POST['ras'];
 $formcontent="Van: $name\nEmail: $email\nTelefoon: $tel\nNaam huisdier: $huisdier\nSoort dier: $soort\nRas dier: $ras\nMessage:\n$message";
-$recipient = "info@huisdierassistentie.nl";
+$recipient = "Huisdier Assistentie <info@huisdierassistentie.nl>";
 $subject = "Website: Hello Huisdier Assistentie";
 $mailheader = "From: $email\r\nReply-to: $email\r\nReturn-Path: $email";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error! Ververs de pagina of naam contact op via een andere methode");
