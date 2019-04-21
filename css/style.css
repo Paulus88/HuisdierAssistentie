@@ -740,7 +740,8 @@ bottom:0;
 background:rgba(243, 251, 254, 0.5);
 color:#000;
 width:100%;
-padding:20px;}
+padding:30px}
+.duifcontent h3{text-align:center}
 @media all and (min-width:0px){
 .book{display:block;width:100%;padding:150px 35px 300px 35px;background-image:url('/images/notepad.png');background-repeat:no-repeat;background-size:135% 100%;font-size:9px;text-align:left}
 .book dl{text-align:center}}
