@@ -53,11 +53,11 @@ window.onload = init;
 <div class="pace"><div class="pace-progress" data-progress="50" data-progress-text="50%" style="-webkit-transform: translate3d(50%, 0px, 0px); -ms-transform: translate3d(50%, 0px, 0px); transform: translate3d(50%, 0px, 0px);"><div class="pace-progress-inner"></div></div></div>
 <div class="pre-loader"><div class="loader">
 <a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><br />Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a><br /><br />Pagina wordt geladen...</div><div class="paw-wrapper">
-<img class = "paw" src="images/paw.png"></img>
-<img class = "paw" src="images/paw.png"></img>
-<img class = "paw" src="images/paw.png"></img>
-<img class = "paw" src="images/paw.png"></img>
-<img class = "paw" src="images/paw.png"></img>
+<img class = "paw" src="images/paw.png" alt="paw"></img>
+<img class = "paw" src="images/paw.png" alt="paw"></img>
+<img class = "paw" src="images/paw.png" alt="paw"></img>
+<img class = "paw" src="images/paw.png" alt="paw"></img>
+<img class = "paw" src="images/paw.png" alt="paw"></img>
 </div></div>
 </div>
 <div class="logo" id="myHeader">
@@ -118,14 +118,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="images/t-d.gif" onmouseover='this.src = this.src.replace("images/t-d.gif","images/t-d.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+							  <img src="images/t-d.gif" onmouseover='this.src = this.src.replace("images/t-d.gif","images/t-d.gif")' alt="Huisdieroppas" class="img-responsive">
 							  <div class="carousel-caption ch">
 								<h3>Huisdieroppas</h3>
 								<p>Ik pas op huisdieren in mijn eigen of uw huis.</p>
 							  </div>
 							</div>
 							<div class="item">
-							  <img src="images/t-v.gif" onmouseover='this.src = this.src.replace("images/t-v.gif","images/t-v.gif")' alt="Hondenuitlaatservice" class="img-responsive">
+							  <img src="images/t-v.gif" onmouseover='this.src = this.src.replace("images/t-v.gif","images/t-v.gif")' alt="Verblijf" class="img-responsive">
 							  <div class="carousel-caption ch">
 								<h3>Verblijf</h3>
 								<p>Ik pas op honden in mijn eigen of uw huis.</p>
@@ -227,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="col-md-3 arr">
 						<div class="bg">
-						  <img src="images/d.jpg" onmouseover='this.src = this.src.replace("images/d.jpg","images/d.gif")' alt="Huisdieroppas" class="img-responsive">
+						  <img src="images/d.jpg" onmouseover='this.src = this.src.replace("images/d.jpg","images/d.gif")' alt="Dierenoppas" class="img-responsive">
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Dierenoppas</h3>
@@ -305,18 +305,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<h3>Hilversum</h3>
 			<div class="team-bottom">
 			   <div class="col-md-3 team-grid">
-				<img src="images/t1.jpg" alt="Tugba Özsoy" class="img-responsive">
+				<img src="images/t1.jpg" alt="Tugba Özsoy" class="img-responsive" alt="Tugba">
 				<div class="about-details">
-					<h4>Tugba Özsoy</h4>
+					<h4>Tugba</h4>
 					<p>Eigenaar<br />Uitlaat/Oppas<br />regio Hilversum</p>
 				</div>
 			   </div>
 			</div>
 			<div class="team-bottom">
 			   <div class="col-md-3 team-grid">
-				<img src="images/t3.jpg" alt="Paul Hemmens" class="img-responsive">
+				<img src="images/t3.jpg" alt="Paul Hemmens" class="img-responsive" alt"Paul">
 				<div class="about-details">
-					<h4>Paul Hemmens</h4>
+					<h4>Paul</h4>
 					<p>Webdesigner<br />ondersteuning Uitlaat/Oppas<br />regio Hilversum</p>
 				</div>
 			   </div>
