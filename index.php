@@ -22,32 +22,6 @@
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$("html,body").animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-(function($){
-  'use strict';
-    $(window).on('load', function () {
-        if ($(".pre-loader").length > 0)
-        {
-            $(".pre-loader").fadeOut("slow");
-        }
-    });
-})(jQuery)
-function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';}
-function init() {
-var vidDefer = document.getElementsByTagName('iframe');
-for (var i=0; i<vidDefer.length; i++) {
-if(vidDefer[i].getAttribute('data-src')) {
-vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-} } }
-window.onload = init;
-</script>
 </head>
 <body>
 <div class="pre-loader"><div class="loader">

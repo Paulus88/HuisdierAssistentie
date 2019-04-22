@@ -1,6 +1,8 @@
 <!doctype html><html lang="nl"><head>
-		<script src="js/0.js"></script>
 		<title>Huisdier Assistentie</title>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/0.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" id="camera-css"  href="css/camera.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
@@ -14,8 +16,6 @@
 		<meta name="description" content="De individuele/persoonlijke dieren uitlaten, oppas en verblijf met veel ervaring">
 		<meta name="keywords" content="hilversum,hondhulp,huisdier,assistentie,verzorg,hond,cat,huisdieren,dog,pet">
 		<meta name="author" content="Paul Hemmens">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,15 +27,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/camera.js"></script>
 	<script>
-(function($){
-  'use strict';
-    $(window).on('load', function () {
-        if ($(".pre-loader").length > 0)
-        {
-            $(".pre-loader").fadeOut("slow");
-        }
-    });
-})(jQuery)
 		paceOptions = {
 					elements: true
 		};
