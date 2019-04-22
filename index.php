@@ -83,7 +83,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-					<li><a class="active  scroll" href="#to-top">Home</a></li>
 					<li><a class="scroll" href="#about">Over Mij</a></li>
 					<li><a class="scroll" href="#service">Diensten</a></li>
 					<li><a class="scroll" href="#team">Team</a></li>
