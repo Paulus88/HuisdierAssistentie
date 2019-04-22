@@ -413,9 +413,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 De naam van mijn <label for="huisdier">huisdier'en</label> zijn
     <input type="text" name="huisdier" id="huisdier" minlength="1" placeholder="(uw huisdier'en naam)">,<br />
 de <label for="soort">soort</label> is als volgt
-    <input type="text" name="soort" id="soort" minlength="1" placeholder="(soort huisdier'en)">,<br />
+    <input type="text" name="soort" id="soort" minlength="1" placeholder="(hond, kat, konijn...)">,<br />
 de <label for="ras">ras</label> is als volgt
-    <input type="text" name="ras" id="ras" minlength="1" placeholder="(ras van uw huisdier'en)"><br />
+    <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, lotharinger...)"><br />
 en dit is mijn <label for="your-message">bericht</label>,
     <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
   <br />
