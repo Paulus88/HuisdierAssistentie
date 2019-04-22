@@ -300,6 +300,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  </div>
         		  <div class="clearfix">  </div>
         		</div>
+          </div>
+          <div class="container">
             <div id="bezoek">
         			<h2>Huisbezoek</h2>
         			<div class="about-bottom">
@@ -342,6 +344,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  </div>
         		  <div class="clearfix">  </div>
         		</div>
+          </div>
+          <div class="container">
             <div id="oppas">
         			<h2>Dierenoppas</h2>
         			<div class="about-bottom">
@@ -383,7 +387,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         		  </div>
         		  <div class="clearfix">  </div>
-        		</div>
+        		</div></div>
+      			<div class="container">
             <div id="verblijf">
         			<h2>Verblijf</h2>
         			<div class="about-bottom">
@@ -425,7 +430,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         		  </div>
         		  <div class="clearfix">  </div>
-        		</div>
+        		</div></div>
         	</div>
         </div>
 		<!--content-ends-->
