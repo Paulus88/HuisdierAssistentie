@@ -208,10 +208,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
-							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a></p>
+							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#hondenuit">Meer informatie</a>
-              </div>
+              </div></p>
 						</div>
 						</div>
 					</div>
@@ -221,10 +221,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Huisbezoek</h3>
-							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact">Contact</a></p>
+							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#bezoek">Meer informatie</a>
-              </div>
+              </div></p>
 						  </div>
 						</div>
 					</div>
@@ -234,10 +234,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Dierenoppas</h3>
-							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact">Contact</a></p>
+							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#oppas">Meer informatie</a>
-              </div>
+              </div></p>
 						  </div>
 						</div>
 					</div>
@@ -247,10 +247,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Verblijf</h3>
-							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a></p>
+							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#verblijf">Meer informatie</a>
-              </div>
+              </div></p>
 						  </div>
 						 </div>
 					</div>
@@ -263,7 +263,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
         				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
-        			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+        			    <p>Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
         			</div>
         			<div class="col-md-6 about-right">
         			    <div class="about-grid">

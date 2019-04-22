@@ -676,9 +676,6 @@ background-color:#f3fbfe
   color:#000;
   line-height:1.6em;
 }
-.client-btn{
-  margin:2em 0em 0em 0em;
-}
 .client-btn a{
   font-size:1em;
   font-weight:400;
@@ -1013,9 +1010,6 @@ ul.res li a:hover,ul.res li a.active{
 }
 .clients-main h3{
   font-size:1.5em;
-}
-.client-btn{
-  margin:1em 0em 0em 0em;
 }
 .gallery{
   padding:2em 0em 2em 0em;
