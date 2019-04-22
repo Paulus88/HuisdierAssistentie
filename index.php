@@ -255,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						 </div>
 					</div>
 					<div class="clearfix"></div>
-				</div>
+				</div></div>
         <div class="services">
         	<div class="container">
         		<div id="hondenuit">
@@ -429,7 +429,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         	</div>
         </div>
 		<!--content-ends-->
-</div>
+</div></div>
 <!--services end here-->
 <!--team start here-->
 <div class="team-member" id="team">
