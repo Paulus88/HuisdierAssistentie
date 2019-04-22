@@ -2259,6 +2259,11 @@ li.text-ul h4{
 		padding:0.5em 0em;
 	}
 }
+@media (min-width:1200px){
+  span.pst{
+	top:156px
+	left:36%;
+	}}
 @media screen and (max-width:1024px){
 	.navbar-default .navbar-nav>li>a{
 		font-size:16px;
@@ -2267,7 +2272,7 @@ li.text-ul h4{
 		font-size:16px;
 	}
 	span.pst{
-	top:197px;
+	top:157px;
 	left:36%;
 	}
 	ul.traits-text li h3{
