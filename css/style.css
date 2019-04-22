@@ -2974,10 +2974,11 @@ justify-content:center}
 }
 #google_translate_element{
 background:#FFF;
-border-top:3px solid #F789DB;
-border-left:3px solid #F789DB;
-border-bottom:3px solid #F789DB;
-}
+border:3px solid #F789DB}
+@media (min-width: 1175px){
+#google_translate_element{
+border-right:0
+}}
 @keyframes paw-move{
   from{
     opacity:1}
