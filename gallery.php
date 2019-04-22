@@ -57,9 +57,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				.keyup(resizeInput)
 				// resize on page load
 				.each(resizeInput);
-
-
-		console.clear();
 		// Adapted from georgepapadakis.me/demo/expanding-textarea.html
 		(function(){
 
