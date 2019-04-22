@@ -2975,6 +2975,7 @@ justify-content:center}
 #google_translate_element{
   width:50px;
 }
+table{display:none}
 @keyframes paw-move{
   from{
     opacity:1}
