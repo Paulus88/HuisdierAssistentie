@@ -1524,7 +1524,7 @@ background:#FFF}
 .products-gallery{
 	margin:0em 0em 5em;
 }
- .caption{
+.caption{
 	text-align:center;
 	padding:25px 20px 0px;
 }
@@ -1643,6 +1643,8 @@ span a.btn.btn-danger.bt{
 .glyphicon-camera.bgtl{
 	background-color:#196ECF;
 }
+#honduit{background:#f3fbfe}
+#oppas{background:#f3fbfe}
 /*--our-products--*/
 /*--logos--*/
 .brand-logo{
