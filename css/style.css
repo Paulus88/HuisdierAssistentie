@@ -2208,7 +2208,7 @@ li.text-ul h4{
 /*--about--*/
 /*--responsive starts here--*/
 .nav-back{
-	background-color:#fff;
+	background:#fff;
 	border:3px solid #41c5f2;
 }
 .navbar-default{
@@ -2974,6 +2974,7 @@ justify-content:center}
 }
 #google_translate_element{
 background:#FFF;
+z-index:10000003;
 border:3px solid #F789DB}
 @keyframes paw-move{
   from{
