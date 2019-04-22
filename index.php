@@ -26,6 +26,14 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
 }
 </script>
+<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+<script>
+ grecaptcha.ready(function() {
+     grecaptcha.execute('6LcCf58UAAAAAJLWAMjVXDogXgnxS1XdHNAPfh3O', {action: 'homepage'}).then(function(token) {
+        ...
+     });
+ });
+</script>
 <script type="text/javascript" src="js/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
