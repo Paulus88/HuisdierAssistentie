@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="nl">
 	<head>
-		<script src="js/0.js"></script>
 		<title>Huisdier Assistentie</title>
+    <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/0.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
@@ -17,24 +19,9 @@
 		<meta name="author" content="Paul Hemmens">
 		<meta name="google-site-verification" content="As4mVIoQo0LnYsKfy8QMcJ0dnjGInu8cznh25sJmKEU" />
 		<meta name="msvalidate.01" content="6A0A2BE320F97CCC6F544BDB772E9258" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'nl'}, 'google_translate_element');
-}
-</script>
-<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-<script>
- grecaptcha.ready(function() {
-     grecaptcha.execute('6LcCf58UAAAAAJLWAMjVXDogXgnxS1XdHNAPfh3O', {action: 'homepage'}).then(function(token) {
-        ...
-     });
- });
-</script>
-<script type="text/javascript" src="js/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){
