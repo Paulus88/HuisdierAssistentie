@@ -2973,7 +2973,8 @@ justify-content:center}
   animation-delay:4s;
 }
 #google_translate_element{
-  height:20px;
+background:#FFF;
+border-bottom:3px solid #F789DB;
 }
 @keyframes paw-move{
   from{
