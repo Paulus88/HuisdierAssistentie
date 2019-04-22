@@ -2267,8 +2267,8 @@ li.text-ul h4{
 		font-size:16px;
 	}
 	span.pst{
-		top:34%;
-		left:36%;
+	top:197px;
+	left:36%;
 	}
 	ul.traits-text li h3{
 		font-size:4em;
@@ -2328,8 +2328,8 @@ li.text-ul h4{
 		margin:0px 0px 20px;
 	}
 	span.pst{
-		top:53%;
-		left:42%;
+	top:197px;
+	left:42%;
 	}
 	.products-gallery h2{
 		padding:0.8em 0em;
@@ -2488,8 +2488,8 @@ li.text-ul h4{
 		margin:0;
 	}
 	span.pst{
-		top:45%;
-		left:39%;
+	top:197px;
+	left:39%;
 	}
 	.tt ol{
 		padding:0px 30px 15px;
@@ -2513,9 +2513,9 @@ li.text-ul h4{
 		font-size:1.1em;
 	}
 	span.pst{
-		top:38%;
-		left:39%;
-		padding:17px 17px;
+	top:197px;
+	left:39%;
+	padding:17px 17px;
 	}
 	.brk{
 		width:100%;
@@ -2542,9 +2542,9 @@ li.text-ul h4{
 		padding:20px 11px 0px;
 	}
 	span.pst{
-		top:37%;
-		left:39%;
-		padding:15px 15px;
+	top:197px;
+	left:39%;
+	padding:15px 15px;
 	}
 	.products-gallery h2{
 		font-size:2.3em;
@@ -2653,8 +2653,8 @@ li.text-ul h4{
 		margin-left:20px;
 	}
 	span.pst{
-		top:52%;
-		left:42%;
+	top:197px;
+	left:42%;
 	}
 	ul.traits-text li h3{
 		font-size:2em;
@@ -2711,8 +2711,8 @@ li.text-ul h4{
 }
 @media screen and (max-width:384px){
 	span.pst{
-		top:49%;
-		left:42%;
+	top:197px;
+	left:42%;
 	}
 	.bgtl{
 		font-size:35px;
@@ -2775,8 +2775,8 @@ li.text-ul h4{
 		font-size:1.9em;
 	}
 	span.pst{
-		top:43%;
-		left:42%;
+	top:197px;
+	left:42%;
 	}
 	.arr{
 		margin-bottom:10px;
@@ -2788,7 +2788,7 @@ li.text-ul h4{
 		font-size:0.877em;
 	}
 	span.pst{
-		top:46%
+	top:197px;
 	}
 	ul.traits-text li p{
 		font-size:1em;
