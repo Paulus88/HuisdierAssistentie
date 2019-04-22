@@ -209,7 +209,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
 							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a></p>
-							<p>Prijs: €10,- per uur</p>
+              <div class="client-btn">
+              	  <a class="scroll" href="#hondenuit">Meer informatie</a>
+              </div>
 						</div>
 						</div>
 					</div>
@@ -220,7 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <div class="caption">
 							<h3>Huisbezoek</h3>
 							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact">Contact</a></p>
-							<p>Prijs: €4,-</p>
+              <div class="client-btn">
+              	  <a class="scroll" href="#hondoppas">Meer informatie</a>
+              </div>
 						  </div>
 						</div>
 					</div>
@@ -231,7 +235,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <div class="caption">
 							<h3>Dierenoppas</h3>
 							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact">Contact</a></p>
-							<p>Prijs: €15,- (van 0 tot 8 uur) Daarna is het per 15 minuten €1,-</p>
+              <div class="client-btn">
+              	  <a class="scroll" href="#oppas">Meer informatie</a>
+              </div>
 						  </div>
 						</div>
 					</div>
@@ -242,16 +248,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <div class="caption">
 							<h3>Verblijf</h3>
 							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a></p>
-							<p>Prijs: is in overleg</p>
+              <div class="client-btn">
+              	  <a class="scroll" href="#verblijf">Meer informatie</a>
+              </div>
 						  </div>
 						 </div>
 					</div>
 					<div class="clearfix"></div>
 				</div>
-					<div class="traits-technology">
+					<div id="hondenuit">
 						<div class="col-md-8 tt">
 							<ul class="traits-text">
-								<li><h3>Wat maakt mij anders?</h3></li>
+								<li><h3>Hondenuitlaatservice</h3></li>
 								<li><p><b style="font-weight:600;">Lorem Ipsum is simply dummy text of the printing</b></p></li>
 								<li><p>There are many variations of passages of Lorem Ipsum available,<br>
 								but the majority have suffered alteration in some form, by injected humour,<br>
