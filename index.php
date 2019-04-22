@@ -60,7 +60,7 @@ window.onload = init;
 </div></div>
 </div>
 <div class="logo" id="myHeader">
-		<span><img class="welkom" src="images/welkom-150.png" alt="Huisdier Assistentie"></img></span><a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><div class="bel">Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a><div id="google_translate_element"></div></div>
+		<span><img class="welkom" src="images/welkom-150.png" alt="Huisdier Assistentie"></img></span><a href=""><h1><span class="hlh">Huisdier </span><span class="hlf">Assistentie</span></a></h1><div class="bel">Bel: <a href="tel:+31657941463">+31 6 57 94 14 63</a><br />E-Mail: <a href="mailto:info@huisdierassistentie.nl" alt="E-Mail">info@huisdierassistentie.nl</a></div>
 </div>
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBZ3D9T"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -503,6 +503,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 		  }
 		}
 </script>
+<div id="google_translate_element"></div>
 		<a href="#to-top" id="toTop" class="scroll" style="display:block;"><span id="toTopHover" style="opacity:1;"></span></a>
 		<script type="text/javascript">
 		    (function () {
