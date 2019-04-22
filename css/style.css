@@ -2974,6 +2974,8 @@ justify-content:center}
 }
 #google_translate_element{
 background:#FFF;
+border-top:3px solid #F789DB;
+border-left:3px solid #F789DB;
 border-bottom:3px solid #F789DB;
 }
 @keyframes paw-move{
