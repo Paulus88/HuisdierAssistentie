@@ -257,7 +257,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="clearfix"></div>
 				</div></div>
         <div class="services">
-        	<div class="container">
         		<div id="hondenuit">
         			<h2>Hondenuitlaatservice</h2>
         			<div class="about-bottom">
@@ -432,7 +431,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  <div class="clearfix">  </div>
         		</div></div>
         	</div>
-        </div>
 		<!--content-ends-->
 </div>
 <!--services end here-->
