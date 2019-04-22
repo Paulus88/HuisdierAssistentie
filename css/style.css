@@ -2972,6 +2972,9 @@ justify-content:center}
   animation:5s paw-move alternate infinite;
   animation-delay:4s;
 }
+#google_translate_element{
+  width:50px;
+}
 @keyframes paw-move{
   from{
     opacity:1}
