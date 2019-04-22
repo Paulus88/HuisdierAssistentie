@@ -1462,7 +1462,7 @@ body{
 	margin:0;
 	background:#FFF;
   padding:10px;
-	z-index:10000;
+	z-index:10000002;
 	border-bottom:3px solid #F789DB;
 	display:block
 }
@@ -2973,9 +2973,8 @@ justify-content:center}
   animation-delay:4s;
 }
 #google_translate_element{
-  width:50px;
+  height:20px;
 }
-.goog-te-banner-frame{visibility:hidden}
 @keyframes paw-move{
   from{
     opacity:1}
