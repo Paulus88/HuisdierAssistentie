@@ -2259,7 +2259,7 @@ li.text-ul h4{
 		padding:0.5em 0em;
 	}
 }
-@media (min-width:1200px){
+@media (max-width:1200px){
   span.pst{
 	top:156px
 	left:36%;
