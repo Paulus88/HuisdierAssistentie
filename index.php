@@ -2,6 +2,7 @@
 <html lang="nl">
 	<head>
 		<title>Huisdier Assistentie</title>
+    <script src="js/pace.js"></script>
     <script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/0.js"></script>
