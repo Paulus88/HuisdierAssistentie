@@ -2977,7 +2977,7 @@ background:#FFF;
 border:3px solid #F789DB}
 @media (min-width: 1175px){
 #google_translate_element{
-border-right:0
+border-right:3px #000
 }}
 @keyframes paw-move{
   from{
