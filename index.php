@@ -415,7 +415,7 @@ De naam van mijn <label for="huisdier">huisdier'en</label> zijn
 de <label for="soort">soort</label> is als volgt
     <input type="text" name="soort" id="soort" minlength="1" placeholder="(hond, kat, konijn...)">,<br />
 de <label for="ras">ras</label> is als volgt
-    <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, lotharinger...)"><br />
+    <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, wener...)"><br />
 en dit is mijn <label for="your-message">bericht</label>,
     <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
   <br />
