@@ -2975,7 +2975,7 @@ justify-content:center}
 #google_translate_element{
   width:50px;
 }
-table{display:none}
+.goog-te-banner-frame{visibility:hidden}
 @keyframes paw-move{
   from{
     opacity:1}
