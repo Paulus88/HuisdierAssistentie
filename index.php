@@ -256,8 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="clearfix"></div>
 				</div></div>
-        <div class="services">
-        		<div id="hondenuit">
+        <div class="services" id="hondenuit">
         			<h2>Hondenuitlaatservice</h2>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
@@ -299,9 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  </div>
         		  <div class="clearfix">  </div>
         		</div>
-          </div>
-          <div class="services">
-            <div id="bezoek">
+          <div class="services" id="bezoek">
         			<h2>Huisbezoek</h2>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
@@ -343,9 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  </div>
         		  <div class="clearfix">  </div>
         		</div>
-          </div>
-          <div class="services">
-            <div id="oppas">
+          <div class="services" id="oppas">
         			<h2>Dierenoppas</h2>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
@@ -387,8 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		  </div>
         		  <div class="clearfix">  </div>
         		</div></div>
-      			<div class="services">
-            <div id="verblijf">
+      			<div class="services" id="verblijf">
         			<h2>Verblijf</h2>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
@@ -429,8 +423,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         		  </div>
         		  <div class="clearfix">  </div>
-        		</div></div>
-        	</div>
+        		</div>
 		<!--content-ends-->
 </div>
 <!--services end here-->
