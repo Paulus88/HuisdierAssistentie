@@ -210,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<h3>Hondenuitlaatservice</h3>
 							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a>
               <div class="client-btn">
-              	  <a class="scroll" href="#hondenuit">Meer informatie</a>
+              	  <a class="scroll" href="#honduitlaat">Meer informatie</a>
               </div></p>
 						</div>
 						</div>
@@ -256,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="clearfix"></div>
 				</div></div>
-        <div class="services" id="hondenuit">
+        <div class="services" id="honduitlaat">
         			<h2>Hondenuitlaatservice</h2>
         			<div class="about-bottom">
         			<div class="col-md-6 about-left">
