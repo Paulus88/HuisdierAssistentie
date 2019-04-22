@@ -217,13 +217,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="col-md-3 arr">
 						<div class="bg">
-						  <img src="images/o.jpg" onmouseover='this.src = this.src.replace("images/o.jpg","images/o.gif")' alt="Hondenoppas" class="img-responsive">
+						  <img src="images/o.jpg" onmouseover='this.src = this.src.replace("images/o.jpg","images/o.gif")' alt="Huisbezoek" class="img-responsive">
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Huisbezoek</h3>
 							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact">Contact</a></p>
               <div class="client-btn">
-              	  <a class="scroll" href="#hondoppas">Meer informatie</a>
+              	  <a class="scroll" href="#bezoek">Meer informatie</a>
               </div>
 						  </div>
 						</div>
@@ -256,51 +256,178 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="clearfix"></div>
 				</div>
-					<div id="hondenuit">
-						<div class="col-md-8 tt">
-							<ul class="traits-text">
-								<li><h3>Hondenuitlaatservice</h3></li>
-								<li><p><b style="font-weight:600;">Lorem Ipsum is simply dummy text of the printing</b></p></li>
-								<li><p>There are many variations of passages of Lorem Ipsum available,<br>
-								but the majority have suffered alteration in some form, by injected humour,<br>
-								or randomised words which don"t look even slightly believable.</p></li>
-							</ul>
-							<ol>
-								<div class="col-md-6 brk">
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								</div>
-								<div class="col-md-6 brk">
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								<li><a href="#">Lorem Ipsum is simply dummy text.</a></li>
-								</div>
-								<div class="clearfix"></div>
-							</ol>
-							<span><a href="#" class="btn btn-danger bt" role="button">More</a></span>
-						</div>
-						<div class="col-md-4 tt">
-							<div class="traits-logos">
-								<div class="col-xs-6 col-md-6 tt brk2">
-									<span class="glyphicon glyphicon-leaf bgtl" aria-hidden="true"></span>
-								</div>
-								<div class="col-xs-6 col-md-6 tt brk2">
-									<span class="glyphicon glyphicon-grain bgtl" aria-hidden="true"></span>
-								</div>
-								<div class="col-xs-6 col-md-6 tt brk2">
-									<span class="glyphicon glyphicon-fire bgtl" aria-hidden="true"></span>
-								</div>
-								<div class="col-xs-6 col-md-6 tt brk2">
-									<span class="glyphicon glyphicon-camera bgtl" aria-hidden="true"></span>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-			</div>
-		</div>
+        <div class="services">
+        	<div class="container">
+        		<div id="hondenuit">
+        			<h2>Hondenuitlaatservice</h2>
+        			<div class="about-bottom">
+        			<div class="col-md-6 about-left">
+        				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
+        			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+        			</div>
+        			<div class="col-md-6 about-right">
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Eerste ontmoeting</h4>
+        			    		<p>Ik sta open om langs te komen, voor een goed gesprek en wat uw wensen zijn.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid ab-more">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Prijs</h4>
+        			    		<p>Ik vraag niet veel voor het oppassen. Voor meer informatie ga naar <a class="scroll" href="#service">Mijn Diensten</a>.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Buiten Hilversum</h4>
+        			    		<p>Buiten Hilversum vraag ik wel reisvergoeding.</p>
+        			    	</div>
+        			       <div class="clearfix">  </div>
+        			    </div>
+        			</div>
+        		  </div>
+        		  <div class="clearfix">  </div>
+        		</div>
+            <div id="bezoek">
+        			<h2>Huisbezoek</h2>
+        			<div class="about-bottom">
+        			<div class="col-md-6 about-left">
+        				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
+        			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+        			</div>
+        			<div class="col-md-6 about-right">
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Eerste ontmoeting</h4>
+        			    		<p>Ik sta open om langs te komen, voor een goed gesprek en wat uw wensen zijn.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid ab-more">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Prijs</h4>
+        			    		<p>Ik vraag niet veel voor het oppassen. Voor meer informatie ga naar <a class="scroll" href="#service">Mijn Diensten</a>.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Buiten Hilversum</h4>
+        			    		<p>Buiten Hilversum vraag ik wel reisvergoeding.</p>
+        			    	</div>
+        			       <div class="clearfix">  </div>
+        			    </div>
+        			</div>
+        		  </div>
+        		  <div class="clearfix">  </div>
+        		</div>
+            <div id="oppas">
+        			<h2>Dierenoppas</h2>
+        			<div class="about-bottom">
+        			<div class="col-md-6 about-left">
+        				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
+        			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+        			</div>
+        			<div class="col-md-6 about-right">
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Eerste ontmoeting</h4>
+        			    		<p>Ik sta open om langs te komen, voor een goed gesprek en wat uw wensen zijn.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid ab-more">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Prijs</h4>
+        			    		<p>Ik vraag niet veel voor het oppassen. Voor meer informatie ga naar <a class="scroll" href="#service">Mijn Diensten</a>.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Buiten Hilversum</h4>
+        			    		<p>Buiten Hilversum vraag ik wel reisvergoeding.</p>
+        			    	</div>
+        			       <div class="clearfix">  </div>
+        			    </div>
+        			</div>
+        		  </div>
+        		  <div class="clearfix">  </div>
+        		</div>
+            <div id="verblijf">
+        			<h2>Verblijf</h2>
+        			<div class="about-bottom">
+        			<div class="col-md-6 about-left">
+        				<p>Ik zal me eerst voorstellen. Ik ben Tugba, 26 jaar jong en woon in Hilversum/ t'Gooi.</p>
+        			    <p> Ik heb een brede interesse voor dieren, vooral voor honden :-) Ik heb ruime ervaring met honden van diverse rassen en een aantal andere huisdieren. Graag zou ik u willen steunen met uw huisdier om het voor u makkelijker te maken.</p>
+        			</div>
+        			<div class="col-md-6 about-right">
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Eerste ontmoeting</h4>
+        			    		<p>Ik sta open om langs te komen, voor een goed gesprek en wat uw wensen zijn.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid ab-more">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Prijs</h4>
+        			    		<p>Ik vraag niet veel voor het oppassen. Voor meer informatie ga naar <a class="scroll" href="#service">Mijn Diensten</a>.</p>
+        			    	</div>
+        			      <div class="clearfix">  </div>
+        			    </div>
+        			    <div class="about-grid">
+        			    	<div class="about-box">
+        			    		<h5><span class="ab-box">  </span></h5>
+        			    	</div>
+        			    	<div class="about-text">
+        			    		<h4>Buiten Hilversum</h4>
+        			    		<p>Buiten Hilversum vraag ik wel reisvergoeding.</p>
+        			    	</div>
+        			       <div class="clearfix">  </div>
+        			    </div>
+        			</div>
+        		  </div>
+        		  <div class="clearfix">  </div>
+        		</div>
+        	</div>
+        </div>
 		<!--content-ends-->
 </div>
 <!--services end here-->
