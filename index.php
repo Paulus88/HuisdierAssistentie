@@ -1,8 +1,8 @@
 <?php
-$honduitlaat="Beste Huisdier Assistentie,\r\nIk heb interesse in uw Hondenuitlaatservice, ";
-$bezoek="Beste Huisdier Assistentie,\r\nIk heb interesse in uw Huisbezoek service, ";
-$oppas="Beste Huisdier Assistentie,\r\nIk heb interesse in uw Dierenoppas service, ";
-$verblijf="Beste Huisdier Assistentie,\r\nIk heb interesse in uw Verblijf service, ";
+$honduitlaat="Beste Huisdier Assistentie,&#13;&#10;Ik heb interesse in uw Hondenuitlaatservice, ";
+$bezoek="Beste Huisdier Assistentie,&#13;&#10;Ik heb interesse in uw Huisbezoek service, ";
+$oppas="Beste Huisdier Assistentie,&#13;&#10;Ik heb interesse in uw Dierenoppas service, ";
+$verblijf="Beste Huisdier Assistentie,&#13;&#10;Ik heb interesse in uw Verblijf service, ";
 ?>
 <!doctype html>
 <html lang="nl">
