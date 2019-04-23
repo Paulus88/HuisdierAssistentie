@@ -214,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
-							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij<br /><a class="scroll" href="#contact" onclick="<?php $message=$honduitlaat ?>">Contact</a>
+							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact" onclick="<?php $message=$honduitlaat ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#honduitlaat">Meer informatie</a>
               </div></p>
@@ -227,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Huisbezoek</h3>
-							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact">Contact</a>
+							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact" onclick="<?php $message=$bezoek ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#bezoek">Meer informatie</a>
               </div></p>
@@ -240,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Dierenoppas</h3>
-							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact">Contact</a>
+							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact" onclick="<?php $message=$oppas ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#oppas">Meer informatie</a>
               </div></p>
@@ -253,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Verblijf</h3>
-							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact">Contact</a>
+							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact" onclick="<?php $message=$verblijf ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#verblijf">Meer informatie</a>
               </div></p>
