@@ -1,9 +1,3 @@
-<?php
-$honduitlaat="Beste Huisdier Assistentie,\nIk heb interesse in uw Hondenuitlaatservice, "
-$bezoek="Beste Huisdier Assistentie,\nIk heb interesse in uw Huisbezoek service, "
-$oppas="Beste Huisdier Assistentie,\nIk heb interesse in uw Dierenoppas service, "
-$verblijf="Beste Huisdier Assistentie,\nIk heb interesse in uw Verblijf service, "
-?>
 <!doctype html>
 <html lang="nl">
 	<head>
@@ -55,6 +49,12 @@ vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
 } } }
 window.onload = init;
 </script>
+<?php
+$honduitlaat="Beste Huisdier Assistentie,\nIk heb interesse in uw Hondenuitlaatservice, "
+$bezoek="Beste Huisdier Assistentie,\nIk heb interesse in uw Huisbezoek service, "
+$oppas="Beste Huisdier Assistentie,\nIk heb interesse in uw Dierenoppas service, "
+$verblijf="Beste Huisdier Assistentie,\nIk heb interesse in uw Verblijf service, "
+?>
 </head>
 <body>
 <div class="pre-loader"><div class="loader">
