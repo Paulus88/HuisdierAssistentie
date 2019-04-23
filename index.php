@@ -214,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
-							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact" onclick="<?php $message=$honduitlaat ?>">Contact</a>
+							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact" onclick="<?php $message=$honduitlaat; ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#honduitlaat">Meer informatie</a>
               </div></p>
@@ -227,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Huisbezoek</h3>
-							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact" onclick="<?php $message=$bezoek ?>">Contact</a>
+							<p>Bent u niet in de gelegenheid of heeft u gewoon extra toezicht nodig op uw huisdier?<br />Dan bied ik mij zelf aan om een korte bezoekje te doen.<br /><a class="scroll" href="#contact" onclick="<?php $message=$bezoek; ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#bezoek">Meer informatie</a>
               </div></p>
@@ -240,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Dierenoppas</h3>
-							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact" onclick="<?php $message=$oppas ?>">Contact</a>
+							<p>Wilt u een dagje uit of heeft u een belangerijke afspraak?<br />Neem dan gerust contact op <a class="scroll" href="#contact" onclick="<?php $message=$oppas; ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#oppas">Meer informatie</a>
               </div></p>
@@ -253,7 +253,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Verblijf</h3>
-							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact" onclick="<?php $message=$verblijf ?>">Contact</a>
+							<p><br />Ik zorg graag voor ze bij ons thuis of bij uw thuis<br />Interesse? Neem contact op met ons <a class="scroll" href="#contact" onclick="<?php $message=$verblijf; ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#verblijf">Meer informatie</a>
               </div></p>
@@ -554,7 +554,7 @@ de <label for="soort">soort</label> is als volgt
 de <label for="ras">ras</label> is als volgt
     <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, wener...)"><br />
 en dit is mijn <label for="your-message">bericht</label>,
-    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required><?php echo nl2br("$message") ?></textarea>
+    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required><?php echo nl2br("$message"); ?></textarea>
   <br />
     <center><button type="submit">
       <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
