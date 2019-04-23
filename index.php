@@ -1,3 +1,9 @@
+<?php
+$honduitlaat="Beste Huisdier Assistentie,\nIk heb interesse in uw Hondenuitlaatservice, "
+$bezoek="Beste Huisdier Assistentie,\nIk heb interesse in uw Huisbezoek service, "
+$oppas="Beste Huisdier Assistentie,\nIk heb interesse in uw Dierenoppas service, "
+$verblijf="Beste Huisdier Assistentie,\nIk heb interesse in uw Verblijf service, "
+?>
 <!doctype html>
 <html lang="nl">
 	<head>
@@ -208,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						  <span class="glyphicon glyphicon-heart pst" aria-hidden="true"></span>
 						  <div class="caption">
 							<h3>Hondenuitlaatservice</h3>
-							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij <a class="scroll" href="#contact">Contact</a>
+							<p>Heeft u even geen tijd om u beste vriend uit te laten?<br />Ik help graag een handje<br />Interesse? Neem contact op met mij<br /><a class="scroll" href="#contact" onclick="<?php $message=$honduitlaat ?>">Contact</a>
               <div class="client-btn">
               	  <a class="scroll" href="#honduitlaat">Meer informatie</a>
               </div></p>
@@ -486,7 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="gallery-main">
 			<h2>Gallery</h2>
 <iframe src="gallery.php" onload="resizeIframe(this)" style="top:0px; left:0px; bottom:0px; right:0px; border:none; margin:0; padding:0; overflow:hidden; z-index:999999; width:100%">
-    Jou browser onderstend geen iframes, ga naar
+    Jou browser onderstend geen iframes
 </iframe>
 	</div>
 </div>
@@ -528,7 +534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="services" id="contact">
 		<div class="contact-main">
 			<h2>Contact</h2>
-<form id="contact-form" method=POST action="duif.php" enctype="text/php">
+<form id="contact-form" method=POST action="duif.php" enctype="text/php" autocomplete="on">
 			<div class="book">
 			<div class="form">
   <p>Beste Huisdier Assistentie,<br />
@@ -548,7 +554,7 @@ de <label for="soort">soort</label> is als volgt
 de <label for="ras">ras</label> is als volgt
     <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, wener...)"><br />
 en dit is mijn <label for="your-message">bericht</label>,
-    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
+    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required><?php echo nl2br("$message")?></textarea>
   <br />
     <center><button type="submit">
       <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
