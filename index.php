@@ -554,7 +554,7 @@ de <label for="soort">soort</label> is als volgt
 de <label for="ras">ras</label> is als volgt
     <input type="text" name="ras" id="ras" minlength="1" placeholder="(bulldog, pers, wener...)"><br />
 en dit is mijn <label for="your-message">bericht</label>,
-    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required><?php echo nl2br("$message"); ?></textarea>
+    <textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required><?php #echo nl2br("$message"); ?></textarea>
   <br />
     <center><button type="submit">
       <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
