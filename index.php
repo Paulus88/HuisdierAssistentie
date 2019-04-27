@@ -517,41 +517,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!--brand-logos-->
 			<div class="brand-logo">
 				<div class="container">
-          <div id="text-carousel" class="carousel slide" data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="row">
-                  <div class="col-xs-offset-3 col-xs-6">
-                      <div class="carousel-inner">
-                          <div class="item active">
-                              <div class="carousel-content">
-                                  <div>
-                                      <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <div class="carousel-content">
-                                  <div>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <div class="carousel-content">
-                                  <div>
-                                      <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
-                                  </div>
-                              </div>
-                          </div>
-
-                      </div>
-                  </div>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                hello
               </div>
-              <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
+              <div class="carousel-item">
+                hello
+              </div>
+              <div class="carousel-item">
+                hello
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
             </a>
-           <a class="right carousel-control" href="#text-carousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
             </a>
           </div>
 					<div class="clearfix"></div>
