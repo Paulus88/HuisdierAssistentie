@@ -519,29 +519,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <!-- Wrapper for slides -->
 		    <div class="row">
 		        <div class="col-xs-offset-3 col-xs-6">
+							<h3 class="w3layouts_head wthree_head">Our <span>Customers</span> Say's</h3>
 		            <div class="carousel-inner">
 		                <div class="item active">
 		                    <div class="carousel-content">
-		                        <div>
-		                            <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
-		                        </div>
+													<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
+														non laoreet dolor.</p>
+													<h4>Laura Lii</h4>
+													<h5>Student</h5>
+													<div class="w3l_testimonial_grid_pos">
+														<img src="images/4.png" alt=" " class="img-responsive">
+													</div>
 		                    </div>
 		                </div>
 		                <div class="item">
 		                    <div class="carousel-content">
-		                        <div>
-		                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
-		                        </div>
+													<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
+														non laoreet dolor.</p>
+													<h4>Laura Lii</h4>
+													<h5>Student</h5>
+													<div class="w3l_testimonial_grid_pos">
+														<img src="images/4.png" alt=" " class="img-responsive">
+													</div>
 		                    </div>
 		                </div>
 		                <div class="item">
 		                    <div class="carousel-content">
-		                        <div>
-		                            <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
-		                        </div>
+													<p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
+														non laoreet dolor.</p>
+													<h4>Laura Lii</h4>
+													<h5>Student</h5>
+													<div class="w3l_testimonial_grid_pos">
+														<img src="images/4.png" alt=" " class="img-responsive">
+													</div>
 		                    </div>
 		                </div>
-
 		            </div>
 		        </div>
 		    </div>
