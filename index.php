@@ -515,19 +515,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <iframe src="//www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d130517.33373183105!2d5.016273187800884!3d52.24767695481527!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c643ebada6a5f7%3A0x1c1f3931512f9233!2sHilversum%2C+Nederland!5e0!3m2!1snl!2snl!4v1501741224714" allowfullscreen></iframe>
 <!--map end here-->
 		<!--brand-logos-->
-			<div class="brand-logo">
-				<div class="container">
-					<div class="col-md-3 arr">
-					</div>
-					<div class="col-md-3 arr">
-					</div>
-					<div class="col-md-3 arr">
-					</div>
-					<div class="col-md-3 arr">
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
+		<div id="text-carousel" class="carousel slide" data-ride="carousel">
+		    <!-- Wrapper for slides -->
+		    <div class="row">
+		        <div class="col-xs-offset-3 col-xs-6">
+		            <div class="carousel-inner">
+		                <div class="item active">
+		                    <div class="carousel-content">
+		                        <div>
+		                            <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <div class="carousel-content">
+		                        <div>
+		                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sint fuga temporibus nam saepe delectus expedita vitae magnam necessitatibus dolores tempore consequatur dicta cumque repellendus eligendi ducimus placeat! </p>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <div class="carousel-content">
+		                        <div>
+		                            <p>Sapiente, ducimus, voluptas, mollitia voluptatibus nemo explicabo sit blanditiis laborum dolore illum fuga veniam quae expedita libero accusamus quas harum ex numquam necessitatibus provident deleniti tenetur iusto officiis recusandae corporis culpa quaerat?</p>
+		                        </div>
+		                    </div>
+		                </div>
+
+		            </div>
+		        </div>
+		    </div>
+		    <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		 <a class="right carousel-control" href="#text-carousel" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div>
 		</div>
 <!--brand-ends-->
 <!--contact start here-->

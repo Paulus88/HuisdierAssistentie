@@ -2998,3 +2998,14 @@ border:3px solid #F789DB}
       right:100%;
       width:100%;
       height:3px}
+      .carousel-content {
+          color:black;
+          display:flex;
+          align-items:center;
+      }
+
+      #text-carousel {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+      }
