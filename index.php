@@ -521,48 +521,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		        <div class="col-xs-offset-3 col-xs-6">
 							<h3 class="w3layouts_head wthree_head"><h2>Mijn Klanten Zeggen</h2>
 		            <div class="carousel-inner">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<img src="images/t1.jpg" alt=" " class="img-responsive" />
-
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Sara Lisbon</h6>
-											</div>
-										</div>
-									</blockquote>
-								</div>
-								<!-- Quote 2 -->
-								<div class="item">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<img src="images/t2.jpg" alt=" " class="img-responsive" />
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Jane Wearne</h6>
-											</div>
-										</div>
-									</blockquote>
-								</div>
-								<!-- Quote 3 -->
-								<div class="item">
-									<blockquote>
-										<div class="test_grid">
-											<div class="col-sm-3 text-center test_img">
-												<img src="images/t3.jpg" alt=" " class="img-responsive" />
-											</div>
-											<div class="col-sm-9 test_img_info">
-												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-													auctor nec lacus ut tempor. Mauris.</p>
-												<h6>Alice Williams</h6>
-											</div>
-										</div>
+		                <div class="item active">
+		                    <div class="carousel-content">
+													<blockquote>
+															<div class="test_grid">
+																<div class="col-sm-3 text-center test_img">
+																	<img src="images/t1.jpg" alt=" " class="img-responsive" />
+																</div>
+																<div class="col-sm-9 test_img_info">
+																	<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+																		auctor nec lacus ut tempor. Mauris.</p>
+																	<h6>Sara Lisbon</h6>
+																</div>
+															</div>
+														</blockquote>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <div class="carousel-content">
+													<blockquote>
+														<div class="test_grid">
+															<div class="col-sm-3 text-center test_img">
+																<img src="images/t2.jpg" alt=" " class="img-responsive" />
+															</div>
+															<div class="col-sm-9 test_img_info">
+																<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+																	auctor nec lacus ut tempor. Mauris.</p>
+																<h6>Jane Wearne</h6>
+															</div>
+														</div>
+													</blockquote>
+		                    </div>
+		                </div>
 		            </div>
 		        </div>
 		    </div>
