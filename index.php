@@ -556,12 +556,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		            </div>
 		        </div>
 		    </div>
-		    <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		  </a>
-		 <a class="right carousel-control" href="#text-carousel" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		  </a>
+				<a class="carousel-control left" href="#text-carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control right" href="#text-carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
 		</div>
 		</div>
 <!--brand-ends-->
