@@ -521,50 +521,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		        <div class="col-xs-offset-3 col-xs-6">
 							<h3 class="w3layouts_head wthree_head"><h2>Mijn Klanten Zeggen</h2>
 		            <div class="carousel-inner">
-									<div class="col-lg-6 clients-w3layouts-row">
-										 <div class="least-w3layouts-text-gap">
-												<div class="row">
-													 <div class="col-md-4 col-sm-4 news-img">
-															<img src="images/t1.jpg" alt="" class="image-fluid">
-													 </div>
-													 <div class="col-md-8 col-sm-8 clients-says-w3layouts">
-															<h4>Milky Deo
-															</h4>
-															<span class="mt-2">Duis posuere</span>
-													 </div>
-													 <div class="mt-3 news-agile-text">
-															<img src="images/tt1.jpg" alt="" class="image-fluid">
-															<p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																 ex in mollis iaculis. Suspendisse tincidunt
-																 velit sagittis vehicula. Duis posuere
-																 velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-															</p>
-													 </div>
-												</div>
-										 </div>
-									</div>
-									<div class="col-lg-6 clients-w3layouts-row">
-										 <div class="least-w3layouts-text-gap">
-												<div class="row">
-													 <div class="col-md-4 col-sm-4 news-img">
-															<img src="images/t2.jpg" alt="" class="image-fluid">
-													 </div>
-													 <div class="col-md-8 col-sm-8 clients-says-w3layouts">
-															<h4>Sam Deo
-															</h4>
-															<span class="mt-2">Duis posuere</span>
-													 </div>
-													 <div class="mt-3 news-agile-text">
-															<img src="images/tt2.jpg" alt="" class="image-fluid">
-															<p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																 ex in mollis iaculis. Suspendisse tincidunt
-																 velit sagittis vehicula. Duis posuere
-																 velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-															</p>
-													 </div>
-												</div>
-										 </div>
-									</div>
+		                <div class="item active">
+											<nav>
+												<ul class="nav navbar-nav">
+													<li><a href="index.html" class="active">Home</a></li>
+													<li class="dropdown">
+														<a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+														<ul class="dropdown-menu">
+															<li><a href="services.html">Services</a></li>
+															<li class="divider"></li>
+															<li><a href="know.html">Knowledge Base</a></li>
+															<li class="divider"></li>
+															<li><a class="s-menu" href="stories.html">Customers <b class="fa fa-caret-right"></b></a>
+																<ul class="dropdown-menu sub-menu">
+																	<li><a href="stories.html">Customer Stories</a></li>
+																	<li class="divider"></li>
+																	<li><a href="reviews.html">Reviews</a></li>
+																</ul>
+															</li>
+
+														</ul>
+													</li>
+													<li class="dropdown">
+														<a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+														<ul class="dropdown-menu">
+															<li><a href="codes.html">Codes</a></li>
+															<li class="divider"></li>
+															<li><a href="icons.html">Icons</a></li>
+															<li class="divider"></li>
+															<li><a href="single.html">One more link</a></li>
+														</ul>
+													</li>
+													<li><a href="plans.html">Plans</a></li>
+													<li><a href="blog.html">Blog</a></li>
+													<li><a href="mail.html">Mail Us</a></li>
+												</ul>
+											</nav>
 		            </div>
 		        </div>
 		    </div>
