@@ -128,8 +128,7 @@ p{margin:0}
 html,body{
   font-family:Quicksand,sans-serif;
    font-size:100%;
-   background:#fff;
-   font-size:2vw
+   background:#fff
 }
 a,a:visited,a:active{
   transition:0.5s all;
