@@ -531,7 +531,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 																<div class="col-sm-9 test_img_info">
 																	<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 																		auctor nec lacus ut tempor. Mauris.</p>
-																	<h6>Sara Lisbon</h6>
+																	<h5>Sara Lisbon</h5>
 																</div>
 															</div>
 														</blockquote>
@@ -547,7 +547,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 															<div class="col-sm-9 test_img_info">
 																<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 																	auctor nec lacus ut tempor. Mauris.</p>
-																<h6>Jane Wearne</h6>
+																<h5>Jane Wearne</h5>
 															</div>
 														</div>
 													</blockquote>
@@ -627,7 +627,7 @@ en dit is mijn <label for="your-message">bericht</label>,
 							<h4>MENU</h4>
 				<ul>
 					<li><a class="active  scroll" href="#to-top">Home</a></li>
-					<li><a class="scroll" href="#about">Over Ons</a></li>
+					<li><a class="scroll" href="#about">Over Mij</a></li>
 					<li><a class="scroll" href="#service">Diensten</a></li>
 					<li><a class="scroll" href="#team">Team</a></li>
 					<li><a class="scroll" href="#gallery">Gallery</a></li>
