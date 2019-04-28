@@ -521,42 +521,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		        <div class="col-xs-offset-3 col-xs-6">
 							<h3 class="w3layouts_head wthree_head"><h2>Mijn Klanten Zeggen</h2>
 		            <div class="carousel-inner">
-		                <div class="item active">
-											<nav>
-												<ul class="nav navbar-nav">
-													<li><a href="index.html" class="active">Home</a></li>
-													<li class="dropdown">
-														<a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
-														<ul class="dropdown-menu">
-															<li><a href="services.html">Services</a></li>
-															<li class="divider"></li>
-															<li><a href="know.html">Knowledge Base</a></li>
-															<li class="divider"></li>
-															<li><a class="s-menu" href="stories.html">Customers <b class="fa fa-caret-right"></b></a>
-																<ul class="dropdown-menu sub-menu">
-																	<li><a href="stories.html">Customer Stories</a></li>
-																	<li class="divider"></li>
-																	<li><a href="reviews.html">Reviews</a></li>
-																</ul>
-															</li>
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<img src="images/t1.jpg" alt=" " class="img-responsive" />
 
-														</ul>
-													</li>
-													<li class="dropdown">
-														<a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-														<ul class="dropdown-menu">
-															<li><a href="codes.html">Codes</a></li>
-															<li class="divider"></li>
-															<li><a href="icons.html">Icons</a></li>
-															<li class="divider"></li>
-															<li><a href="single.html">One more link</a></li>
-														</ul>
-													</li>
-													<li><a href="plans.html">Plans</a></li>
-													<li><a href="blog.html">Blog</a></li>
-													<li><a href="mail.html">Mail Us</a></li>
-												</ul>
-											</nav>
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+													auctor nec lacus ut tempor. Mauris.</p>
+												<h6>Sara Lisbon</h6>
+											</div>
+										</div>
+									</blockquote>
+								</div>
+								<!-- Quote 2 -->
+								<div class="item">
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<img src="images/t2.jpg" alt=" " class="img-responsive" />
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+													auctor nec lacus ut tempor. Mauris.</p>
+												<h6>Jane Wearne</h6>
+											</div>
+										</div>
+									</blockquote>
+								</div>
+								<!-- Quote 3 -->
+								<div class="item">
+									<blockquote>
+										<div class="test_grid">
+											<div class="col-sm-3 text-center test_img">
+												<img src="images/t3.jpg" alt=" " class="img-responsive" />
+											</div>
+											<div class="col-sm-9 test_img_info">
+												<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+													auctor nec lacus ut tempor. Mauris.</p>
+												<h6>Alice Williams</h6>
+											</div>
+										</div>
 		            </div>
 		        </div>
 		    </div>
