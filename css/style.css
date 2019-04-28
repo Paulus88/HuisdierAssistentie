@@ -113,10 +113,10 @@
     font-style:normal}
 h4,h5,h6,h1,h2,h3{margin-top:0}
 h2{
-  font-size:3vw;
 		text-align:center;
 		font-weight:400;
 		font-size:3em;
+    font-size:3vw;
 		margin:0px;
 		color:#F789DB;
 		padding:1em 0em;
