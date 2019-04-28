@@ -3035,6 +3035,17 @@ border:3px solid #F789DB}
           -o-transition: 0.5s all;
           -ms-transition: 0.5s all;
       }
+      .clients_more-buttn a:hover,.subscrib-btnn:hover,.sent-butnn:hover {background:#fff;
+      color:#000;}
+       .carousel-control-prev {
+          left: -58px;
+      }
+      .carousel-control-next{
+          right: -58px;
+      }
+      .carousel-control-next, .carousel-control-prev {
+          width: 3%;
+      }
       .clients-says-w3layouts span {
           font-size: 13px;
           color: #26bb48;

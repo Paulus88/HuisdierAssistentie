@@ -521,149 +521,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		        <div class="col-xs-offset-3 col-xs-6">
 							<h3 class="w3layouts_head wthree_head"><h2>Mijn Klanten Zeggen</h2>
 		            <div class="carousel-inner">
-									<div class="row">
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t1.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Milky Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt1.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
+									<div class="col-lg-6 clients-w3layouts-row">
+										 <div class="least-w3layouts-text-gap">
+												<div class="row">
+													 <div class="col-md-4 col-sm-4 news-img">
+															<img src="images/t1.jpg" alt="" class="image-fluid">
 													 </div>
-												</div>
-										 </div>
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t2.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Sam Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt2.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
+													 <div class="col-md-8 col-sm-8 clients-says-w3layouts">
+															<h4>Milky Deo
+															</h4>
+															<span class="mt-2">Duis posuere</span>
+													 </div>
+													 <div class="mt-3 news-agile-text">
+															<img src="images/tt1.jpg" alt="" class="image-fluid">
+															<p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
+																 ex in mollis iaculis. Suspendisse tincidunt
+																 velit sagittis vehicula. Duis posuere
+																 velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
+															</p>
 													 </div>
 												</div>
 										 </div>
 									</div>
-							 </div>
-							 <div class="carousel-item">
-									<div class="row">
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t1.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Milky Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt1.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
+									<div class="col-lg-6 clients-w3layouts-row">
+										 <div class="least-w3layouts-text-gap">
+												<div class="row">
+													 <div class="col-md-4 col-sm-4 news-img">
+															<img src="images/t2.jpg" alt="" class="image-fluid">
 													 </div>
-												</div>
-										 </div>
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t3.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Sam Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt1.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
+													 <div class="col-md-8 col-sm-8 clients-says-w3layouts">
+															<h4>Sam Deo
+															</h4>
+															<span class="mt-2">Duis posuere</span>
+													 </div>
+													 <div class="mt-3 news-agile-text">
+															<img src="images/tt2.jpg" alt="" class="image-fluid">
+															<p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
+																 ex in mollis iaculis. Suspendisse tincidunt
+																 velit sagittis vehicula. Duis posuere
+																 velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
+															</p>
 													 </div>
 												</div>
 										 </div>
 									</div>
-							 </div>
-							 <div class="carousel-item">
-									<div class="row">
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t2.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Milky Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt2.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span>  velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
-													 </div>
-												</div>
-										 </div>
-										 <div class="col-lg-6 clients-w3layouts-row">
-												<div class="least-w3layouts-text-gap">
-													 <div class="row">
-															<div class="col-md-4 col-sm-4 news-img">
-																 <img src="images/t3.jpg" alt="" class="image-fluid">
-															</div>
-															<div class="col-md-8 col-sm-8 clients-says-w3layouts">
-																 <h4>Sam Deo
-																 </h4>
-																 <span class="mt-2">Duis posuere</span>
-															</div>
-															<div class="mt-3 news-agile-text">
-																 <img src="images/tt1.jpg" alt="" class="image-fluid">
-																 <p class="mt-3"><span class="fas fa-quote-left"></span> velit sagittis vehicula. Duis posuere
-																		ex in mollis iaculis. Suspendisse tincidunt
-																		velit sagittis vehicula. Duis posuere
-																		velit sagittis vehicula. Duis posuere <span class="fas fa-quote-right"></span>
-																 </p>
-															</div>
-													 </div>
-												</div>
-										 </div>
-									</div>
-							 </div>
 		            </div>
 		        </div>
 		    </div>
