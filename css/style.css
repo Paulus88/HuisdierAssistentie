@@ -3016,8 +3016,7 @@ border:3px solid #F789DB}
       	border-left:none;
       	margin:0}
 .item blockquote img{
-      	border-radius: 50%;
-      	margin-bottom:10px}
+      	border-radius:50%}
 .item blockquote p:before{
       	content:"\f10d";
       	font-family:'Fontawesome';
