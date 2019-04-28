@@ -3012,12 +3012,12 @@ border:3px solid #F789DB}
       width:100%;
       height:auto;
       padding:50px}
-.item blockquote {
+.item blockquote{
       	border-left:none;
       	margin:0}
-.item blockquote img {
+.item blockquote img{
       	margin-bottom:10px}
-.item blockquote p:before {
+.item blockquote p:before{
       	content:"\f10d";
       	font-family:'Fontawesome';
       	float:left;

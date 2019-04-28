@@ -519,19 +519,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <!-- Wrapper for slides -->
 		    <div class="row">
 		        <div class="col-xs-offset-3 col-xs-6">
-							<h3 class="w3layouts_head wthree_head"><h2>Mijn Klanten Zeggen</h2>
+							<h3 class="w3layouts_head wthree_head"><h3>Mijn Klanten Zeggen</h3>
 		            <div class="carousel-inner">
 		                <div class="item active">
 		                    <div class="carousel-content">
 													<blockquote>
 															<div class="test_grid">
 																<div class="col-sm-3 text-center test_img">
-																	<img src="images/t1.jpg" alt=" " class="img-responsive" />
+																	<img src="images/josefin.jpg" alt=" " class="img-responsive" />
 																</div>
 																<div class="col-sm-9 test_img_info">
-																	<p>Maecenas quis neque libero. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-																		auctor nec lacus ut tempor. Mauris.</p>
-																	<h5>Sara Lisbon</h5>
+																	<p>Tugba is een geweldig lieve, zorgvuldige en betrouwbare hondenoppas. We zijn erg blij met haar!</p>
+																	<h5>Josefin, 25-04-2019</h5>
 																</div>
 															</div>
 														</blockquote>
@@ -542,12 +541,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 													<blockquote>
 														<div class="test_grid">
 															<div class="col-sm-3 text-center test_img">
-																<img src="images/t2.jpg" alt=" " class="img-responsive" />
+																<img src="images/geen.svg" alt=" " class="img-responsive" />
 															</div>
 															<div class="col-sm-9 test_img_info">
-																<p>Lorem ipsum dolor sit amet. Class aptent taciti.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-																	auctor nec lacus ut tempor. Mauris.</p>
-																<h5>Jane Wearne</h5>
+																<p>Ik had met spoed iemand nodig die mijn hondje voor onbepaalde tijd dagelijks kon uitlaten. Tugba heeft direct ruimte gemaakt voor ons. Alfie , altijd een beetje eenkennig, was direct dol op haar en ging gewoon met haar mee. Ze doet haar werk op een relaxte manier met liefde voor mens en dier. Als Alfie tevreden is ben ik dat zeker ook.</p>
+																<h5>Simone, 03-03-2019</h5>
+															</div>
+														</div>
+													</blockquote>
+		                    </div>
+		                </div>
+										<div class="item">
+		                    <div class="carousel-content">
+													<blockquote>
+														<div class="test_grid">
+															<div class="col-sm-3 text-center test_img">
+																<img src="images/geen.svg" alt=" " class="img-responsive" />
+															</div>
+															<div class="col-sm-9 test_img_info">
+																<p>Tugba is een geweldige hondenoppas .uitlaatster Ze staat altijd voor je klaar . Ze is behulpzaam en lief,mijn hond had gelijk een klik met Tugba.Ik beveel haar van harte aan. Toos.</p>
+																<h5>Toos, 23-10-2017</h5>
 															</div>
 														</div>
 													</blockquote>
