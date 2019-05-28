@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /opencart/
+Disallow: /prestashop/
+Disallow: /dev/
 Sitemap: https://huisdierassistentie.nl/sitemap.xml
