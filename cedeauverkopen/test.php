@@ -1,23 +1,22 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$sql = "CREATE TABLE track(
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-tm TIMESTAMP,
-ref varchar(255),
-geo varchar(255),
-lat varchar(255),
-lon varchar(255),
-agent varchar(255),
-ipv4 varchar(20),
-ipv6 varchar(50),
-ip_value int(11),
-domain varchar(20))";
-
-if ($conn->query($sql) === TRUE) {
-    echo "Table MyGuests created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
+$result = mysqli_query($connection,"SELECT * FROM *");
+$all_property = array();  //declare an array for saving property
+echo '<table class="data-table">
+        <tr class="data-heading">';  //initialize table tag
+while ($property = mysqli_fetch_field($result)) {
+    echo '<td>' . $property->name . '</td>';  //get field name for header
+    array_push($all_property, $property->name);  //save those to array
 }
+echo '</tr>'; //end tr tag
+while ($row = mysqli_fetch_array($result)) {
+    echo "<tr>";
+    foreach ($all_property as $item) {
+        echo '<td>' . $row[$item] . '</td>'; //get items using property value
+    }
+    echo '</tr>';
+}
+echo "</table>";
 CloseCon($conn);
 ?>
