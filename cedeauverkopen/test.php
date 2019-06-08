@@ -1,22 +1,21 @@
 <?php
-include 'huMf6GwI0pbSg1k.php';
-$conn = OpenCon();
-$result = mysqli_query("SELECT * FROM track");
-$all_property = array();  //declare an array for saving property
-echo '<table class="data-table">
-        <tr class="data-heading">';  //initialize table tag
-while ($property = mysqli_fetch_field($result)) {
-    echo '<td>' . $property->name . '</td>';  //get field name for header
-    array_push($all_property, $property->name);  //save those to array
-}
-echo '</tr>'; //end tr tag
-while ($row = mysqli_fetch_array($result)) {
-    echo "<tr>";
-    foreach ($all_property as $item) {
-        echo '<td>' . $row[$item] . '</td>'; //get items using property value
+function getLocationInfoByIp(){
+    $client  = @$_SERVER['HTTP_CLIENT_IP'];
+    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+    $remote  = @$_SERVER['REMOTE_ADDR'];
+    $result  = array('country'=>'', 'city'=>'');
+    if(filter_var($client, FILTER_VALIDATE_IP)){
+        $ip = $client;
+    }elseif(filter_var($forward, FILTER_VALIDATE_IP)){
+        $ip = $forward;
+    }else{
+        $ip = $remote;
     }
-    echo '</tr>';
-}
-echo "</table>";
-CloseCon($conn);
-?>
+    $ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip));
+    if($ip_data && $ip_data->geoplugin_countryName != null){
+        $result['country'] = $ip_data->geoplugin_countryCode;
+        $result['city'] = $ip_data->geoplugin_city;
+    }
+    return $result;
+    echo $result;
+} ?>
