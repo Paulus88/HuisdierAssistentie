@@ -4,15 +4,15 @@ $conn = OpenCon();
 $sql = "CREATE TABLE track(
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 tm TIMESTAMP,
-ref varchar(255) NOT NULL default '',
-geo varchar(255) NOT NULL default '',
-lat varchar(255) NOT NULL default '',
-lon varchar(255) NOT NULL default '',
-agent varchar(255) NOT NULL default '',
-ipv4 varchar(20) NOT NULL default '',
-ipv6 varchar(50) NOT NULL default '',
-ip_value int(11) NOT NULL default '0',
-domain varchar(20) NOT NULL default '')";
+ref varchar(255),
+geo varchar(255),
+lat varchar(255),
+lon varchar(255),
+agent varchar(255),
+ipv4 varchar(20),
+ipv6 varchar(50),
+ip_value int(11),
+domain varchar(20))";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table MyGuests created successfully";
