@@ -5,8 +5,9 @@ function OpenCon()
  $dbuser = "logger";
  $dbpass = "1Logger21";
  $db = "cedeauverkopen";
- $conn = new mysqli($dbhost,$dbuser,$dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ $conn = new mysqli($dbhost,$dbuser,$dbpass,$db) or die("echo Connect failed: %s\n". $conn -> error);
  return $conn;
+ echo yes!
  }
 function CloseCon($conn)
  {
