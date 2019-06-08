@@ -12,7 +12,7 @@ agent varchar(255) NOT NULL default '',
 ipv4 varchar(20) NOT NULL default '',
 ipv6 varchar(50) NOT NULL default '',
 ip_value int(11) NOT NULL default '0',
-domain varchar(20) NOT NULL default '';)
+domain varchar(20) NOT NULL default '')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Table MyGuests created successfully";
