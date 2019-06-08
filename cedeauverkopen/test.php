@@ -1,22 +1,28 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$result = mysqli_query($connection,"SELECT * FROM *");
-$all_property = array();  //declare an array for saving property
-echo '<table class="data-table">
-        <tr class="data-heading">';  //initialize table tag
-while ($property = mysqli_fetch_field($result)) {
-    echo '<td>' . $property->name . '</td>';  //get field name for header
-    array_push($all_property, $property->name);  //save those to array
+$result = "CREATE TABLE track(
+`id` int(6) NOT NULL auto_increment,
+`tm` varchar(20) NOT NULL default '',
+`ref` varchar(255) NOT NULL default '',
+`geo` varchar(255) NOT NULL default '',
+`lat` varchar(255) NOT NULL default '',
+`lon` varchar(255) NOT NULL default '',
+`agent` varchar(255) NOT NULL default '',
+`ipv4` varchar(20) NOT NULL default '',
+`ipv6` varchar(45) NOT NULL default '',
+`ip_value` int(11) NOT NULL default '0',
+`domain` varchar(20) NOT NULL default '',
+ UNIQUE KEY `id` (`id`)
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 ";
+
+if (mysql_query($result))
+{
+ print "Success in TABLE creation!......";
 }
-echo '</tr>'; //end tr tag
-while ($row = mysqli_fetch_array($result)) {
-    echo "<tr>";
-    foreach ($all_property as $item) {
-        echo '<td>' . $row[$item] . '</td>'; //get items using property value
-    }
-    echo '</tr>';
+else
+{
+die('MSSQL error: ' . mssql_get_last_message());
 }
-echo "</table>";
 CloseCon($conn);
 ?>
