@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /prestashop/
 Disallow: /dev/
+Disallow: /cedeauverkopen/
 Sitemap: https://huisdierassistentie.nl/sitemap.xml
