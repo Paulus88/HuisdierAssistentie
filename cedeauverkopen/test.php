@@ -2,7 +2,7 @@
     $useragent = $_SERVER['HTTP_USER_AGENT'];
     echo "<b>Your User Agent is</b>: ".$useragent;
     $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
-    return $ip;
+    echo $ip;
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
         //check ip from share internet
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -12,5 +12,5 @@
     }else{
         $ip = $_SERVER['REMOTE_ADDR'];
     }
-    return $ip;
+    echo $ip;
 ?>
