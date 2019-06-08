@@ -1,7 +1,7 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$result = mysqli_query($connection,"SELECT * FROM *");
+$result = mysqli_query($connection,"SELECT * FROM track");
 $all_property = array();  //declare an array for saving property
 echo '<table class="data-table">
         <tr class="data-heading">';  //initialize table tag
