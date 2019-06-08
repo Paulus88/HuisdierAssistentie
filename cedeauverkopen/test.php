@@ -1,6 +1,7 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
+$selectDb = mysql_select_db($db,$conn);
 $result = "CREATE TABLE track(
 `id` int(6) NOT NULL auto_increment,
 `tm` varchar(20) NOT NULL default '',
