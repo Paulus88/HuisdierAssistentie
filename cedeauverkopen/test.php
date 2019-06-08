@@ -29,6 +29,6 @@
             $result['country'] = $ip_data->geoplugin_countryCode;
             $result['city'] = $ip_data->geoplugin_city;
         }
-        echo $result."<br />";
+        return $result
         echo $forward
 ?>
