@@ -1,29 +1,23 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$selectDb = mysql_select_db($db,$conn);
-$result = "CREATE TABLE track(
-`id` int(6) NOT NULL auto_increment,
-`tm` varchar(20) NOT NULL default '',
-`ref` varchar(255) NOT NULL default '',
-`geo` varchar(255) NOT NULL default '',
-`lat` varchar(255) NOT NULL default '',
-`lon` varchar(255) NOT NULL default '',
-`agent` varchar(255) NOT NULL default '',
-`ipv4` varchar(20) NOT NULL default '',
-`ipv6` varchar(45) NOT NULL default '',
-`ip_value` int(11) NOT NULL default '0',
-`domain` varchar(20) NOT NULL default '',
- UNIQUE KEY `id` (`id`)
- ) ENGINE=MyISAM DEFAULT CHARSET=latin1 ";
+$sql = "CREATE TABLE track(
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+tm TIMESTAMP,
+ref varchar(255) NOT NULL default '',
+geo varchar(255) NOT NULL default '',
+lat varchar(255) NOT NULL default '',
+lon varchar(255) NOT NULL default '',
+agent varchar(255) NOT NULL default '',
+ipv4 varchar(20) NOT NULL default '',
+ipv6 varchar(50) NOT NULL default '',
+ip_value int(11) NOT NULL default '0',
+domain varchar(20) NOT NULL default '';)
 
-if (mysql_query($result))
-{
- print "Success in TABLE creation!......";
-}
-else
-{
-die('MSSQL error: ' . mssql_get_last_message());
+if ($conn->query($sql) === TRUE) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . $conn->error;
 }
 CloseCon($conn);
 ?>
