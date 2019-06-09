@@ -10,6 +10,7 @@ $lat = $_COOKIE['lat'];
 echo $lat."<br />";
 $lon = $_COOKIE['lon'];
 echo $lon."<br />";
+echo "http://maps.google.com/maps?q=loc:".$lat."+".$lon.""
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
 $xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
