@@ -5,7 +5,7 @@ var lon = position.coords.longitude;
 document.cookie="geo=" + lat + lon;
 document.write("<?php $lat = " + lat + "; $lon = " + lon + "; ?>");
 document.getElementById("result").innerHTML = lat + ", " + lon;});
-</script><?
+</script><?php
 echo $lat;
 $geo = $_COOKIE['geo'];
 echo $geo."<br />";
