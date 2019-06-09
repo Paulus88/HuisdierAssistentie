@@ -1,6 +1,8 @@
 <script>
 navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
+global $HTTP_SERVER_VARS;
+global $HTTP_USER_AGENT;
 $lat = $_COOKIE['lat'];
 $lon = $_COOKIE['lon'];
 $client = $_SERVER['HTTP_CLIENT_IP'];
@@ -10,6 +12,10 @@ $forf = $_SERVER['HTTP_FORWARDED_FOR'];
 $for = $_SERVER['HTTP_FORWARDED'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $ipa = $_GET['addr'];
+$agent = $_SERVER['HTTP_USER_AGENT'];
+$hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
+$gagent = $HTTP_USER_AGENT;
+
 echo $lat."<br />";
 echo $lon."<br />";
 if ($lon == NULL){header("Refresh:5");}else{
@@ -51,22 +57,21 @@ echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6)))."<br />";}
 echo $for."<br />";
 
+if ($ip != NULL){
 echo $ip."<br />";
-
-echo $ipa."<br />";
-$v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
-
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for)))."<br />";
+$ipv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['REMOTE_ADDR']);
+echo $ipv6."<br />";
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip)))."<br />";
-$agent = $_SERVER['HTTP_USER_AGENT'];
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6)))."<br />";}
+
+if ($ipa != NULL){
+echo $ipa."<br />";
+$ipav6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_GET['addr']);
+echo $ipav6."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6)))."<br />";}
+
 echo $agent."<br />";
-global $HTTP_SERVER_VARS;
-$agent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
-echo $agent."<br />";
-global $HTTP_USER_AGENT;
-$agent = $HTTP_USER_AGENT;
-echo $agent."<br />";
+echo $hagent."<br />";
+echo $gagent."<br />";
 ?>
