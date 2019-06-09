@@ -1,24 +1,16 @@
 <?php
     $useragent = $_SERVER['HTTP_USER_AGENT'];
     echo $useragent."<br />";
-      function get_client_ip() {
-          $ipaddress = '';
-          if (getenv('HTTP_CLIENT_IP'))
-              $ipaddress = getenv('HTTP_CLIENT_IP');
-          else if(getenv('HTTP_X_FORWARDED_FOR'))
-              $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
-          else if(getenv('HTTP_X_FORWARDED'))
-              $ipaddress = getenv('HTTP_X_FORWARDED');
-          else if(getenv('HTTP_FORWARDED_FOR'))
-              $ipaddress = getenv('HTTP_FORWARDED_FOR');
-          else if(getenv('HTTP_FORWARDED'))
-             $ipaddress = getenv('HTTP_FORWARDED');
-          else if(getenv('REMOTE_ADDR'))
-              $ipaddress = getenv('REMOTE_ADDR');
-          else
-              $ipaddress = 'UNKNOWN';
-          return $ipaddress;
-      }
-
-      echo $get_client_ip;
+$client = getenv('HTTP_CLIENT_IP');
+echo $client."<br />";
+$xforf = getenv('HTTP_X_FORWARDED_FOR');
+echo $xforf."<br />";
+$xfor = getenv('HTTP_X_FORWARDED');
+echo $xfor."<br />";
+$forf = getenv('HTTP_FORWARDED_FOR');
+echo $forf."<br />";
+$for = getenv('HTTP_FORWARDED');
+echo $for."<br />";
+$ip = getenv('REMOTE_ADDR');
+echo $ip."<br />";
 ?>
