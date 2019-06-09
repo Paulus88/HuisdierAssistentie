@@ -1,6 +1,19 @@
 <script>
 navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
+$lat = NULL;
+$lon = NULL;
+$client = NULL;
+$xforf = NULL;
+$xfor = NULL;
+$forf = NULL;
+$for = NULL;
+$ip = NULL;
+$ipa = NULL;
+$agent = NULL;
+$hagent = NULL;
+$gagent = NULL;
+
 global $HTTP_SERVER_VARS;
 global $HTTP_USER_AGENT;
 $lat = $_COOKIE['lat'];
