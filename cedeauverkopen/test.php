@@ -2,28 +2,37 @@
 navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
 $lat = $_COOKIE['lat'];
-echo $lat."<br />";
 $lon = $_COOKIE['lon'];
+$client = $_SERVER['HTTP_CLIENT_IP'];
+$xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
+$xfor = $_SERVER['HTTP_X_FORWARDED'];
+$forf = $_SERVER['HTTP_FORWARDED_FOR'];
+$for = $_SERVER['HTTP_FORWARDED'];
+$ip = $_SERVER['REMOTE_ADDR'];
+$ipa = $_GET['addr'];
+echo $lat."<br />";
 echo $lon."<br />";
 if ($lon==NULL){header("Refresh:5");}else{
 echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."";}
-$client = $_SERVER['HTTP_CLIENT_IP'];
+if ($client!=NULL){
 echo $client."<br />";
-$xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
+$clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $clientv6);
+echo $clientv6."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";}
+
 echo $xforf."<br />";
-$xfor = $_SERVER['HTTP_X_FORWARDED'];
+
 echo $xfor."<br />";
-$forf = $_SERVER['HTTP_FORWARDED_FOR'];
+
 echo $forf."<br />";
-$for = $_SERVER['HTTP_FORWARDED'];
+
 echo $for."<br />";
-$ip = $_SERVER['REMOTE_ADDR'];
+
 echo $ip."<br />";
-$ipa = $_GET['addr'];
+
 echo $ipa."<br />";
 $v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
-echo $v6."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";
+
 echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforf)))."<br />";
 echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xfor)))."<br />";
 echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$forf)))."<br />";
