@@ -20,7 +20,7 @@ echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?i
 $useragent = $_SERVER['HTTP_USER_AGENT'];
 echo $useragent."<br />";
 function getOS(){
-global $user_agent;
+global $useragent;
 $os_platform= "Unknown OS Platform";
 $os_array = array(
 '/windows nt 10/i'=>'Windows 10',
@@ -51,7 +51,7 @@ if (preg_match($regex, $user_agent))
 $os_platform = $value;
 return $os_platform;}
 function getBrowser(){
-global $user_agent;
+global $useragent;
 $browser= "Unknown Browser";
 $browser_array = array(
 '/msie/i'=> 'Internet Explorer',
