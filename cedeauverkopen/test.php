@@ -24,11 +24,12 @@
         }else{
             $ip = $remote;
         }
-        $ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$ip));
+        $ip_data = @json_decode(file_get_contents("//geoplugin.net/json.gp?ip=".$ip));
         if($ip_data && $ip_data->geoplugin_countryName != null){
-            $result['country'] = $ip_data->geoplugin_countryCode;
-            $result['city'] = $ip_data->geoplugin_city;
+            $country['country'] = $ip_data->geoplugin_countryCode;
+            $city['city'] = $ip_data->geoplugin_city;
         }
-        return $result;
+        echo $country."<br />";
+        echo $city."<br />";
         echo $forward;
 ?>
