@@ -15,7 +15,7 @@ $ipa = $_GET['addr'];
 echo $ipa."<br />";
 $v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
 echo $v6."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$client)))."<br />";
+echo var_dump(json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$client)))."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$xforf)))."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$xfor)))."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$forf)))."<br />";
