@@ -12,8 +12,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $ipa = $_GET['addr'];
 echo $lat."<br />";
 echo $lon."<br />";
-if ($lon == NULL){header("Refresh:5");}else{
-echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";}
+echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";
 
 if ($client != NULL){
 echo $client."<br />";
