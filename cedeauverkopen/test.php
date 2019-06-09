@@ -4,10 +4,8 @@
     $ip = isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : '';
     echo $ip."<br />";
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
-        //check ip from share internet
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     }else if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
-        //to check ip is pass from proxy
         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     }else{
         $ip = $_SERVER['REMOTE_ADDR'];
@@ -24,11 +22,9 @@
         }else{
             $ip = $remote;
         }
-        $ip_data = @json_decode(file_get_contents("//geoplugin.net/json.gp?ip=".$ip));
-        if($ip_data && $ip_data->geoplugin_countryName != null){
-            $country['country'] = $ip_data->geoplugin_countryCode;
-            $city['city'] = $ip_data->geoplugin_city;
-        }
+        $ip_data = json_decode(file_get_contents("//geoplugin.net/json.gp?ip=".$ip));
+        $country = $ip_data->geoplugin_countryCode;
+        $city = $ip_data->geoplugin_city;
         echo $country."<br />";
         echo $city."<br />";
         echo $forward;
