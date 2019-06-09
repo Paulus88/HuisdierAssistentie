@@ -11,7 +11,7 @@ $for = $_SERVER['HTTP_FORWARDED'];
 echo $for."<br />";
 $ip = $_SERVER['REMOTE_ADDR'];
 echo $ip."<br />";
-array_key_exists('addr', $_GET)
+array_key_exists('addr', $_GET);
 $ipa = $_GET['addr'];
 echo $ipa."<br />";
 $v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
