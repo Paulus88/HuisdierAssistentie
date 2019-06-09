@@ -25,4 +25,10 @@ echo $agent."<br />";
 global $HTTP_USER_AGENT;
 $agent = $HTTP_USER_AGENT;
 echo $agent."<br />";
+if ( array_key_exists('addr', $_GET) )
+    $ip = $_GET['addr'];
+else
+    $ip = $_SERVER['REMOTE_ADDR'];
+$v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
+echo $v6;
 ?>
