@@ -3,8 +3,10 @@ navigator.geolocation.getCurrentPosition(function(position){
 var lat = position.coords.latitude;
 var lon = position.coords.longitude;
 document.cookie="geo=" + lat + lon;
+document.write("<?php $lat = " + lat + ";$lon = " + lon + ";");
 document.getElementById("result").innerHTML = lat + ", " + lon;});
-</script><?php
+</script>
+echo $lat;
 $geo = $_COOKIE['geo'];
 echo $geo."<br />";
 $client = $_SERVER['HTTP_CLIENT_IP'];
