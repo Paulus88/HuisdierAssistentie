@@ -14,13 +14,20 @@ echo $lat."<br />";
 echo $lon."<br />";
 if ($lon == NULL){header("Refresh:5");}else{
 echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";}
+
 if ($client != NULL){
 echo $client."<br />";
-$clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $clientv6);
+$clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $client);
 echo $clientv6."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";}
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$clientv6)))."<br />";}
 
+if ($xforf != NULL){
 echo $xforf."<br />";
+$xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $xforf);
+echo $xforfv6."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforf)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforfv6)))."<br />";}
 
 echo $xfor."<br />";
 
