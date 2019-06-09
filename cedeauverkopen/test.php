@@ -5,8 +5,6 @@ var lon = position.coords.longitude;
 document.cookie = "lat=" + lat;
 document.cookie = "lon=" + lon;});
 </script>
-<div id="lat"></div>
-<div id="lon"></div>
 <?php
 $lat = $_COOKIE['lat'];
 echo $lat."<br />";
