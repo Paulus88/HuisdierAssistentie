@@ -1,11 +1,13 @@
 <script>
 navigator.geolocation.getCurrentPosition(function(position){
 var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
-var javavar=document.getElementById("result").innerHTML = positionInfo;
+var javavar=document.getElementById("text").value;
+document.getElementById("result").innerHTML = positionInfo;});
+document.getElementById("result").innerHTML="
 <?php
 $phpvar='"+javavar+"';
 echo $phpvar;
-?>";});
+?>";
 </script><?php
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
