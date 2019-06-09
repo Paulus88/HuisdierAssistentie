@@ -1,15 +1,10 @@
-<script>
-navigator.geolocation.getCurrentPosition(function(position){
-var lat = position.coords.latitude;
-var lon = position.coords.longitude;
-document.cookie = "lat=" + lat;
-document.cookie = "lon=" + lon;});
-</script>
+<script>navigator.geolocation.getCurrentPosition(function(position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
 $lat = $_COOKIE['lat'];
 echo $lat."<br />";
 $lon = $_COOKIE['lon'];
 echo $lon."<br />";
+if $lon=NULL{header("Refresh:0");}
 echo "http://maps.google.com/maps?q=loc:".$lat."+".$lon."";
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
