@@ -2,13 +2,16 @@
 navigator.geolocation.getCurrentPosition(function(position){
 var lat = position.coords.latitude;
 var lon = position.coords.longitude;
-document.cookie="geo=" + lat + lon;
-document.write("<?php $lat = " + lat + "; $lon = " + lon + "; ?>");
-document.getElementById("result").innerHTML = lat + ", " + lon;});
+document.getElementById("lat").innerHTML = lat;});
+document.getElementById("lon").innerHTML = lon;});
 </script><?php
-echo $lat;
-$geo = $_COOKIE['geo'];
+$lat = new DomDocument();
+$lon = new DomDocument();
 echo $geo."<br />";
+$lati = $lat->getElementById('lat');
+echo $lati."<br />";
+$long = $lon->getElementById('lon');
+echo $long."<br />";
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
 $xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -40,5 +43,5 @@ global $HTTP_USER_AGENT;
 $agent = $HTTP_USER_AGENT;
 echo $agent."<br />";
 ?>
-<div id="result">
+<div id="lat">
 </div>
