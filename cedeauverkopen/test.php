@@ -1,18 +1,12 @@
 <script>
-navigator.geolocation.getCurrentPosition(
-  function (position) {
-  var lat = position.coords.latitude;
-  var lon = position.coords.longitude;
-  document.cookie = "lat=" + lat;
-  document.cookie = "lon=" + lon;});
-</script>
+navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
 $lat = $_COOKIE['lat'];
 echo $lat."<br />";
 $lon = $_COOKIE['lon'];
 echo $lon."<br />";
 if ($lon==NULL){header("Refresh:5");}else{
-echo "http://maps.google.com/maps?q=loc:".$lat."+".$lon."";}
+echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."";}
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
 $xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
@@ -29,12 +23,12 @@ $ipa = $_GET['addr'];
 echo $ipa."<br />";
 $v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
 echo $v6."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$client)))."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$xforf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$xfor)))."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$forf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$for)))."<br />";
-echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$ip)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforf)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xfor)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$forf)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$for)))."<br />";
+echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$ip)))."<br />";
 $agent = $_SERVER['HTTP_USER_AGENT'];
 echo $agent."<br />";
 global $HTTP_SERVER_VARS;
