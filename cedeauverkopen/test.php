@@ -2,7 +2,7 @@
 navigator.geolocation.getCurrentPosition(function(position){
 var lat = position.coords.latitude;
 var lon = position.coords.longitude;
-document.getElementById("lat").innerHTML = lat;});
+document.getElementById("lat").innerHTML = lat;;
 document.getElementById("lon").innerHTML = lon;});
 </script><?php
 $lat = new DomDocument();
