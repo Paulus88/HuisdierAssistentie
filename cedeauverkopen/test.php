@@ -4,7 +4,7 @@ $lat = $_COOKIE['lat'];
 echo $lat."<br />";
 $lon = $_COOKIE['lon'];
 echo $lon."<br />";
-if ($lon==NULL){header("Refresh:0");}
+if ($lon==NULL){header("Refresh:5");}else{
 echo "http://maps.google.com/maps?q=loc:".$lat."+".$lon."";
 $client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
@@ -35,5 +35,5 @@ $agent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 echo $agent."<br />";
 global $HTTP_USER_AGENT;
 $agent = $HTTP_USER_AGENT;
-echo $agent."<br />";
+echo $agent."<br />";}
 ?>
