@@ -1,17 +1,17 @@
 <?php
-    $useragent = $_SERVER['HTTP_USER_AGENT'];
-    echo $useragent."<br />";
-$client = getenv('HTTP_CLIENT_IP');
+$useragent = $_SERVER['HTTP_USER_AGENT'];
+echo $useragent."<br />";
+$client = $_SERVER['HTTP_CLIENT_IP'];
 echo $client."<br />";
-$xforf = getenv('HTTP_X_FORWARDED_FOR');
+$xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
 echo $xforf."<br />";
-$xfor = getenv('HTTP_X_FORWARDED');
+$xfor = $_SERVER['HTTP_X_FORWARDED'];
 echo $xfor."<br />";
-$forf = getenv('HTTP_FORWARDED_FOR');
+$forf = $_SERVER['HTTP_FORWARDED_FOR'];
 echo $forf."<br />";
-$for = getenv('HTTP_FORWARDED');
+$for = $_SERVER['HTTP_FORWARDED'];
 echo $for."<br />";
-$ip = getenv('REMOTE_ADDR');
+$ip = $_SERVER['REMOTE_ADDR'];
 echo $ip."<br />";
 $url = json_decode(file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=<your_api_key>&ip=".$client."&format=json"));
 echo "<table border='1' width='50%' align='center'><tr><td>COUNTRY:</td><td>";
