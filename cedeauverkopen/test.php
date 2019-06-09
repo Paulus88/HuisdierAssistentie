@@ -11,6 +11,11 @@ $for = $_SERVER['HTTP_FORWARDED'];
 echo $for."<br />";
 $ip = $_SERVER['REMOTE_ADDR'];
 echo $ip."<br />";
+array_key_exists('addr', $_GET)
+$ipa = $_GET['addr'];
+echo $ipa."<br />";
+$v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
+echo $v6."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$client)))."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$xforf)))."<br />";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$xfor)))."<br />";
@@ -25,10 +30,4 @@ echo $agent."<br />";
 global $HTTP_USER_AGENT;
 $agent = $HTTP_USER_AGENT;
 echo $agent."<br />";
-if ( array_key_exists('addr', $_GET) )
-    $ip = $_GET['addr'];
-else
-    $ip = $_SERVER['REMOTE_ADDR'];
-$v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
-echo $v6;
 ?>
