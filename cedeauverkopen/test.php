@@ -13,7 +13,7 @@ $ipa = $_GET['addr'];
 echo $lat."<br />";
 echo $lon."<br />";
 if ($lon==NULL){header("Refresh:5");}else{
-echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."";}
+echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";}
 if ($client!=NULL){
 echo $client."<br />";
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $clientv6);
