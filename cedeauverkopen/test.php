@@ -1,4 +1,4 @@
-<script>navigator.geolocation.getCurrentPosition(function(position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
+<script>navigator.geolocation.getCurrentPosition(function(position){var lat = position.coords.latitude;var lon = position.coords.longitude;document.cookie = "lat=" + lat;document.cookie = "lon=" + lon;});</script>
 <?php
 $lat = $_COOKIE['lat'];
 echo $lat."<br />";
