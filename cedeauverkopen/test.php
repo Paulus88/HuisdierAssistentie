@@ -6,20 +6,20 @@
         $ip = getenv('HTTP_CLIENT_IP');
         echo $ip
     else if(getenv('HTTP_X_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+        $ip = getenv('HTTP_X_FORWARDED_FOR');
         echo $ip
     else if(getenv('HTTP_X_FORWARDED'))
-        $ipaddress = getenv('HTTP_X_FORWARDED');
+        $ip = getenv('HTTP_X_FORWARDED');
         echo $ip
     else if(getenv('HTTP_FORWARDED_FOR'))
-        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+        $ip = getenv('HTTP_FORWARDED_FOR');
         echo $ip
     else if(getenv('HTTP_FORWARDED'))
-       $ipaddress = getenv('HTTP_FORWARDED');
+       $ip = getenv('HTTP_FORWARDED');
        echo $ip
-    else(getenv('REMOTE_ADDR'))
-        $ipaddress = getenv('REMOTE_ADDR');
+    else if(getenv('REMOTE_ADDR'))
+        $ip = getenv('REMOTE_ADDR');
         echo $ip
-    return $ipaddress;}
+    return $ip;}
     echo $get_client_ip;
 ?>
