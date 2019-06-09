@@ -19,15 +19,15 @@ if ($client != NULL){
 echo $client."<br />";
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $client);
 echo $clientv6."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$client)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$clientv6)))."<br />";}
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6)))."<br />";}
 
 if ($xforf != NULL){
 echo $xforf."<br />";
 $xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $xforf);
 echo $xforfv6."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforf)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforfv6)))."<br />";}
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6)))."<br />";}
 
 echo $xfor."<br />";
 
@@ -40,11 +40,11 @@ echo $ip."<br />";
 echo $ipa."<br />";
 $v6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $ip);
 
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xforf)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$xfor)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$forf)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$for)))."<br />";
-echo var_export(unserialize(file_get_contents("//geoplugin.net/php.gp?ip=".$ip)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip)))."<br />";
 $agent = $_SERVER['HTTP_USER_AGENT'];
 echo $agent."<br />";
 global $HTTP_SERVER_VARS;
