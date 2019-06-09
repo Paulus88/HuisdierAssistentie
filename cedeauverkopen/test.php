@@ -18,7 +18,7 @@ echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?i
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$for))) . "\n\n";
 echo var_export(unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=".$ip))) . "\n\n";
 $useragent = $_SERVER['HTTP_USER_AGENT'];
-echo $useragent . "\n\n"
+echo $useragent . "\n\n";
 $browser = get_browser(null, true);
 print_r($browser);
 ?>
