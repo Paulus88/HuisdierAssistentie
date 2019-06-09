@@ -1,6 +1,6 @@
 <script>
 navigator.geolocation.getCurrentPosition(function(position){
-var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+var positionInfo = "<?php $lat = " + position.coords.latitude + ";echo $lat;$lon = " + position.coords.longitude + ";echo $lat; ?>";
 document.getElementById("result").innerHTML = positionInfo;});
 </script><?php
 $client = $_SERVER['HTTP_CLIENT_IP'];
