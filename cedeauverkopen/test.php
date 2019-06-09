@@ -1,7 +1,7 @@
 <script>
 navigator.geolocation.getCurrentPosition(function(position){
 var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
-document.cookie("geo") = positionInfo;
+document.cookie="geo=" + positionInfo;
 document.getElementById("result").innerHTML = positionInfo;});
 </script><?php
 $geo = $_COOKIE['geo'];
