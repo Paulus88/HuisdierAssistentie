@@ -12,26 +12,43 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $ipa = $_GET['addr'];
 echo $lat."<br />";
 echo $lon."<br />";
-echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";
+if ($lon == NULL){header("Refresh:5");}else{
+echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";}
 
 if ($client != NULL){
 echo $client."<br />";
-$clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $client);
+$clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
 echo $clientv6."<br />";
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client)))."<br />";
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6)))."<br />";}
 
 if ($xforf != NULL){
 echo $xforf."<br />";
-$xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $xforf);
+$xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED_FOR']);
 echo $xforfv6."<br />";
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)))."<br />";
 echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6)))."<br />";}
 
+if ($xfor != NULL){
 echo $xfor."<br />";
+$xforv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED']);
+echo $xforv6."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6)))."<br />";}
 
+if ($forf != NULL){
 echo $forf."<br />";
+$forfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED_FOR']);
+echo $forfv6."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6)))."<br />";}
 
+if ($for != NULL){
+echo $for."<br />";
+$forv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED']);
+echo $forv6."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for)))."<br />";
+echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6)))."<br />";}
 echo $for."<br />";
 
 echo $ip."<br />";
