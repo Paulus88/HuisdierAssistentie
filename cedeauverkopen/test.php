@@ -23,9 +23,8 @@
             $ip = $remote;
         }
         $ip_data = json_decode(file_get_contents("//geoplugin.net/json.gp?ip=".$ip));
-        $country = $ip_data->geoplugin_countryCode;
-        $city = $ip_data->geoplugin_city;
-        echo $country."<br />";
-        echo $city."<br />";
+        $result = $ip_data->geoplugin_countryCode;
+        $result = $ip_data->geoplugin_city;
+        return $result."<br />";
         echo $forward;
 ?>
