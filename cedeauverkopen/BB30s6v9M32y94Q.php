@@ -3,7 +3,8 @@
 $a = NULL;
 $msg = NULL;
 $a = $_COOKIE['a'];
-if ($a == "1"){setcookie("a","2", time()+2*24*60*60);header("Refresh:6");}
+echo $a;
+if ($a == "1"){setcookie("a","2",time()+2*24*60*60);header("Refresh:6");}
 if ($a == "2"){
 include '7c79Yc656i31Ifg.php';
 echo serialize($msg);}
