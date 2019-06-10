@@ -1,4 +1,4 @@
-$conn = OpenCon();
+<?php $conn = OpenCon();
     if ($conn->connect_errno) {
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
     }
@@ -6,4 +6,4 @@ $conn = OpenCon();
     $res = $mysqli->query($sql);
 
     while ($row = $res->fetch_assoc()) {
-    print_r($row);}
+    print_r($row);} ?>
