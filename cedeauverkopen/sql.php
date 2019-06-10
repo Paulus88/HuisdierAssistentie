@@ -1,13 +1,12 @@
-<?php
-   $dbhost = 'huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com';
-   $dbuser = 'logger';
-   $dbpass = '1Logger21';
-   $conn = mysqli($dbhost, $dbuser, $dbpass);
-
-   if(! $conn ) {
-      die('Could not connect: ' . mysqli_error());
+   <?php  
+   $host = 'huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com';
+   $user = 'logger';
+   $pass = '1Logger21';
+   $conn = mysqli_connect($host, $user, $pass);
+   if(! $conn )
+   {
+     die('Could not connect: ' . mysqli_error());
    }
-
    echo 'Connected successfully';
    mysqli_close($conn);
-?>
+   ?>
