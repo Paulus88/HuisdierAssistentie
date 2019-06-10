@@ -88,10 +88,9 @@ $ipageo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
 if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 include 'huMf6GwI0pbSg1k.php';
-if ($conn->connect_error) {
-   die("Connection failed: " . $conn->connect_error);
-}
 $sql = "INSERT INTO track(`client`,`xforf`,`xfor`,`forf`,`for`,`ip`,`ipa`,`lat`,`lon`,`google`,`clientv6`,`xforfv6`,`xforv6`,`forfv6`,`forv6`,`ipv6`,`ipav6`,`agent`,`hagent`,`gagent`,`clientgeo`,`xforfgeo`,`xforgeo`,`forfgeo`,`forgeo`,`ipgeo`,`ipageo`,`clientv6geo`,`xforfv6geo`,`xforv6geo`,`forfv6geo`,`forv6geo`,`ipv6geo`,`ipav6geo`) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
 mysqli_query($conn, $sql);
+$msg = "$sql";
+mail("cedeauverkopen@paul.media","Cedeau Verkopen - Bezoeker",$msg);
 $conn->close();
 ?>
