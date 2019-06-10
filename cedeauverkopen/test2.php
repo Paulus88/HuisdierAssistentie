@@ -5,28 +5,28 @@ $conn = OpenCon();
 $db = 'cedeauverkopen';
 $table = 'track';
 
-if (!mysql_select_db($db))
+if (!mysqli_select_db($db))
     die("Can't select database");
 
 // sending query
-$result = mysql_query("SELECT * FROM {$table}");
+$result = mysqli_query("SELECT * FROM {$table}");
 if (!$result) {
     die("Query to show fields from table failed");
 }
 
-$fields_num = mysql_num_fields($result);
+$fields_num = mysqli_num_fields($result);
 
 echo "<h1>Table: {$table}</h1>";
 echo "<table border='1'><tr>";
 // printing table headers
 for($i=0; $i<$fields_num; $i++)
 {
-    $field = mysql_fetch_field($result);
+    $field = mysqli_fetch_field($result);
     echo "<td>{$field->name}</td>";
 }
 echo "</tr>\n";
 // printing table rows
-while($row = mysql_fetch_row($result))
+while($row = mysqli_fetch_row($result))
 {
     echo "<tr>";
 
@@ -37,7 +37,7 @@ while($row = mysql_fetch_row($result))
 
     echo "</tr>\n";
 }
-mysql_free_result($result);
+mysqli_free_result($result);
 CloseCon($conn);
 ?>
 </body></html>
