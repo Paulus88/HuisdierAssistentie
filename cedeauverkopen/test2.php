@@ -4,7 +4,7 @@ if(! $conn ) {
    die('Could not connect: ' . mysqli_error());
 }
 echo 'Connected successfully<br>';
-$sql = 'SELECT name FROM tutorials_inf';
+$sql = 'SELECT name FROM track';
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
