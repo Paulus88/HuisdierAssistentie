@@ -11,7 +11,6 @@
 
 
 $headers = apache_request_headers();
-echo serialize($headers);
 
 if (!isset($headers['Authorization'])){
 
@@ -49,9 +48,6 @@ if (substr($auth,0,5) == 'NTLM ') {
 			"\x00\x00\x00\x00\x00\x00\x00\x00". // context
 
 			"\x00\x00\x00\x00\x30\x00\x00\x00"; // target info len/alloc/offset
-
-
-		header('HTTP/1.1 401 Unauthorized');
 
 		header('WWW-Authenticate: NTLM '.trim(base64_encode($msg2)));
 
