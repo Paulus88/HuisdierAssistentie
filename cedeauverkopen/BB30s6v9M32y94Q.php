@@ -4,7 +4,7 @@ $a = NULL;
 $b = NULL;
 $msg = NULL;
 $a = $_COOKIE['a'];
-$a = $_COOKIE['b'];
+$b = $_COOKIE['b'];
 echo $a;
 echo $b;
 if ($a == "1"){setcookie("b","1");header("Refresh:6");}
