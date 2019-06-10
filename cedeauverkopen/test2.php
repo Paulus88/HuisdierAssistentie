@@ -2,11 +2,7 @@
 <?php
 include("huMf6GwI0pbSg1k.php");
 $conn = OpenCon();
-$db = 'cedeauverkopen';
 $table = 'track';
-
-if (!mysqli_select_db($db))
-    die("Can't select database");
 
 // sending query
 $result = mysqli_query("SELECT * FROM {$table}");
