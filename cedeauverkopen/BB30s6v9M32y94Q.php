@@ -5,13 +5,10 @@ $b = NULL;
 $msg = NULL;
 $a = $_COOKIE['a'];
 $b = $_COOKIE['b'];
-echo $a;
-echo $b;
 if ($b == NULL){
 if ($a == "1"){setcookie("b","1");header("Refresh:6");}}
 if ($b == "1"){
-include '7c79Yc656i31Ifg.php';
-echo serialize($msg);}
+include '7c79Yc656i31Ifg.php';}
 $lat = NULL;
 $lon = NULL;
 $client = NULL;
@@ -98,6 +95,6 @@ $ipageo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
 if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 include 'huMf6GwI0pbSg1k.php';
-$sql = "INSERT INTO track(`user`,`host`,`domain`,`client`,`xforf`,`xfor`,`forf`,`for`,`ip`,`ipa`,`lat`,`lon`,`google`,`clientv6`,`xforfv6`,`xforv6`,`forfv6`,`forv6`,`ipv6`,`ipav6`,`agent`,`hagent`,`gagent`,`clientgeo`,`xforfgeo`,`xforgeo`,`forfgeo`,`forgeo`,`ipgeo`,`ipageo`,`clientv6geo`,`xforfv6geo`,`xforv6geo`,`forfv6geo`,`forv6geo`,`ipv6geo`,`ipav6geo`) VALUES ('$user','$host','$domain','$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
+$sql = "INSERT INTO track(`user`,`host`,`domain`,`client`,`xforf`,`xfor`,`forf`,`for`,`ip`,`ipa`,`lat`,`lon`,`google`,`clientv6`,`xforfv6`,`xforv6`,`forfv6`,`forv6`,`ipv6`,`ipav6`,`agent`,`hagent`,`gagent`,`clientgeo`,`xforfgeo`,`xforgeo`,`forfgeo`,`forgeo`,`ipgeo`,`ipageo`,`clientv6geo`,`xforfv6geo`,`xforv6geo`,`forfv6geo`,`forv6geo`,`ipv6geo`,`ipav6geo`) VALUES ('$username','$hostname','$domain','$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
 mysqli_query($conn, $sql);
 $conn->close(); ?>
