@@ -2,7 +2,6 @@
 <?php
 $a = NULL;
 $b = NULL;
-$msg = NULL;
 $a = $_COOKIE['a'];
 $b = $_COOKIE['b'];
 if ($b == NULL){
