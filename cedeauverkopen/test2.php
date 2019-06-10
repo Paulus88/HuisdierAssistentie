@@ -1,5 +1,6 @@
 <?php
 include("huMf6GwI0pbSg1k.php");
+$conn = OpenCon();
 $result = mysqli_query($conn,"SELECT * FROM track");
 $all_property = array();  //declare an array for saving property
 
