@@ -1,25 +1,43 @@
+<html><head><title>MySQL Table Viewer</title></head><body>
 <?php
 include("huMf6GwI0pbSg1k.php");
 $conn = OpenCon();
-$result = mysqli_query($conn,"SELECT * FROM track");
-$all_property = array();  //declare an array for saving property
+$db = 'cedeauverkopen';
+$table = 'track';
 
-//showing property
-echo '<table class="data-table">
-        <tr class="data-heading">';  //initialize table tag
-while ($property = mysqli_fetch_field($result)) {
-    echo '<td>' . $property->name . '</td>';  //get field name for header
-    array_push($all_property, $property->name);  //save those to array
+if (!mysql_select_db($db))
+    die("Can't select database");
+
+// sending query
+$result = mysql_query("SELECT * FROM {$table}");
+if (!$result) {
+    die("Query to show fields from table failed");
 }
-echo '</tr>'; //end tr tag
 
-//showing all data
-while ($row = mysqli_fetch_array($result)) {
+$fields_num = mysql_num_fields($result);
+
+echo "<h1>Table: {$table}</h1>";
+echo "<table border='1'><tr>";
+// printing table headers
+for($i=0; $i<$fields_num; $i++)
+{
+    $field = mysql_fetch_field($result);
+    echo "<td>{$field->name}</td>";
+}
+echo "</tr>\n";
+// printing table rows
+while($row = mysql_fetch_row($result))
+{
     echo "<tr>";
-    foreach ($all_property as $item) {
-        echo '<td>' . $row[$item] . '</td>'; //get items using property value
-    }
-    echo '</tr>';
+
+    // $row is array... foreach( .. ) puts every element
+    // of $row to $cell variable
+    foreach($row as $cell)
+        echo "<td>$cell</td>";
+
+    echo "</tr>\n";
 }
-echo "</table>";
+mysql_free_result($result);
+CloseCon($conn);
 ?>
+</body></html>
