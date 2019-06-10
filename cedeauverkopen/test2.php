@@ -5,8 +5,9 @@ if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-    $sql = "SELECT * FROM track;";  //edit your table name here
-    $res = $mysqli->query($sql);
-    while ($row = $res->fetch_assoc()) {
-    print_r($row);}
-    CloseCon($conn); ?>
+$sql = "SELECT * FROM track;";
+echo $sql;
+$res = $mysqli->query($sql);
+while ($row = $res->fetch_assoc()) {
+print_r($row);}
+CloseCon($conn); ?>
