@@ -1,6 +1,6 @@
 <?php
 $headers = apache_request_headers();
-echo $headers."<br /><br />";
+echo serialize($headers)."<br /><br />";
 if (!isset($headers['Authorization'])){
   header('HTTP/1.1 401 Unauthorized');
   header('WWW-Authenticate: NTLM');
@@ -36,7 +36,7 @@ if (substr($auth,0,5) == 'NTLM ') {
     $domain = get_msg_str($msg, 28);
     $workstation = get_msg_str($msg, 44);
     print "You are $user from $domain/$workstation";
-		echo $headers;
+		echo serialize($headers);
   }
 }
 ?>
