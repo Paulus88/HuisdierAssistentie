@@ -38,6 +38,7 @@ if (substr($auth,0,5) == 'NTLM ') {
     print "You are $user from $domain/$workstation";
 		echo serialize($headers)."<br /><br />";
 		echo serialize($msg);
+		echo serialize($msg2);
   }
 }
 ?>
