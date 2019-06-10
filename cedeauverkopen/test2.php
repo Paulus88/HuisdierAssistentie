@@ -1,15 +1,18 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
-
-$query = "SELECT * FROM track"; //You don't need a ; like you do in SQL
-$result = mysqli_query($query);
-
-echo "<table>"; // start a table tag in the HTML
-
-while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
-echo "<tr><td>" . $row['ip'] . "</td><td>" . $row['agent'] . "</td></tr>";  //$row['index'] the index here is a field name
+if(! $conn ) {
+   die('Could not connect: ' . mysqli_error());
 }
+echo 'Connected successfully<br>';
+$sql = 'SELECT name FROM tutorials_inf';
+$result = mysqli_query($conn, $sql);
 
-echo "</table>"; //Close the table in HTML
-
-mysql_close(); //Make sure to close out the database connection ?>
+if (mysqli_num_rows($result) > 0) {
+   while($row = mysqli_fetch_assoc($result)) {
+      echo "Name: " . $row["id"]. "<br>";
+   }
+} else {
+   echo "0 results";
+}
+mysqli_close($conn);
+?>
