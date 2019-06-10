@@ -1,18 +1,10 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
-if(! $conn ) {
-   die('Could not connect: ' . mysqli_error());
+$result = mysqli_query("select * from track");
+while ($row = mysql_fetch_object($result)) {
+    echo $row->id;
+    echo $row->ip;
 }
-echo 'Connected successfully<br>';
-$sql = 'SELECT name FROM track';
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-   while($row = mysqli_fetch_assoc($result)) {
-      echo "Name: " . $row["id"]. "<br>";
-   }
-} else {
-   echo "0 results";
-}
+mysql_free_result($result);
 mysqli_close($conn);
 ?>
