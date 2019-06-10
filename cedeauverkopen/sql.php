@@ -1,5 +1,5 @@
-   <?php  
-   $host = 'huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com';
+   <?php
+   $host = 'huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com:3306';
    $user = 'logger';
    $pass = '1Logger21';
    $conn = mysqli_connect($host, $user, $pass);
