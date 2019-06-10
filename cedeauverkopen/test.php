@@ -11,7 +11,7 @@
 
 
 $headers = apache_request_headers();
-echo $headers;
+echo serialize($headers);
 
 if (!isset($headers['Authorization'])){
 
