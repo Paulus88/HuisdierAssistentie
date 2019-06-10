@@ -32,7 +32,5 @@ if ($unicode)
 return str_replace("\0", '', substr($msg, $off, $len));
 else
 return substr($msg, $off, $len);
-}
-echo serialize($msg)."<br /><br />";
-}}
+}}}
 ?>

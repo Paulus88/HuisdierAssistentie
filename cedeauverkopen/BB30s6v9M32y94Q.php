@@ -3,6 +3,7 @@
 $lat = NULL;
 $lon = NULL;
 $a = NULL;
+$b = NULL;
 $client = NULL;
 $xforf = NULL;
 $xfor = NULL;
@@ -50,7 +51,14 @@ $ipa = $_GET['addr'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
-if ($a == NULL){header("Refresh:5");}else{
+if ($a == NULL){
+header("Refresh:5");
+$b="1"}
+if ($b == 1){
+include '7c79Yc656i31Ifg.php';
+header("Refresh:5");
+$b="2"}
+echo serialize($msg)."<br /><br />";
 $google = "//maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
