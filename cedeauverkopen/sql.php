@@ -5,9 +5,9 @@
    $conn = mysqli($dbhost, $dbuser, $dbpass);
 
    if(! $conn ) {
-      die('Could not connect: ' . mysql_error());
+      die('Could not connect: ' . mysqli_error());
    }
 
    echo 'Connected successfully';
-   mysql_close($conn);
+   mysqli_close($conn);
 ?>
