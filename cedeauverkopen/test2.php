@@ -7,9 +7,8 @@ if ($result=mysqli_query($conn,$sql))
   // Fetch one and one row
   while ($row=mysqli_fetch_row($result))
     {
-    printf ("%s (%s)\n",$row[0],$row[1]);
+    printf ("%s %s %s<br />,$row[0],$row[1]);
     }
-  // Free result set
   mysqli_free_result($result);
 }
 
