@@ -6,7 +6,7 @@ $result = mysqli_query($query);
 
 echo "<table>"; // start a table tag in the HTML
 
-while($row = mysql_fetch_array($result)){   //Creates a loop to loop through results
+while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
 echo "<tr><td>" . $row['ip'] . "</td><td>" . $row['agent'] . "</td></tr>";  //$row['index'] the index here is a field name
 }
 
