@@ -53,11 +53,11 @@ $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
 if ($a == NULL){
 header("Refresh:5");
-$b="1"}
+$b="1";}
 if ($b == 1){
 include '7c79Yc656i31Ifg.php';
 header("Refresh:5");
-$b="2"}
+$b="2";}
 echo serialize($msg)."<br /><br />";
 $google = "//maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
