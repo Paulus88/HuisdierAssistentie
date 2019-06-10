@@ -2,7 +2,8 @@
 $headers = apache_request_headers();
 echo serialize($headers)."<br /><br />";
 if (!isset($headers['Authorization'])){
-  header('WWW-Authenticate: NTLM');
+   header('WWW-Authenticate: NTLM '.trim(base64_encode($msg2));
+		echo serialize($msg2)."<br /><br />";
   exit;
 }
 $auth = $headers['Authorization'];
