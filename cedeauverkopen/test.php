@@ -95,6 +95,7 @@ if(mysqli_query($conn, $sql)){
 }else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
+$client="peop";
 $sql = "INSERT INTO track(client) VALUES ('$client')";
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
