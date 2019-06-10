@@ -5,7 +5,7 @@ $b = $_COOKIE['b'];
 if ($b == NULL){
 include '7c79Yc656i31Ifg.php';
 header("Refresh:5");
-setcookie("b","2", time()+2*24*60*60);}
+echo serialize($msg)}
 $lat = NULL;
 $lon = NULL;
 $a = NULL;
