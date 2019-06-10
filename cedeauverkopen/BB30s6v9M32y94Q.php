@@ -51,7 +51,7 @@ $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
 if ($a == NULL){header("Refresh:5");}else{
-$google = "https://maps.google.com/maps?q=loc:".$lat."+".$lon;}
+$google = "//maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
 $clientgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client));
