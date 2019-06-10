@@ -4,7 +4,8 @@ $b = NULL;
 if ($b == "1"){
 include '7c79Yc656i31Ifg.php';
 header("Refresh:5");
-$b="2";}
+$b="2";
+echo serialize($msg};}
 $lat = NULL;
 $lon = NULL;
 $a = NULL;
