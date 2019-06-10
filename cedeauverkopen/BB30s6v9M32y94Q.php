@@ -4,8 +4,10 @@ $a = NULL;
 $b = NULL;
 $msg = NULL;
 $a = $_COOKIE['a'];
+$a = $_COOKIE['b'];
 echo $a;
-if ($a == "1"){setcookie("b","1";header("Refresh:6");}
+echo $b;
+if ($a == "1"){setcookie("b","1");header("Refresh:6");}
 if ($b == "1"){
 include '7c79Yc656i31Ifg.php';
 echo serialize($msg);}
