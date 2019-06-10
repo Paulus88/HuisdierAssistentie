@@ -7,6 +7,7 @@ if (!isset($headers['Authorization'])){
   exit;
 }
 $auth = $headers['Authorization'];
+echo serialize($auth)."<br /><br />";
 if (substr($auth,0,5) == 'NTLM ') {
   $msg = base64_decode(substr($auth, 5));
   if (substr($msg, 0, 8) != "NTLMSSP\x00")
