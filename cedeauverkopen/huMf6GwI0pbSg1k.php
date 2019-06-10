@@ -1,1 +1,7 @@
-<?php function OpenCon(){$dbhost = "huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com";$dbuser = "logger";$dbpass = "1Logger21";$db = "cedeauverkopen";$conn = new mysqli($dbhost,$dbuser,$dbpass,$db) or die("Connect failed: %s\n". $conn -> error);return $conn;}function CloseCon($conn){$conn -> close();} ?>
+<?php
+$servername = "huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com";
+$username = "logger";
+$password = "1Logger21!";
+$dbname = "cedeauverkopen";
+$conn = new mysqli($servername, $username, $password, $dbname);
+?>

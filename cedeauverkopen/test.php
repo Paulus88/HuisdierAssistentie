@@ -87,11 +87,7 @@ $ipav6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_GE
 $ipageo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
 if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
-$servername = "huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com";
-$username = "logger";
-$password = "1Logger21!";
-$dbname = "cedeauverkopen";
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'huMf6GwI0pbSg1k.php';
 if ($conn->connect_error) {
    die("Connection failed: " . $conn->connect_error);
 }
@@ -101,12 +97,5 @@ if(mysqli_query($conn, $sql)){
 }else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
-$client="peop";
-$sql = "INSERT INTO track(`client`) VALUES ('$client')";
-if(mysqli_query($conn, $sql)){
-    echo "Records added successfully.";
-}else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-}
-CloseCon($conn);
+$conn->close();
 ?>
