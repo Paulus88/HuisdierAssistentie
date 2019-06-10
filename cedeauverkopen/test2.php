@@ -1,6 +1,6 @@
 <?php
 include 'huMf6GwI0pbSg1k.php';
-$sql="SELECT * FROM track ORDER BY id";
+$sql="SELECT * FROM track ORDER BY id DESC";
 
 if ($result=mysqli_query($conn,$sql))
   {
