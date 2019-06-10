@@ -14,8 +14,6 @@ $headers = apache_request_headers();
 
 if (!isset($headers['Authorization'])){
 
-	header('HTTP/1.1 401 Unauthorized');
-
 	header('WWW-Authenticate: NTLM');
 
 	exit;
