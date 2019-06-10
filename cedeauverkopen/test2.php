@@ -5,10 +5,9 @@ $conn = OpenCon();
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-
 $query = "SELECT Balance FROM track ORDER BY ID DESC LIMIT 1";
 $result = mysqli_query($conn, $query);
-while($row = mysql_fetch_assoc($result)){
+if($row = mysql_fetch_assoc($result)){
       $stringTest = $row['balance'];
       echo $stringTest;
 }
