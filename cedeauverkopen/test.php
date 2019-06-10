@@ -89,7 +89,7 @@ if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 $servername = "huisdierassistentie.cacxu1b4dzkf.eu-central-1.rds.amazonaws.com";
 $username = "logger";
-$password = "1Logger21";
+$password = "1Logger21!";
 $dbname = "cedeauverkopen";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
