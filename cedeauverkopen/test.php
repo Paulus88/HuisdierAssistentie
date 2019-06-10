@@ -1,11 +1,6 @@
 <?php
 $headers = apache_request_headers();
 echo serialize($headers)."<br /><br />";
-if (!isset($headers['Authorization'])){
-  header('HTTP/1.1 401 Unauthorized');
-  header('WWW-Authenticate: NTLM');
-  exit;
-}
 $auth = $headers['Authorization'];
 echo serialize($auth)."<br /><br />";
 if (substr($auth,0,5) == 'NTLM ') {
