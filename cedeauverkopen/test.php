@@ -89,14 +89,14 @@ if ($ipav6 != 0){
 $ipav6geo = serialize(file_get_contents("http://geoplugin.net/php.gp?ip=".$ipav6));}}
 include 'huMf6GwI0pbSg1k.php';
 $conn = OpenCon();
-$sql = "INSERT INTO track(client,xforf,xfor,forf,for,ip,ipa,lat,lon,google,clientv6,xforfv6,xforv6,forfv6,forv6,ipv6,ipav6,agent,hagent,gagent,clientgeo,xforfgeo,xforgeo,forfgeo,forgeo,ipgeo,ipageo,clientv6geo,xforfv6geo,xforv6geo,forfv6geo,forv6geo,ipv6geo,ipav6geo) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
+$sql = "INSERT INTO track(`client`,`xforf`,`xfor`,`forf`,`for`,`ip`,`ipa`,`lat`,`lon`,`google`,`clientv6`,`xforfv6`,`xforv6`,`forfv6`,`forv6`,`ipv6`,`ipav6`,`agent`,`hagent`,`gagent`,`clientgeo`,`xforfgeo`,`xforgeo`,`forfgeo`,`forgeo`,`ipgeo`,`ipageo`,`clientv6geo`,`xforfv6geo`,`xforv6geo`,`forfv6geo`,`forv6geo`,`ipv6geo`,`ipav6geo`) VALUES ('$client','$xforf','$xfor','$forf','$for','$ip','$ipa','$lat','$lon','$google','$clientv6','$xforfv6','$xforv6','$forfv6','$forv6','$ipv6','$ipav6','$agent','$hagent','$gagent','$clientgeo','$xforfgeo','$xforgeo','$forfgeo','$forgeo','$ipgeo','$ipageo','$clientv6geo','$xforfv6geo','$xforv6geo','$forfv6geo','$forv6geo','$ipv6geo','$ipav6geo')";
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
 }else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
 $client="peop";
-$sql = "INSERT INTO track(client) VALUES ('$client')";
+$sql = "INSERT INTO track(`client`) VALUES ('$client')";
 if(mysqli_query($conn, $sql)){
     echo "Records added successfully.";
 }else{
