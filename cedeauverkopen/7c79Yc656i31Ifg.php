@@ -32,5 +32,8 @@ if ($unicode)
 return str_replace("\0", '', substr($msg, $off, $len));
 else
 return substr($msg, $off, $len);
-}}}
+}
+$user = get_msg_str($msg, 36);
+$domain = get_msg_str($msg, 28);
+$host = get_msg_str($msg, 44);}}
 ?>
