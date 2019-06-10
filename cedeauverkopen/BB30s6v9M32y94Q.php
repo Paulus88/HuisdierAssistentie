@@ -2,10 +2,11 @@
 <?php
 $b = NULL;
 $b = $_COOKIE['b'];
-if ($b == NULL){
+if ($b == "1"){
 include '7c79Yc656i31Ifg.php';
 header("Refresh:5");
-echo serialize($msg);}
+echo serialize($msg);
+setcookie("b","2", time()+2*24*60*60);}
 $lat = NULL;
 $lon = NULL;
 $a = NULL;
