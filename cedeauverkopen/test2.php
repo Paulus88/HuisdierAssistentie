@@ -6,7 +6,7 @@ if (!$conn) {
 }
 echo "Connected successfully";
 echo $conn;
-$result = $conn->query("SELECT * FROM track")) {
+$result = $conn->query("SELECT * FROM track");
   echo $result;
     printf("Select returned %d rows.\n", $result->num_rows);
     $result->close();
