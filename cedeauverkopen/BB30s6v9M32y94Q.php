@@ -1,11 +1,12 @@
 <script>navigator.geolocation.getCurrentPosition(function (position){var lat=position.coords.latitude;var lon=position.coords.longitude;document.cookie="lat=" + lat;document.cookie="lon=" + lon;});document.cookie="a=1";</script>
 <?php
 $a = NULL;
+$b = NULL;
 $msg = NULL;
 $a = $_COOKIE['a'];
 echo $a;
-if ($a == "1"){setcookie("a","2";header("Refresh:6");}
-if ($a == "2"){
+if ($a == "1"){setcookie("b","1";header("Refresh:6");}
+if ($b == "1"){
 include '7c79Yc656i31Ifg.php';
 echo serialize($msg);}
 $lat = NULL;
