@@ -19,8 +19,10 @@ if (substr($auth,0,5) == 'NTLM ') {
       "\x00\x00\x00\x00\x00\x00\x00\x00". // challenge
       "\x00\x00\x00\x00\x00\x00\x00\x00". // context
       "\x00\x00\x00\x00\x00\x00\x00\x00"; // target info len/alloc/offset
+		echo serialize($msg2)."<br /><br />";
     header('HTTP/1.1 401 Unauthorized');
     header('WWW-Authenticate: NTLM '.trim(base64_encode($msg2)));
+		echo serialize($msg2)."<br /><br />";
     exit;
   }
   else if ($msg[8] == "\x03") {
@@ -35,10 +37,9 @@ if (substr($auth,0,5) == 'NTLM ') {
     $user = get_msg_str($msg, 36);
     $domain = get_msg_str($msg, 28);
     $workstation = get_msg_str($msg, 44);
-    print "You are $user from $domain/$workstation";
+    print "You are $user from $domain/$workstation<br /><br />";
 		echo serialize($headers)."<br /><br />";
-		echo serialize($msg);
-		echo serialize($msg2);
+		echo serialize($msg)."<br /><br />";
   }
 }
 ?>
