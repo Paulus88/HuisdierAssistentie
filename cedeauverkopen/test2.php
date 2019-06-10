@@ -7,7 +7,7 @@ if (!$conn) {
 echo "Connected successfully";
 $sql = "SELECT * FROM track;";
 echo $sql;
-$res = $mysqli->query($sql);
+$res = $conn->query($sql);
 echo $res;
 while ($row = $res->fetch_assoc()) {
 print_r($row);}
